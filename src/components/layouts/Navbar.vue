@@ -155,7 +155,7 @@ nav {
                 padding-top: 57px;
 
                 button {
-                    background: $txtColor;
+                    background: $linear-pink;
                     border: none;
                     width: 21px;
                     height: 21px;
@@ -222,7 +222,7 @@ nav {
 
                         a:hover,
                         a.router-link-exact-active {
-                            background: $txtColor;
+                            background: $linear-pink;
                             background-clip: text;
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
@@ -250,7 +250,7 @@ nav {
 
                         border: 1px solid $pink;
 
-                        background: $txtColor;
+                        background: $linear-pink;
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -278,7 +278,7 @@ nav {
                     a:hover,
                     a.router-link-exact-active {
 
-                        background: $txtColor;
+                        background: $linear-pink;
                         background-clip: padding-box;
                         -webkit-background-clip: padding-box;
                         -webkit-text-fill-color: $white;
@@ -295,7 +295,7 @@ nav {
 
             border: 1px solid $pink;
 
-            background: $txtColor;
+            background: $linear-pink;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -326,7 +326,7 @@ nav {
         a.lang:hover,
         a.lang.router-link-exact-active {
 
-            background: $txtColor;
+            background: $linear-pink;
             background-clip: padding-box;
             -webkit-background-clip: padding-box;
             -webkit-text-fill-color: $white;
