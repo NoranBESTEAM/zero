@@ -1,36 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <!-- import navbar in main.js file -->
+  <Navbar />
   <router-view/>
 </template>
 
 <script>
-export default {
+  export default {
 
-}
+  }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  @import url('https://fonts.cdnfonts.com/css/super-dream');
+  #app {
+    font-family: 'Super Dream', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-}
+  #app a{
+    text-decoration: none;
+  }
 </style>

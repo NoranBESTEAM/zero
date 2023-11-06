@@ -11,6 +11,8 @@ import "normalize.css";
 import FlagIcon from "vue-flag-icon";
 // import Wow Library
 import 'animate.css';
+// import Navbar Component
+import Navbar from "@/components/layouts/Navbar.vue";
 //import the fontawesome core
 import { library } from "@fortawesome/fontawesome-svg-core";
 //import font awesome icon component
@@ -31,5 +33,7 @@ app.use(store);
 app.component("font-awesome-icon", FontAwesomeIcon);
 // Add Flag Icon
 app.use(FlagIcon);
+//Add Navbar Component
+app.component('Navbar', Navbar)
 app.use(router);
 app.mount("#app");

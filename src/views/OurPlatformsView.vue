@@ -1,11 +1,10 @@
 <template>
-  <h1>Home Page</h1>
+    <h1>Our Platforms Page</h1>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
-
+    name:'OurPlatformsView'
 }
 </script>
 

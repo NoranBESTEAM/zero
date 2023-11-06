@@ -1,11 +1,10 @@
 <template>
-  <h1>Home Page</h1>
+    <h1>Sign Up Page</h1>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
-
+    name:'SignUpView'
 }
 </script>
 
