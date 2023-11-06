@@ -51,4 +51,16 @@ const router = createRouter({
   routes
 })
 
+/* router.beforeEach((to,from,next)=>{
+
+  if (to.name != null){
+    document.title = `${process.env.VUE_APP_TITLE} - ${to.name}`;
+  } else{
+    document.title = `${process.env.VUE_APP_TITLE}`;
+  }
+  
+  next();
+
+}); */
+
 export default router
