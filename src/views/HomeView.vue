@@ -4,6 +4,10 @@
     <Header/>
   <!-- End Header -->
 
+  <!-- Start Categories -->
+  <Categories/>
+  <!-- End Categories -->
+
   <!-- Start Footer -->
   <Footer/>
   <!-- End Footer -->
@@ -13,6 +17,8 @@
 <script>
 
 import Header from '@/components/home/Header.vue';
+import Categories from '@/components/home/Categories.vue';
+
 
 export default {
 
@@ -20,6 +26,7 @@ export default {
 
   components: {
     Header,
+    Categories,
   }
 
 }
