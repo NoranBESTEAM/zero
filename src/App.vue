@@ -2,7 +2,6 @@
   <!-- import navbar in main.js file -->
   <Navbar />
   <router-view/>
-  <Footer/>
 </template>
 
 <script>
