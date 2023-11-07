@@ -70,7 +70,7 @@
                             <font-awesome-icon :icon="['fas', 'fa-arrow-right']" class="inputIco" />
                         </span>
                     </div>
-                    <p class="mb-3">Keep in touch</p>
+                    <h6 class="mb-3">Keep in touch</h6>
                     <!-- Social Links -->
                     <div>
                         <a href="https://www.facebook.com/" class="me-4 text-reset">
@@ -142,6 +142,10 @@ footer {
 
                 @include breakpoints(large) {
                     margin-top: 24px;
+                }
+
+                h6{
+                    color: $orange;
                 }
 
                 .input-group {

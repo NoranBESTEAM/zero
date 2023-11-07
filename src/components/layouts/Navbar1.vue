@@ -66,26 +66,16 @@
                     <button class="btn btn-outline-success" type="submit">Search</button>
                     </form> -->
                     <!-- Login / Sign up -->
-                    <div class="d-flex flex-lg-row d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                        <router-link :to="{ name: 'login' }" class="btn rounded-3 me-3">Login</router-link>
-                        <router-link :to="{ name: 'sign-up' }" class="btn rounded-3 me-3">Sign Up</router-link>
-                        <router-link :to="{ name: '' }" class="btn rounded-3 me-3">
-                            <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
-                            <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
-                        </router-link>
+                    <div class="d-flex flex-column flex-lg-row justify-content-start align-items-start gap-3">
+                        <router-link :to="{ name: 'login' }" class="btn rounded-3">Login</router-link>
+                        <router-link :to="{ name: 'sign-up' }" class="btn rounded-3">Sign Up</router-link>
                     </div>
                 </div>
             </div>
-            <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none" id="responsive">
-                <router-link :to="{ name: 'login' }" class="btn rounded-3 me-3">
-                    Start
-                </router-link>
-                <router-link :to="{ name: '' }" class="btn rounded-3 me-3">
-                    <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
-                    <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
-                </router-link>
-            </div>
-
+            <router-link :to="{ name: '' }" class="btn rounded-3 lang">
+                <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
+                <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
+            </router-link>
         </div>
     </nav>
 </template>
@@ -244,6 +234,18 @@ nav {
 
                 div {
 
+                    @include breakpoints(x-small) {
+                        gap: 0 !important;
+                    }
+
+                    @include breakpoints(small) {
+                        gap: 0 !important;
+                    }
+
+                    @include breakpoints(medium) {
+                        gap: 0 !important;
+                    }
+
                     a {
 
                         border: 1px solid $pink;
@@ -253,11 +255,22 @@ nav {
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
 
-                        svg {
-                            width: 16px;
-                            height: 16px;
-                            margin-right: 8px;
-                            color: $pink;
+                        @include breakpoints(x-small) {
+                            margin-top: 12px;
+                            margin-bottom: 12px;
+                            // box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+                        }
+
+                        @include breakpoints(small) {
+                            margin-top: 12px;
+                            margin-bottom: 12px;
+                            // box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+                        }
+
+                        @include breakpoints(medium) {
+                            margin-top: 12px;
+                            margin-bottom: 12px;
+                            // box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
                         }
 
                     }
@@ -270,10 +283,6 @@ nav {
                         -webkit-background-clip: padding-box;
                         -webkit-text-fill-color: $white;
 
-                        svg {
-                            color: $white;
-                        }
-
                     }
 
                 }
@@ -282,50 +291,48 @@ nav {
 
         }
 
-        div#responsive {
+        a.lang {
 
-            a {
-                border: 1px solid $pink;
+            border: 1px solid $pink;
 
-                background: $linear-pink;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+            background: $linear-pink;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
-                margin-left: 1rem !important;
+            margin-left: 1rem !important;
 
-                @include breakpoints(x-small) {
-                    margin-left: 0 !important;
-                }
-
-                @include breakpoints(small) {
-                    margin-left: 0 !important;
-                }
-
-                @include breakpoints(medium) {
-                    margin-left: 0 !important;
-                }
-
-                svg {
-                    width: 16px;
-                    height: 16px;
-                    margin-right: 8px;
-                    color: $pink;
-                }
+            @include breakpoints(x-small) {
+                margin-left: 0 !important;
             }
 
-            a:hover,
-            a.router-link-exact-active {
+            @include breakpoints(small) {
+                margin-left: 0 !important;
+            }
 
-                background: $linear-pink;
-                background-clip: padding-box;
-                -webkit-background-clip: padding-box;
-                -webkit-text-fill-color: $white;
+            @include breakpoints(medium) {
+                margin-left: 0 !important;
+            }
 
-                svg {
-                    color: $white;
-                }
+            svg {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+                color: $pink;
+            }
 
+        }
+
+        a.lang:hover,
+        a.lang.router-link-exact-active {
+
+            background: $linear-pink;
+            background-clip: padding-box;
+            -webkit-background-clip: padding-box;
+            -webkit-text-fill-color: $white;
+
+            svg {
+                color: $white;
             }
 
         }
