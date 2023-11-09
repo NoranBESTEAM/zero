@@ -8,6 +8,10 @@
   <Categories/>
   <!-- End Categories -->
 
+  <!-- Start Leader Board -->
+  <LeaderBoard/>
+  <!-- End Leader Board -->
+
   <!-- Start Footer -->
   <Footer/>
   <!-- End Footer -->
@@ -18,6 +22,7 @@
 
 import Header from '@/components/home/Header.vue';
 import Categories from '@/components/home/Categories.vue';
+import LeaderBoard from '@/components/home/LeaderBoard.vue';
 
 
 export default {
@@ -27,6 +32,7 @@ export default {
   components: {
     Header,
     Categories,
+    LeaderBoard,
   }
 
 }
