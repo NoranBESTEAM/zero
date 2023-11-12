@@ -3,6 +3,9 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 module.exports = {
+  // https://stackoverflow.com/questions/41392166/vue-js-build-not-working-with-npm-run-build
+  // https://www.youtube.com/watch?v=Qrf-WcrzkdQ
+  publicPath: process.env.NODE_ENV === 'production' ? '' : '/',
   css: {
     loaderOptions: {
       sass: {

@@ -72,9 +72,9 @@
 
                         <p class="text-center mb-4">
                             Don’t have account?
-                            <a href="#" class="text-reset">
+                            <router-link :to="{ name: 'sign-up' }" class="text-reset">
                                 Sign Up
-                            </a>
+                            </router-link>
                         </p>
 
                         <router-link :to="{ name: '' }"

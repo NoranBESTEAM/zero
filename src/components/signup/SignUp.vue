@@ -84,9 +84,9 @@
 
                         <p class="text-center mb-4">
                             Already have account?
-                            <a href="#" class="text-reset">
+                            <router-link :to="{ name: 'login' }" class="text-reset">
                                 Log in
-                            </a>
+                            </router-link>
                         </p>
 
                         <router-link :to="{ name: '' }" class="btn mb-4 border-0 d-flex justify-content-center align-items-center">

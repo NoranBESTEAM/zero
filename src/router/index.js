@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+// import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'
 import TracksView from '../views/TracksView.vue'
@@ -41,13 +42,14 @@ const routes = [
   },
   {
     path: '/sign-in',
-    name: 'sign-in',
+    name: 'login',
     component: SignInView
   },
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  // history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   routes
 })
 
