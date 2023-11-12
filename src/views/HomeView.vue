@@ -1,5 +1,7 @@
 <template>
-
+  <!-- import navbar in main.js file -->
+  <Navbar />
+  <router-view/>
   <!-- Start Header -->
     <Header/>
   <!-- End Header -->

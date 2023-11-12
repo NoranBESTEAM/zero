@@ -1,13 +1,17 @@
 <template>
-    <h1>Sign Up Page</h1>
+    <!-- Start Signup -->
+    <SignUp />
+    <!-- End Signup -->
 </template>
 
 <script>
+import SignUp from '@/components/signup/SignUp.vue';
 export default {
-    name:'SignUpView'
+    name: 'SignUpView',
+    components: {
+        SignUp,
+    }
 }
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
