@@ -1,5 +1,5 @@
 <template>
-    <section id="sign-up">
+    <section id="sign-in">
 
         <div class="container">
 
@@ -14,18 +14,9 @@
                         <img src="@/assets/images/navbar/logo1.png" alt="">
                     </div>
 
-                    <h1 class="text-center mb-5">Sign up</h1>
+                    <h1 class="text-center mb-5">Log In</h1>
 
                     <form>
-
-                        <div class="input-group mb-4">
-                            <span class="input-group-text" id="basic-addon1">
-                                <!-- <font-awesome-icon :icon="['far', 'fa-user']" /> -->
-                                <img src="@/assets/images/signup/user.svg" alt="">
-                            </span>
-                            <input type="text" class="form-control shadow-none" placeholder="User name"
-                                aria-label="UserName" aria-describedby="basic-addon1" />
-                        </div>
 
                         <div class="input-group mb-4">
                             <span class="input-group-text" id="basic-addon2">
@@ -49,20 +40,17 @@
                             </span>
                         </div>
 
-                        <div class="input-group mb-4">
-                            <span class="input-group-text" id="basic-addon4">
-                                <!-- <font-awesome-icon :icon="['fas', 'fa-lock']" /> -->
-                                <img src="@/assets/images/signup/lock.svg" alt="">
-                            </span>
-                            <input type="password" class="form-control shadow-none" placeholder="Confirm password"
-                                aria-label="Password" aria-describedby="basic-addon4" />
-                            <span class="input-group-text" id="basic-addon3">
-                                <!-- <font-awesome-icon :icon="['far', 'fa-eye-slash']" /> -->
-                                <img src="@/assets/images/signup/eye-slash.svg" alt="">
-                            </span>
+                        <!-- Checkbox -->
+                        <div class="form-check mb-4">
+                            <input class="form-check-input shadow-none" type="checkbox" value="" id="form2Example31" />
+                            <label class="form-check-label" for="form2Example31"> Remember me </label>
                         </div>
 
-                        <button type="button" class="btn btn-lg w-100 mb-4" id="sign_up">Sign up</button>
+                        <button type="button" class="btn btn-lg w-100 mb-4" id="sign_up">Log In</button>
+
+                        <div class="mb-4">
+                            <a href="#">Forgot password?</a>
+                        </div>
 
                         <p class="text-center mb-4 myP">or</p>
 
@@ -83,9 +71,9 @@
                         </div>
 
                         <p class="text-center mb-4">
-                            Already have account?
+                            Don’t have account?
                             <a href="#" class="text-reset">
-                                Log in
+                                Sign Up
                             </a>
                         </p>
 
@@ -113,12 +101,12 @@
 
 <script>
 export default {
-    name: 'SignUp',
+    name: 'SignIn',
 }
 </script>
 
 <style lang="scss" scoped>
-#sign-up {
+#sign-in {
 
     // https://www.w3schools.com/cssref/pr_background-image.php
     /* The image used */
@@ -163,10 +151,24 @@ export default {
             span img {
                 width: 16px;
                 height: 16px;
-                color: $white;
             }
 
             input::placeholder {
+                color: $white;
+            }
+        }
+
+        .form-check {
+
+            /* input{
+                background: transparent;
+            } */
+            .form-check-input:checked {
+                background-color: $mov !important;
+                border: none;
+            }
+
+            label {
                 color: $white;
             }
         }

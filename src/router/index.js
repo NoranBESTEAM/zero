@@ -5,8 +5,8 @@ import TracksView from '../views/TracksView.vue'
 import CompetitionsView from '../views/CompetitionsView.vue'
 import OurPlatformsView from '../views/OurPlatformsView.vue'
 import ReadableContentView from '../views/ReadableContentView.vue'
-import LoginView from '../views/LoginView.vue'
 import SignUpView from '../views/SignUpView.vue'
+import SignInView from '../views/SignInView.vue'
 
 const routes = [
   {
@@ -35,14 +35,14 @@ const routes = [
     component: ReadableContentView
   },
   {
-    path: '/login',
-    name: 'login',
-    component: LoginView
-  },
-  {
     path: '/sign-up',
     name: 'sign-up',
     component: SignUpView
+  },
+  {
+    path: '/sign-in',
+    name: 'sign-in',
+    component: SignInView
   },
 ]
 
