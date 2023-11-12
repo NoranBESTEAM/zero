@@ -77,7 +77,8 @@
                             </a>
                         </p>
 
-                        <router-link :to="{ name: '' }" class="btn mb-4 border-0 d-flex justify-content-center align-items-center">
+                        <router-link :to="{ name: '' }"
+                            class="btn mb-4 border-0 d-flex justify-content-center align-items-center">
                             <font-awesome-icon :icon="['fas', 'fa-earth-americas']" class="me-2" />
                             اللغة العربية
                         </router-link>
@@ -148,6 +149,10 @@ export default {
                 border: none;
             }
 
+            input{
+                caret-color: $white;
+            }
+
             span img {
                 width: 16px;
                 height: 16px;
@@ -155,6 +160,10 @@ export default {
 
             input::placeholder {
                 color: $white;
+            }
+
+            input:focus::placeholder {
+                color: transparent;
             }
         }
 

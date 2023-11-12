@@ -160,6 +160,10 @@ export default {
                 border: none;
             }
 
+            input{
+                caret-color: $white;
+            }
+
             span img {
                 width: 16px;
                 height: 16px;
@@ -168,6 +172,10 @@ export default {
 
             input::placeholder {
                 color: $white;
+            }
+
+            input:focus::placeholder {
+                color: transparent;
             }
         }
 
