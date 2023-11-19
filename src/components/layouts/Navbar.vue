@@ -7,13 +7,14 @@
                 <img src="@/assets/images/navbar/logo1.png" alt="ZEROLogo" />
             </router-link>
             <!-- Toggle Button -->
+            <!-- shadow-none border-0 -->
             <button class="navbar-toggler rounded-3" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <img src="@/assets/images/navbar/gg_menu-right.svg" alt="Toggler Icon">
             </button>
             <!-- Sidebar -->
-            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <!-- Sidebar Header -->
                 <div class="offcanvas-header">
@@ -148,9 +149,11 @@ nav {
 
         .offcanvas {
 
+            background: $dark-mov;
+
             .offcanvas-header {
 
-                @include breakpoints(x-small) {
+                /* @include breakpoints(x-small) {
                     background: $dark-mov;
                 }
 
@@ -160,7 +163,7 @@ nav {
 
                 @include breakpoints(medium) {
                     background: $dark-mov;
-                }
+                } */
 
                 padding-top: 57px;
 
@@ -178,7 +181,7 @@ nav {
 
                 padding-top: 0;
 
-                @include breakpoints(x-small) {
+                /* @include breakpoints(x-small) {
                     background: $dark-mov;
                 }
 
@@ -188,7 +191,7 @@ nav {
 
                 @include breakpoints(medium) {
                     background: $dark-mov;
-                }
+                } */
 
                 ul {
 
@@ -292,7 +295,7 @@ nav {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
 
-                margin-left: 1rem !important;
+                // margin-left: 1rem !important;
 
                 @include breakpoints(x-small) {
                     margin-left: 0 !important;

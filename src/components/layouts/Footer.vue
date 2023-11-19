@@ -11,46 +11,49 @@
 
                 <!-- Grid column -->
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 mx-auto" id="about-us">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 mx-auto" id="about-us">
                     <img src="@/assets/images/navbar/logo1.png" alt="Footer Logo" id="logoImg">
-                    <p class="mt-3 mb-0 text-justify">Digital Skills provides you with a funny and integrated content makes
+                    <!-- mb-0 -->
+                    <p class="mt-2 text-justify">Digital Skills provides you with a funny and integrated content makes
                         you learn programming easier.</p>
                 </div>
 
                 <!-- Grid column -->
 
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 mx-auto">
                     <h6 class="fw-bold mb-3">Fast links</h6>
-                    <p class="mb-3">Home</p>
-                    <p class="mb-3">Tracks</p>
-                    <p class="mb-3">Our platforms</p>
-                    <p class="mb-0">Readable content</p>
+                    <p>Home</p>
+                    <p>Tracks</p>
+                    <p>Our platforms</p>
+                    <p>Readable content</p>
                 </div>
 
                 <!-- Grid column -->
 
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto">
+                <!-- mt-sm-4 mt-md-4 mt-lg-4 mt-xl-0 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 mx-auto">
                     <h6 class="fw-bold mb-3">Help & Support</h6>
-                    <p class="mb-3">Terms and Conditions</p>
-                    <p class="mb-3">Privacy policy</p>
-                    <p class="mb-0">Support</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy policy</p>
+                    <p>Support</p>
                 </div>
 
                 <!-- Grid column -->
 
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 mx-auto" id="contact">
+                <!-- mt-sm-4 mt-md-4 mt-lg-4 mt-xl-0 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 mx-auto">
                     <h6 class="fw-bold mb-3">Contact us</h6>
-                    <p class="mb-3">
+                    <p>
                         <!-- <i class="fa-solid fa-phone"></i> -->
                         <font-awesome-icon :icon="['fas', 'fa-phone']" />
                         +966531577796
                     </p>
-                    <p class="mb-3">
+                    <p>
                         <!-- <i class="fa-solid fa-envelope"></i> -->
                         <font-awesome-icon :icon="['fas', 'fa-envelope']" />
                         info@thaka.sa
                     </p>
-                    <p class="mb-0">
+                    <p>
                         <!-- <i class="fa-solid fa-location-dot"></i> -->
                         <font-awesome-icon :icon="['fas', 'fa-location-dot']" />
                         Saudi Arabia
@@ -59,6 +62,7 @@
 
                 <!-- Grid column -->
 
+                <!-- mt-sm-4 mt-md-4 mt-lg-4 mt-xl-0 -->
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 mx-auto">
                     <h6 class="fw-bold mb-3">Last news</h6>
                     <!-- Email input -->
@@ -96,10 +100,10 @@
 
             <!-- Copyright -->
 
-            <div class="text-center" id="copyright">
-                All rights reserved &copy;
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">{{ new Date().getFullYear() }}</a>
-                ZERO1 Skills
+            <div class="text-center pt-3" id="copyright">
+                All rights reserved
+                <a class="text-reset fw-bold" href="">ZERO1 Skills</a>
+                &copy; {{ new Date().getFullYear() }}
             </div>
 
         </div>
@@ -121,84 +125,78 @@ footer {
 
     .container {
 
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        a {
+            &:hover {
+                color: $orange !important;
+            }
+        }
+
         .row {
 
-            padding-top: 40px;
+            @include breakpoints(x-small) {
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+            }
+
             border-bottom: 1px solid $white;
 
-            div {
+            #about-us {
+                #logoImg {
+                    width: 143.536px;
+                    height: 48px;
+                }
+            }
 
+            h6 {
+                color: $orange;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            svg {
+                margin-right: 4px;
+            }
+
+            .input-group {
+
+                input::placeholder {
+                    font-size: 12px;
+                }
+
+                input:focus,
+                input:focus+span {
+                    box-shadow: 0 0 8px 0 $box-shadow-two;
+                }
+
+                input:focus::placeholder {
+                    color: $gray;
+                }
+
+                span {
+                    background: $linear-pink;
+                    color: $white;
+                    cursor: pointer;
+                }
+
+            }
+
+            /* div:not(:first-child) {
                 @include breakpoints(x-small) {
                     margin-top: 24px;
                 }
-
-                @include breakpoints(small) {
-                    margin-top: 24px;
-                }
-
-                @include breakpoints(medium) {
-                    margin-top: 24px;
-                }
-
-                @include breakpoints(large) {
-                    margin-top: 24px;
-                }
-
-                h6{
-                    color: $orange;
-                }
-
-                .input-group {
-
-                    input:focus,
-                    input:focus+span {
-                        box-shadow: 0 0 8px 0 #D7DADD;
-                    }
-
-                    input:focus::placeholder {
-                        color: $gray;
-                    }
-
-                    span {
-                        background: $linear-pink;
-                        color: #FFF;
-                        cursor: pointer;
-                    }
-
-                }
-
-                a {
-                    &:hover {
-                        color: $orange !important;
-                    }
-                }
-
-            }
-
-            #about-us #logoImg {
-                width: 143.536px;
-                height: 48px;
-            }
-
-            #contact svg {
-                margin-right: 4px;
-            }
+            } */
 
         }
 
         #copyright {
-
-            padding: 16px 0;
-
-            a {
-                &:hover {
-                    color: $orange !important;
-                }
-            }
-            
+            font-size: 12px;
         }
 
     }
-
 }
 </style>

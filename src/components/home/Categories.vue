@@ -1,5 +1,5 @@
 <template>
-    <div class="categories text-center">
+    <div id="categories" class="text-center">
 
         <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
 
@@ -8,15 +8,16 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
 
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" ref="myCardOne">
                         <img src="@/assets/images/categories/learn.svg" class="card-img-top" alt="Learn">
                         <div class="card-body">
                             <h5 class="card-title">Learn</h5>
-                            <p class="card-text">Self-learning paths in digital skills, programming, and STEAM applications.
+                            <p class="card-text">
+                                Self-learning paths in digital skills, programming, and STEAM applications.
                             </p>
                         </div>
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3">
+                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3" v-on:mouseover="changeBorderOne(true)" v-on:mouseleave="changeBorderOne(false)">
                                 Start learning now
                             </router-link>
                         </div>
@@ -24,14 +25,14 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" ref="myCardTwo">
                         <img src="@/assets/images/categories/code.svg" class="card-img-top" alt="Code">
                         <div class="card-body">
                             <h5 class="card-title">Code</h5>
                             <p class="card-text">Practice digital skills with experts.</p>
                         </div>
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3">
+                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3" v-on:mouseover="changeBorderTwo(true)" v-on:mouseleave="changeBorderTwo(false)">
                                 Start learning now
                             </router-link>
                         </div>
@@ -39,15 +40,16 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100" ref="myCardThree">
                         <img src="@/assets/images/categories/compute.svg" class="card-img-top" alt="Compute">
                         <div class="card-body">
                             <h5 class="card-title">Compete</h5>
-                            <p class="card-text">Compete solo or in league through series of missions, be a future skills
-                                pioneer.</p>
+                            <p class="card-text">
+                                Compete solo or in league through series of missions, be a future skills pioneer.
+                            </p>
                         </div>
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3">
+                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3" v-on:mouseover="changeBorderThree(true)" v-on:mouseleave="changeBorderThree(false)">
                                 Start learning now
                             </router-link>
                         </div>
@@ -64,11 +66,41 @@
 <script>
 export default {
     name: 'Categories',
+    methods: {
+        // https://fontawesomeicons.com/fa/vue-change-text-color-on-hover
+        changeBorderOne(isHovering) {
+            if (isHovering) {
+                // this.$refs.myParagraph.style.border = '1px solid #E74B90';
+                this.$refs.myCardOne.style.border = '1px solid #E74B90';
+            } else {
+                // this.$refs.myParagraph.style.border = '0';
+                this.$refs.myCardOne.style.border = '0';
+            }
+        },
+        changeBorderTwo(isHovering) {
+            if (isHovering) {
+                // this.$refs.myParagraph.style.border = '1px solid #E74B90';
+                this.$refs.myCardTwo.style.border = '1px solid #E74B90';
+            } else {
+                // this.$refs.myParagraph.style.border = '0';
+                this.$refs.myCardTwo.style.border = '0';
+            }
+        },
+        changeBorderThree(isHovering) {
+            if (isHovering) {
+                // this.$refs.myParagraph.style.border = '1px solid #E74B90';
+                this.$refs.myCardThree.style.border = '1px solid #E74B90';
+            } else {
+                // this.$refs.myParagraph.style.border = '0';
+                this.$refs.myCardThree.style.border = '0';
+            }
+        },
+    },
 }
 </script>
 
 <style lang="scss" scoped>
-.categories {
+#categories {
 
     padding-top: 40px;
     padding-bottom: 40px;
@@ -81,13 +113,15 @@ export default {
             border-radius: 8px;
             background: $mov;
             /* Shadow */
-            box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+            box-shadow: 0px 4px 4px 0px $box-shadow;
+
+            padding-top: 16px;
+            padding-bottom: 16px;
 
             img {
                 width: 104px;
                 height: 104px;
                 margin: auto;
-                margin-top: 24px;
             }
 
             .card-body {

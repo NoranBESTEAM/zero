@@ -1,12 +1,14 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import store from "./store";
+import store from "./store/index";
 // import Bootstrap
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 //import Normalize
 import "normalize.css";
+// import Fonts
+import "@/assets/scss/style.scss";
 // import flag icon
 import FlagIcon from "vue-flag-icon";
 // import Wow Library

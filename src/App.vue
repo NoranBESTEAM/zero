@@ -11,7 +11,7 @@
 </script>
 
 <style lang="scss">
-  @import url('https://fonts.cdnfonts.com/css/super-dream');
+  // @import url('https://fonts.cdnfonts.com/css/super-dream');
   #app {
     font-family: 'Super Dream', sans-serif;
     -webkit-font-smoothing: antialiased;

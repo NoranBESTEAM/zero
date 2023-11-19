@@ -1,10 +1,11 @@
 <template>
-    <div class="leader-board">
+    <div id="leader-board">
         <div class="container">
             <h3 class="text-center">Leader Board</h3>
-            <p class="text-center">The leaderboard is updated all day long</p>
+            <p class="text-center">The leader board is updated all day long</p>
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6" id="players">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 table-responsive" id="players">
                     <!-- table-striped table-bordered -->
                     <table class="table caption-top">
                         <caption>
@@ -128,7 +129,8 @@
                     </table>
 
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6" id="leagues">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 table-responsive" id="leagues">
                     <table class="table caption-top">
                         <caption>
                             <h5 class="text-center">
@@ -238,6 +240,7 @@
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </div>
     </div>
@@ -250,11 +253,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.leader-board {
+#leader-board {
 
     // https://www.w3schools.com/cssref/pr_background-image.php
     /* The image used */
-    background-image: url("@/assets/images/leader_board/leader board.jpg");
+    background-image: url("@/assets/images/leader_board/leader_board.jpg");
     /* Used if the image is unavailable */
     background-color: $dark-mov;
     /* Center the image */
@@ -278,7 +281,15 @@ export default {
     }
 
     @include breakpoints(medium) {
-        background-image: none;
+        background-size: cover;
+    }
+
+    @include breakpoints(large) {
+        background-size: cover;
+    }
+
+    @include breakpoints(x-Large) {
+        background-size: cover;
     }
 
     table {
@@ -288,7 +299,7 @@ export default {
         }
 
         tr {
-            border-bottom: 4px solid rgba(144, 144, 144, 0.50);
+            border-bottom: 4px solid $table-border;
             border-style: outset;
         }
 
@@ -296,7 +307,7 @@ export default {
             tr {
                 th {
 
-                    background-color: rgba(11, 7, 67, 0.80);
+                    background-color: $table-BG;
                     padding: 8px 16px;
 
                     .myFlag {
@@ -308,9 +319,9 @@ export default {
                 }
 
                 td {
-                    background-color: rgba(11, 7, 67, 0.80);
+                    background-color: $table-BG;
                     padding: 8px 16px;
-                    color: #FFF;
+                    color: $white;
                 }
             }
         }
@@ -324,8 +335,8 @@ export default {
             thead {
                 tr {
                     th {
-                        background-color: #BCD016;
-                        color: #FFF;
+                        background-color: $green;
+                        color: $white;
                         padding: 8px 16px;
                     }
                 }
@@ -334,7 +345,7 @@ export default {
             tbody {
                 tr {
                     td.green {
-                        color: #BCD016;
+                        color: $green;
                     }
                 }
             }
@@ -350,8 +361,8 @@ export default {
             thead {
                 tr {
                     th {
-                        background-color: #ED612D;
-                        color: #FFF;
+                        background-color: $orange;
+                        color: $white;
                         padding: 8px 16px;
                     }
                 }
@@ -360,7 +371,7 @@ export default {
             tbody {
                 tr {
                     td.orange {
-                        color: #ED612D;
+                        color: $orange;
                     }
                 }
             }
@@ -370,5 +381,4 @@ export default {
     }
 
 }
-
 </style>

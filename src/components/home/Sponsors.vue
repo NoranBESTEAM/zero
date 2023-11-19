@@ -1,17 +1,17 @@
 <template>
-    <div class="sponsors">
+    <div id="sponsors">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                     <img src="@/assets/images/sponsors/logo-sponsor.png" alt="علم">
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                     <img src="@/assets/images/sponsors/logo-sponsor2.png" alt="تطوير لتقنيات التعليم">
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                     <img src="@/assets/images/sponsors/logo-sponsor3.png" alt="جامعه المجمعه">
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                     <img src="@/assets/images/sponsors/logo-sponsor4.png" alt="جامعه الملك سعود">
                 </div>
             </div>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sponsors {
+#sponsors {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: $dark-mov;

@@ -1,5 +1,5 @@
 <template>
-    <div class="packages text-center">
+    <div id="packages" class="text-center">
 
         <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
 
@@ -133,7 +133,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.packages {
+#packages {
 
     padding-top: 40px;
     padding-bottom: 40px;
@@ -152,9 +152,9 @@ export default {
 
                 border: 0;
 
-                h3 {
+                /* h3 {
                     font-size: 32px;
-                }
+                } */
 
             }
 
