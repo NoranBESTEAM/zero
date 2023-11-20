@@ -3,6 +3,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'
 import TracksView from '../views/TracksView.vue'
+import LessonsView from '../views/LessonsView.vue'
+import LevelsView from '../views/LevelsView.vue'
 import CompetitionsView from '../views/CompetitionsView.vue'
 import OurPlatformsView from '../views/OurPlatformsView.vue'
 import ReadableContentView from '../views/ReadableContentView.vue'
@@ -19,6 +21,16 @@ const routes = [
     path: '/tracks',
     name: 'tracks',
     component: TracksView
+  },
+  {
+    path: '/lessons',
+    name: 'lessons',
+    component: LessonsView
+  },
+  {
+    path: '/levels',
+    name: 'levels',
+    component: LevelsView
   },
   {
     path: '/competitions',

@@ -1,12 +1,10 @@
 <template>
-    <!-- Start Navbar -->
     <!-- import navbar in main.js file -->
     <Navbar />
     <router-view />
-    <!-- End Navbar -->
-    <!-- Start Tracks -->
-    <Tracks />
-    <!-- End Tracks -->
+    <!-- Start Lessons -->
+    <Lessons />
+    <!-- End Lessons -->
     <!-- Start Footer -->
     <!-- import Footer in main.js file -->
     <Footer />
@@ -14,13 +12,11 @@
 </template>
 
 <script>
-
-import Tracks from '@/components/tracks/Tracks.vue';
-
+import Lessons from '@/components/lessons/Lessons.vue';
 export default {
-    name: 'TracksView',
+    name: 'LessonsView',
     components: {
-        Tracks
+        Lessons
     }
 }
 </script>

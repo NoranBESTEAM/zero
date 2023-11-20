@@ -27,6 +27,7 @@
   <!-- End Mail -->
 
   <!-- Start Footer -->
+  <!-- import Footer in main.js file -->
   <Footer/>
   <!-- End Footer -->
   
