@@ -184,7 +184,7 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <router-link :to="{ name: '' }" class="text-reset">
+                                <router-link :to="{ name: 'mission_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">8</span>
                                         <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
@@ -207,7 +207,7 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <router-link :to="{ name: '' }" class="text-reset">
+                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">9</span>
                                         <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
@@ -229,7 +229,7 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <router-link :to="{ name: '' }" class="text-reset">
+                                <router-link :to="{ name: 'mission_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">10</span>
                                         <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
@@ -252,7 +252,7 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <router-link :to="{ name: '' }" class="text-reset">
+                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">11</span>
                                         <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
@@ -274,7 +274,7 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <router-link :to="{ name: '' }" class="text-reset">
+                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">12</span>
                                         <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
@@ -296,7 +296,7 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <router-link :to="{ name: '' }" class="text-reset">
+                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">13</span>
                                         <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
@@ -325,7 +325,7 @@
                                 <div class="lock-card">
 
                                     <div class="card h-100">
-                                        <router-link :to="{ name: '' }" class="text-reset disabled">
+                                        <router-link :to="{ name: 'level_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
                                                 <span class="ms-3 h3 mb-0">14</span>
                                                 <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top"
@@ -364,7 +364,7 @@
                                 <div class="lock-card">
 
                                     <div class="card h-100">
-                                        <router-link :to="{ name: '' }" class="text-reset disabled">
+                                        <router-link :to="{ name: 'level_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
                                                 <span class="ms-3 h3 mb-0">15</span>
                                                 <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top"
@@ -403,7 +403,7 @@
                                 <div class="lock-card">
 
                                     <div class="card h-100">
-                                        <router-link :to="{ name: '' }" class="text-reset disabled">
+                                        <router-link :to="{ name: 'level_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
                                                 <span class="ms-3 h3 mb-0">16</span>
                                                 <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top"

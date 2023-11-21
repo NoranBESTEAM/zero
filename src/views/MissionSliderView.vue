@@ -1,10 +1,10 @@
 <template>
-<h1>Level</h1>
+<h1>Mission</h1>
 </template>
 
 <script>
 export default {
-    name:'LevelSliderView',
+    name:'MissionSliderView',
 }
 </script>
 

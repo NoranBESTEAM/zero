@@ -6,6 +6,7 @@ import TracksView from '../views/TracksView.vue'
 import LessonsView from '../views/LessonsView.vue'
 import LevelsView from '../views/LevelsView.vue'
 import LevelSliderView from '../views/LevelSliderView.vue'
+import MissionSliderView from '../views/MissionSliderView.vue'
 import CompetitionsView from '../views/CompetitionsView.vue'
 import OurPlatformsView from '../views/OurPlatformsView.vue'
 import ReadableContentView from '../views/ReadableContentView.vue'
@@ -37,6 +38,11 @@ const routes = [
     path: '/level_slider',
     name: 'level_slider',
     component: LevelSliderView
+  },
+  {
+    path: '/mission_slider',
+    name: 'mission_slider',
+    component: MissionSliderView
   },
   {
     path: '/competitions',
