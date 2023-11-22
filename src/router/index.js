@@ -8,6 +8,7 @@ import LevelsView from '../views/LevelsView.vue'
 import LevelSliderView from '../views/LevelSliderView.vue'
 import MissionSliderView from '../views/MissionSliderView.vue'
 import CompetitionsView from '../views/CompetitionsView.vue'
+import JourneyView from '../views/JourneyView.vue'
 import OurPlatformsView from '../views/OurPlatformsView.vue'
 import ReadableContentView from '../views/ReadableContentView.vue'
 import SignUpView from '../views/SignUpView.vue'
@@ -48,6 +49,11 @@ const routes = [
     path: '/competitions',
     name: 'competitions',
     component: CompetitionsView
+  },
+  {
+    path: '/journey',
+    name: 'journey',
+    component: JourneyView
   },
   {
     path: '/our-platforms',
