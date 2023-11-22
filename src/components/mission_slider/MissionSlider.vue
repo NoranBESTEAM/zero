@@ -45,11 +45,6 @@ h3 {
     }
 }
 
-h3:hover {
-    -webkit-text-stroke: 2px $white;
-    color: transparent;
-}
-
 .image-wrapper {
 
     width: 867px;

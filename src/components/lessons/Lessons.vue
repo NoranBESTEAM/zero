@@ -137,11 +137,6 @@ export default {
         }
     }
 
-    h3:hover{
-        -webkit-text-stroke: 2px $white;
-        color: transparent;
-    }
-
     .card {
 
         background-color: $primary;
