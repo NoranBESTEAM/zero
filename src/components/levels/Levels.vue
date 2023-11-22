@@ -60,7 +60,7 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level2 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
@@ -82,7 +82,7 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level3 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
@@ -104,13 +104,35 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level4 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
                                     </p>
                                     <p class="card-text mb-2">
                                         Get 5 start to start this level.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <router-link :to="{ name: 'mission_slider' }" class="text-reset">
+                                    <div class="image-wrapper">
+                                        <span class="ms-3 h3 mb-0">1</span>
+                                        <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top" alt="">
+                                    </div>
+                                </router-link>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Mission 1
+                                    </h5>
+                                    <p class="card-text mb-2">
+                                        Start mission 1
+                                    </p>
+                                    <p class="card-text mb-2">
+                                        Finish all previous levels before mission 1.
                                     </p>
                                 </div>
                             </div>
@@ -126,7 +148,7 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level5 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
@@ -148,7 +170,7 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level6 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
@@ -170,7 +192,29 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level7 (Beginner)
+                                    </h5>
+                                    <p class="card-text mb-2">
+                                        In this level you will learn what the robot is.
+                                    </p>
+                                    <p class="card-text mb-2">
+                                        Get 5 start to start this level.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
+                                    <div class="image-wrapper">
+                                        <span class="ms-3 h3 mb-0">8</span>
+                                        <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
+                                    </div>
+                                </router-link>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Phase1- Level8 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
@@ -186,17 +230,17 @@
                             <div class="card h-100">
                                 <router-link :to="{ name: 'mission_slider' }" class="text-reset">
                                     <div class="image-wrapper">
-                                        <span class="ms-3 h3 mb-0">8</span>
+                                        <span class="ms-3 h3 mb-0">2</span>
                                         <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
                                             alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Mission 1
+                                        Mission 2
                                     </h5>
                                     <p class="card-text mb-2">
-                                        Start mission 1
+                                        Start mission 2
                                     </p>
                                     <p class="card-text mb-2">
                                         Finish all previous levels before mission 1.
@@ -215,7 +259,7 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level9 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
@@ -229,22 +273,21 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <router-link :to="{ name: 'mission_slider' }" class="text-reset">
+                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">10</span>
-                                        <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
-                                            alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Mission 1
+                                        Phase1- Level10 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
-                                        Start mission 1
+                                        In this level you will learn what the robot is.
                                     </p>
                                     <p class="card-text mb-2">
-                                        Finish all previous levels before mission 1.
+                                        Get 5 start to start this level.
                                     </p>
                                 </div>
                             </div>
@@ -260,51 +303,7 @@
                                 </router-link>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
-                                    </h5>
-                                    <p class="card-text mb-2">
-                                        In this level you will learn what the robot is.
-                                    </p>
-                                    <p class="card-text mb-2">
-                                        Get 5 start to start this level.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
-                                    <div class="image-wrapper">
-                                        <span class="ms-3 h3 mb-0">12</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
-                                    </div>
-                                </router-link>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
-                                    </h5>
-                                    <p class="card-text mb-2">
-                                        In this level you will learn what the robot is.
-                                    </p>
-                                    <p class="card-text mb-2">
-                                        Get 5 start to start this level.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <router-link :to="{ name: 'level_slider' }" class="text-reset">
-                                    <div class="image-wrapper">
-                                        <span class="ms-3 h3 mb-0">13</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top" alt="">
-                                    </div>
-                                </router-link>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Phase1- Level1 (Beginner)
+                                        Phase1- Level11 (Beginner)
                                     </h5>
                                     <p class="card-text mb-2">
                                         In this level you will learn what the robot is.
@@ -327,14 +326,14 @@
                                     <div class="card h-100">
                                         <router-link :to="{ name: 'level_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
-                                                <span class="ms-3 h3 mb-0">14</span>
+                                                <span class="ms-3 h3 mb-0">12</span>
                                                 <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top"
                                                     alt="">
                                             </div>
                                         </router-link>
                                         <div class="card-body">
                                             <h5 class="card-title">
-                                                Phase1- Level1 (Beginner)
+                                                Phase1- Level12 (Beginner)
                                             </h5>
                                             <p class="card-text mb-2">
                                                 In this level you will learn what the robot is.
@@ -364,22 +363,22 @@
                                 <div class="lock-card">
 
                                     <div class="card h-100">
-                                        <router-link :to="{ name: 'level_slider' }" class="text-reset disabled">
+                                        <router-link :to="{ name: 'mission_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
-                                                <span class="ms-3 h3 mb-0">15</span>
-                                                <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top"
+                                                <span class="ms-3 h3 mb-0">3</span>
+                                                <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
                                                     alt="">
                                             </div>
                                         </router-link>
                                         <div class="card-body">
                                             <h5 class="card-title">
-                                                Phase1- Level1 (Beginner)
+                                                Mission 3
                                             </h5>
                                             <p class="card-text mb-2">
-                                                In this level you will learn what the robot is.
+                                                Start mission 3
                                             </p>
                                             <p class="card-text mb-2">
-                                                Get 5 start to start this level.
+                                                Finish all previous levels before mission 3.
                                             </p>
                                         </div>
                                     </div>
@@ -403,22 +402,22 @@
                                 <div class="lock-card">
 
                                     <div class="card h-100">
-                                        <router-link :to="{ name: 'level_slider' }" class="text-reset disabled">
+                                        <router-link :to="{ name: 'mission_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
-                                                <span class="ms-3 h3 mb-0">16</span>
-                                                <img src="@/assets/images/levels/gray_3_star_robot.png" class="card-img-top"
+                                                <span class="ms-3 h3 mb-0">4</span>
+                                                <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
                                                     alt="">
                                             </div>
                                         </router-link>
                                         <div class="card-body">
                                             <h5 class="card-title">
-                                                Phase1- Level1 (Beginner)
+                                                Mission 4
                                             </h5>
                                             <p class="card-text mb-2">
-                                                In this level you will learn what the robot is.
+                                                Start mission 4
                                             </p>
                                             <p class="card-text mb-2">
-                                                Get 5 start to start this level.
+                                                Finish all previous levels before mission 4.
                                             </p>
                                         </div>
                                     </div>
