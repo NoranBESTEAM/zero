@@ -77,7 +77,7 @@ export default {
                 background-clip: padding-box;
                 -webkit-background-clip: padding-box;
                 -webkit-text-fill-color: $white;
-                // border: 1px solid $pink;
+                border: 1px solid $pink;
             }
 
         }

@@ -18,8 +18,8 @@
                         Digital Skills provides you with a funny and integrated content makes you learn programming easier.
                     </p>
                     <div>
-                        <router-link :to="{ name: 'sign-up' }" class="btn rounded-3 me-3">
-                            Register and start
+                        <router-link :to="{ name: 'tracks' }" class="btn rounded-3 me-3">
+                            Start Your Journey
                         </router-link>
                         <router-link :to="{ name: '' }" class="btn rounded-3">
                             <!-- <i class="fa-solid fa-circle-chevron-right"></i> -->

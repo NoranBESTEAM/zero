@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3"
+                            <router-link :to="{ name: '' }" class="btn rounded-3"
                                 v-on:mouseover="changeBorderOne(true)" v-on:mouseleave="changeBorderOne(false)">
                                 Get offer
                             </router-link>
@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3"
+                            <router-link :to="{ name: '' }" class="btn rounded-3"
                                 v-on:mouseover="changeBorderTwo(true)" v-on:mouseleave="changeBorderTwo(false)">
                                 Get offer
                             </router-link>
@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3"
+                            <router-link :to="{ name: '' }" class="btn rounded-3"
                                 v-on:mouseover="changeBorderThree(true)" v-on:mouseleave="changeBorderThree(false)">
                                 Get offer
                             </router-link>

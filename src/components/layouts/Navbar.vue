@@ -51,6 +51,14 @@
                     </ul>
 
                     <div class="d-flex flex-lg-row d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                        <button class="btn rounded-3 me-3 d-lg-none d-xl-inline-block" id="time">
+                            <img src="@/assets/images/navbar/time.png" alt="">
+                            2.45.00
+                        </button>
+                        <button :to="{ name: '' }" class="btn rounded-3 me-3 d-lg-none d-xl-inline-block" id="certificate">
+                            <img src="@/assets/images/navbar/certificate.png" alt="">
+                            250 XP
+                        </button>
                         <!-- https://freefrontend.com/css-notifications/ -->
                         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
                         <router-link :to="{ name: '' }" class="btn me-3 text-reset" id="alert">
@@ -210,6 +218,24 @@ nav {
                 }
 
                 // First Div
+
+                div {
+
+                    button {
+
+                        background: $linear-blue;
+                        background-clip: padding-box;
+                        -webkit-background-clip: padding-box;
+                        -webkit-text-fill-color: $white;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                    }
+
+                }
             }
 
         }
@@ -250,15 +276,15 @@ nav {
 
         }
 
-        #alert:hover,
+        /* #alert:hover,
         #alert.router-link-exact-active {
             border: 1px solid $pink;
-        }
+        } */
 
-        #user:hover,
+        /* #user:hover,
         #user.router-link-exact-active {
             border: 1px solid $pink;
-        }
+        } */
 
 
     }

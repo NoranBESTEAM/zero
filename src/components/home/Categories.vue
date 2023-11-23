@@ -17,7 +17,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3" v-on:mouseover="changeBorderOne(true)" v-on:mouseleave="changeBorderOne(false)">
+                            <router-link :to="{ name: '' }" class="btn rounded-3" v-on:mouseover="changeBorderOne(true)" v-on:mouseleave="changeBorderOne(false)">
                                 Start learning now
                             </router-link>
                         </div>
@@ -32,7 +32,7 @@
                             <p class="card-text">Practice digital skills with experts.</p>
                         </div>
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3" v-on:mouseover="changeBorderTwo(true)" v-on:mouseleave="changeBorderTwo(false)">
+                            <router-link :to="{ name: '' }" class="btn rounded-3" v-on:mouseover="changeBorderTwo(true)" v-on:mouseleave="changeBorderTwo(false)">
                                 Start learning now
                             </router-link>
                         </div>
@@ -49,7 +49,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <router-link :to="{ name: 'sign-up' }" class="btn rounded-3" v-on:mouseover="changeBorderThree(true)" v-on:mouseleave="changeBorderThree(false)">
+                            <router-link :to="{ name: '' }" class="btn rounded-3" v-on:mouseover="changeBorderThree(true)" v-on:mouseleave="changeBorderThree(false)">
                                 Start learning now
                             </router-link>
                         </div>

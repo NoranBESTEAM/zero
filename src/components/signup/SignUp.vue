@@ -61,13 +61,15 @@
                             </span>
                         </div>
 
-                        <button type="button" class="btn btn-lg w-100 mb-3" id="sign_up">Sign up</button>
+                        <!-- <button type="button" class="btn btn-lg w-100 mb-3" id="sign_up">Sign up</button> -->
+
+                        <router-link :to="{ name: 'home' }" class="btn btn-lg w-100 mb-3" id="sign_up">Sign up</router-link>
 
                         <p class="text-center mb-3 myP">or</p>
 
                         <div class="d-flex justify-content-center align-items-center mb-3" id="social">
 
-                            <a href="https://www.google.com/" class="btn me-4 text-reset border-0">
+                            <a href="https://www.google.com/intl/en/gmail/about/" class="btn me-4 text-reset border-0">
                                 <img src="@/assets/images/signup/Google.svg" alt="">
                             </a>
 
