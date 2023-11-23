@@ -310,6 +310,10 @@ export default {
                     background-color: $table-BG;
                     padding: 8px 16px;
 
+                    @include breakpoints(x-small) {
+                        padding: 8px;
+                    }
+
                     .myFlag {
                         border-radius: 50%;
                         width: 24px !important;
@@ -322,6 +326,10 @@ export default {
                     background-color: $table-BG;
                     padding: 8px 16px;
                     color: $white;
+
+                    @include breakpoints(x-small) {
+                        padding: 8px;
+                    }
                 }
             }
         }
@@ -338,6 +346,10 @@ export default {
                         background-color: $green;
                         color: $white;
                         padding: 8px 16px;
+
+                        @include breakpoints(x-small) {
+                            padding: 8px;
+                        }
                     }
                 }
             }
@@ -364,6 +376,10 @@ export default {
                         background-color: $orange;
                         color: $white;
                         padding: 8px 16px;
+
+                        @include breakpoints(x-small) {
+                            padding: 8px;
+                        }
                     }
                 }
             }

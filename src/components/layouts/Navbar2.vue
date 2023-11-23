@@ -48,30 +48,42 @@
                         <li class="nav-item mx-xxl-4 mx-xl-2">
                             <router-link :to="{ name: 'readable-content' }" class="nav-link">Readable content</router-link>
                         </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                            <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li> -->
                     </ul>
-
+                    <!-- <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    <!-- Login / Sign up -->
                     <div class="d-flex flex-lg-row d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                        <!-- https://freefrontend.com/css-notifications/ -->
-                        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
-                        <router-link :to="{ name: '' }" class="btn me-3 text-reset" id="alert">
-                            <img src="@/assets/images/navbar/notification.svg" alt="">
-                            <font-awesome-icon :icon="['fas', 'fa-circle']" />
-                        </router-link>
-                        <router-link :to="{ name: '' }" class="btn" id="user">
-                            <img src="@/assets/images/navbar/user.png" alt="">
+                        <router-link :to="{ name: 'login' }" class="btn rounded-3 me-3">Login</router-link>
+                        <router-link :to="{ name: 'sign-up' }" class="btn rounded-3 me-3">Sign Up</router-link>
+                        <router-link :to="{ name: '' }" class="btn rounded-3 me-3">
+                            <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
+                            <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
                         </router-link>
                     </div>
-
                 </div>
             </div>
-
-            <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                <router-link :to="{ name: '' }" class="btn me-3 text-reset" id="alert">
-                    <img src="@/assets/images/navbar/notification.svg" alt="">
-                    <font-awesome-icon :icon="['fas', 'fa-circle']" />
+            <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none" id="responsive">
+                <router-link :to="{ name: 'login' }" class="btn rounded-3 me-3">
+                    Start
                 </router-link>
-                <router-link :to="{ name: '' }" class="btn" id="user">
-                    <img src="@/assets/images/navbar/user.png" alt="">
+                <router-link :to="{ name: '' }" class="btn rounded-3 me-3">
+                    <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
+                    <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
                 </router-link>
             </div>
 
@@ -80,18 +92,16 @@
 </template>
 
 <script>
-
 export default {
-    name: 'Navbar',
-};
-
+    name: 'Navbar2',
+}
 </script>
 
 <style scoped lang="scss">
 nav {
 
     background: $mov;
-    box-shadow: 0px 4px 4px 0px $box-shadow;
+    box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
 
     width: 100%;
     height: 64px;
@@ -141,6 +151,18 @@ nav {
 
             .offcanvas-header {
 
+                /* @include breakpoints(x-small) {
+                background: $dark-mov;
+            }
+
+            @include breakpoints(small) {
+                background: $dark-mov;
+            }
+
+            @include breakpoints(medium) {
+                background: $dark-mov;
+            } */
+
                 padding-top: 57px;
 
                 button {
@@ -156,6 +178,18 @@ nav {
             .offcanvas-body {
 
                 padding-top: 0;
+
+                /* @include breakpoints(x-small) {
+                background: $dark-mov;
+            }
+
+            @include breakpoints(small) {
+                background: $dark-mov;
+            }
+
+            @include breakpoints(medium) {
+                background: $dark-mov;
+            } */
 
                 ul {
 
@@ -180,19 +214,19 @@ nav {
                             @include breakpoints(x-small) {
                                 padding-top: 12px;
                                 padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px $box-shadow;
+                                box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
                             }
 
                             @include breakpoints(small) {
                                 padding-top: 12px;
                                 padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px $box-shadow;
+                                box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
                             }
 
                             @include breakpoints(medium) {
                                 padding-top: 12px;
                                 padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px $box-shadow;
+                                box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
                             }
 
                         }
@@ -209,57 +243,93 @@ nav {
 
                 }
 
-                // First Div
+                div {
+
+                    a {
+
+                        border: 1px solid $pink;
+
+                        background: $linear-pink;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 8px;
+                            color: $pink;
+                        }
+
+                    }
+
+                    a:hover,
+                    a.router-link-exact-active {
+
+                        background: $linear-pink;
+                        background-clip: padding-box;
+                        -webkit-background-clip: padding-box;
+                        -webkit-text-fill-color: $white;
+
+                        svg {
+                            color: $white;
+                        }
+
+                    }
+
+                }
+
             }
 
         }
 
-        // Second Div
+        div#responsive {
 
-        div {
+            a {
+                border: 1px solid $pink;
 
-            #alert {
-                padding: 0;
-                position: relative;
+                background: $linear-pink;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
 
-                img {
-                    width: 40px;
-                    height: 40px;
+                // margin-left: 1rem !important;
+
+                @include breakpoints(x-small) {
+                    margin-left: 0 !important;
+                }
+
+                @include breakpoints(small) {
+                    margin-left: 0 !important;
+                }
+
+                @include breakpoints(medium) {
+                    margin-left: 0 !important;
                 }
 
                 svg {
-                    color: green;
-                    font-size: 8px;
-                    position: absolute;
-                    top: 10px;
-                    right: 12px;
-                    // border: 1px solid #fff;
-                    // border-radius: 50%;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+                    color: $pink;
+                }
+            }
+
+            a:hover,
+            a.router-link-exact-active {
+
+                background: $linear-pink;
+                background-clip: padding-box;
+                -webkit-background-clip: padding-box;
+                -webkit-text-fill-color: $white;
+
+                svg {
+                    color: $white;
                 }
 
             }
 
-            #user {
-                padding: 0;
-
-                img {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-
         }
-
-        #alert:hover,
-        #alert.router-link-exact-active {
-            border: 1px solid $pink;
-        }
-
-        #user:hover,
-        #user.router-link-exact-active {
-            border: 1px solid $pink;
-        }
-
 
     }
 
