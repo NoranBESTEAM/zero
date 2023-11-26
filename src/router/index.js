@@ -14,7 +14,12 @@ import ReadableContentView from '../views/ReadableContentView.vue'
 import SignUpView from '../views/SignUpView.vue'
 import SignInView from '../views/SignInView.vue'
 import NotificationView from '../views/NotificationView.vue'
-import ProfileView from '../views/ProfileView.vue'
+import ProfileView from '../views/profile/ProfileView.vue'
+import ProfileScoreView from '../views/profile/ProfileScoreView.vue'
+import ProfileTeamView from '../views/profile/ProfileTeamView.vue'
+import ProfileEventsView from '../views/profile/ProfileEventsView.vue'
+import ProfileTimeView from '../views/profile/ProfileTimeView.vue'
+import ProfileWalletView from '../views/profile/ProfileWalletView.vue'
 
 const routes = [
   {
@@ -86,6 +91,31 @@ const routes = [
     path: '/profile',
     name: 'profile',
     component: ProfileView
+  },
+  {
+    path: '/profile-score',
+    name: 'profile-score',
+    component: ProfileScoreView
+  },
+  {
+    path: '/profile-team',
+    name: 'profile-team',
+    component: ProfileTeamView
+  },
+  {
+    path: '/profile-events',
+    name: 'profile-events',
+    component: ProfileEventsView
+  },
+  {
+    path: '/profile-time',
+    name: 'profile-time',
+    component: ProfileTimeView
+  },
+  {
+    path: '/profile-wallet',
+    name: 'profile-wallet',
+    component: ProfileWalletView
   },
 ]
 
