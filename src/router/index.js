@@ -13,6 +13,8 @@ import OurPlatformsView from '../views/OurPlatformsView.vue'
 import ReadableContentView from '../views/ReadableContentView.vue'
 import SignUpView from '../views/SignUpView.vue'
 import SignInView from '../views/SignInView.vue'
+import NotificationView from '../views/NotificationView.vue'
+import ProfileView from '../views/ProfileView.vue'
 
 const routes = [
   {
@@ -74,6 +76,16 @@ const routes = [
     path: '/sign-in',
     name: 'login',
     component: SignInView
+  },
+  {
+    path: '/notification',
+    name: 'notification',
+    component: NotificationView
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: ProfileView
   },
 ]
 

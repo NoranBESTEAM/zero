@@ -55,17 +55,21 @@
                             <img src="@/assets/images/navbar/time.png" alt="">
                             2.45.00
                         </button>
-                        <button :to="{ name: '' }" class="btn rounded-3 me-3 d-lg-none d-xl-inline-block" id="certificate">
+                        <button class="btn rounded-3 me-3 d-lg-none d-xl-inline-block" id="certificate">
                             <img src="@/assets/images/navbar/certificate.png" alt="">
                             250 XP
                         </button>
                         <!-- https://freefrontend.com/css-notifications/ -->
                         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
-                        <router-link :to="{ name: '' }" class="btn me-3 text-reset" id="alert">
-                            <img src="@/assets/images/navbar/notification.svg" alt="">
+                        <router-link :to="{ name: 'notification' }" class="btn me-3 text-reset" id="alert">
+                            <img src="@/assets/images/navbar/notification.svg" alt="" class="position-relative">
                             <font-awesome-icon :icon="['fas', 'fa-circle']" />
+                            <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
+                            <!-- <span class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span> -->
                         </router-link>
-                        <router-link :to="{ name: '' }" class="btn" id="user">
+                        <router-link :to="{ name: 'profile' }" class="btn" id="user">
                             <img src="@/assets/images/navbar/user.png" alt="">
                         </router-link>
                     </div>
@@ -74,11 +78,11 @@
             </div>
 
             <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                <router-link :to="{ name: '' }" class="btn me-3 text-reset" id="alert">
+                <router-link :to="{ name: 'notification' }" class="btn me-3 text-reset" id="alert">
                     <img src="@/assets/images/navbar/notification.svg" alt="">
                     <font-awesome-icon :icon="['fas', 'fa-circle']" />
                 </router-link>
-                <router-link :to="{ name: '' }" class="btn" id="user">
+                <router-link :to="{ name: 'profile' }" class="btn" id="user">
                     <img src="@/assets/images/navbar/user.png" alt="">
                 </router-link>
             </div>
