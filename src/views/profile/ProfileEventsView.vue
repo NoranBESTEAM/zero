@@ -1,13 +1,13 @@
 <template>
-  
+
 </template>
 
 <script>
 export default {
-
+    name: 'ProfileEventsView',
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

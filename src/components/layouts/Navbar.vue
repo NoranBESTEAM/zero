@@ -70,7 +70,8 @@
                             </span> -->
                         </router-link>
                         <router-link :to="{ name: 'profile' }" class="btn" id="user">
-                            <img src="@/assets/images/navbar/user.png" alt="">
+                            <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
+                            <img src="@/assets/images/profile/profile-pic-square.png" alt="">
                         </router-link>
                     </div>
 
@@ -83,7 +84,7 @@
                     <font-awesome-icon :icon="['fas', 'fa-circle']" />
                 </router-link>
                 <router-link :to="{ name: 'profile' }" class="btn" id="user">
-                    <img src="@/assets/images/navbar/user.png" alt="">
+                    <img src="@/assets/images/profile/profile-pic-square.png" alt="">
                 </router-link>
             </div>
 
@@ -275,6 +276,8 @@ nav {
                 img {
                     width: 40px;
                     height: 40px;
+                    border-radius: 8px;
+                    object-fit: cover;
                 }
             }
 

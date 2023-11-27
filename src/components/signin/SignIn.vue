@@ -46,7 +46,9 @@
                             <label class="form-check-label" for="form-checkbox"> Remember me </label>
                         </div>
 
-                        <button type="button" class="btn btn-lg w-100 mb-3" id="login">Log In</button>
+                        <!-- <button type="button" class="btn btn-lg w-100 mb-3" id="login">Log In</button> -->
+
+                        <router-link :to="{ name: 'home' }" class="btn btn-lg w-100 mb-3" id="login">Log In</router-link>
 
                         <div class="mb-3">
                             <a href="#">Forgot password?</a>

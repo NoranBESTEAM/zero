@@ -293,7 +293,7 @@ export default {
                 // right: 10px;
 
                 .modal-content {
-                    background: $mov;
+                    background: $primary;
 
                     .modal-body {
                         font-size: 14px;

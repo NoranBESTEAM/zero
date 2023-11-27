@@ -15,6 +15,9 @@ import SignUpView from '../views/SignUpView.vue'
 import SignInView from '../views/SignInView.vue'
 import NotificationView from '../views/NotificationView.vue'
 import ProfileView from '../views/profile/ProfileView.vue'
+import ChangePasswordView from '../views/profile/ChangePasswordView.vue'
+import SupportView from '../views/profile/SupportView.vue'
+import SettingView from '../views/profile/SettingView.vue'
 import ProfileScoreView from '../views/profile/ProfileScoreView.vue'
 import ProfileTeamView from '../views/profile/ProfileTeamView.vue'
 import ProfileEventsView from '../views/profile/ProfileEventsView.vue'
@@ -91,6 +94,21 @@ const routes = [
     path: '/profile',
     name: 'profile',
     component: ProfileView
+  },
+  {
+    path: '/change-password',
+    name: 'change-password',
+    component: ChangePasswordView
+  },
+  {
+    path: '/support',
+    name: 'support',
+    component: SupportView
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: SettingView
   },
   {
     path: '/profile-score',

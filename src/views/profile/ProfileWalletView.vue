@@ -1,13 +1,13 @@
 <template>
-  
+
 </template>
 
 <script>
 export default {
-
+    name: 'ProfileWalletView',
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
