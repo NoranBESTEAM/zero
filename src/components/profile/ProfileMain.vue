@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="modal-footer border-0 d-flex justify-content-center align-items-center">
                                     <span class="me-3">
-                                        <img src="@/assets/images/profile/save-icon.png" alt="">
+                                        <img src="@/assets/images/profile/save-icon.svg" alt="">
                                     </span>
                                     <button type="button" class="btn btn-lg" data-bs-dismiss="modal">Save</button>
                                 </div>
@@ -88,7 +88,7 @@
                         <input type="text" class="form-control shadow-none" id="date" placeholder="15/7/2000" />
                         <span class="input-group-text" role="button" id="calenderSpan">
                             <!-- <font-awesome-icon :icon="['fas', 'fa-calendar-days']" /> -->
-                            <img src="@/assets/images/profile/calendar-icon.png" alt="">
+                            <img src="@/assets/images/profile/calendar-icon.svg" alt="">
                         </span>
                     </div>
                 </div>
@@ -149,17 +149,17 @@
             <div id="links" class="mt-4">
 
                 <router-link :to="{ name: 'support' }" class="d-inline me-3">
-                    <img src="@/assets/images/profile/support-icon.png" alt="" class="me-2">
+                    <img src="@/assets/images/profile/support-icon.svg" alt="" class="me-2">
                     Technical support
                 </router-link>
 
                 <router-link :to="{ name: 'settings' }" class="d-inline">
-                    <img src="@/assets/images/profile/settings-icon.png" alt="" class="me-2">
+                    <img src="@/assets/images/profile/settings-icon.svg" alt="" class="me-2">
                     Settings
                 </router-link>
 
                 <router-link :to="{ name: 'login' }" class="d-block mt-3">
-                    <img src="@/assets/images/profile/logout-icon.png" alt="" class="me-2">
+                    <img src="@/assets/images/profile/logout-icon.svg" alt="" class="me-2">
                     Logout
                 </router-link>
 
