@@ -51,7 +51,7 @@ export default {
 
 </script>
 
-<style  lang="scss" scoped>
+<style lang="scss" scoped>
 #change_password {
 
     margin-top: 64px;
