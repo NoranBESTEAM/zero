@@ -288,10 +288,10 @@ nav {
             border: 1px solid $pink;
         } */
 
-        /* #user:hover,
+        #user:hover,
         #user.router-link-exact-active {
             border: 1px solid $pink;
-        } */
+        }
 
 
     }
