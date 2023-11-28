@@ -61,7 +61,7 @@
                                     Delete?
                                 </div>
                                 <div class="modal-footer border-0 d-flex justify-content-center align-items-center">
-                                    <button type="button" class="btn btn-success" id="yesBtn">Yes</button>
+                                    <button type="button" class="btn" id="yesBtn">Yes</button>
                                     <button type="button" class="btn" data-bs-dismiss="modal" id="noBtn">No</button>
                                 </div>
                             </div>
@@ -308,6 +308,7 @@ export default {
 
                         #yesBtn {
                             margin-right: 8px;
+                            background: $green-light;
                         }
 
                         #noBtn {
