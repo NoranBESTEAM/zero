@@ -2,9 +2,9 @@
     <!-- import navbar in main.js file -->
     <Navbar />
     <router-view />
-    <!-- Start Add Team -->
-    <AddTeam />
-    <!-- End Add Team -->
+    <!-- Start Team Members -->
+    <TeamMembers />
+    <!-- End Team Members -->
     <!-- Start Footer -->
     <!-- import Footer in main.js file -->
     <Footer />
@@ -12,13 +12,15 @@
 </template>
 
 <script>
-import AddTeam from '@/components/profile/AddTeam.vue';
+import TeamMembers from '@/components/profile/TeamMembers.vue';
 export default {
-    name: 'ProfileTeamView',
+    name: 'ProfileTeamMembersView',
     components: {
-        AddTeam
+        TeamMembers
     }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

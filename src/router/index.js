@@ -20,6 +20,7 @@ import SupportView from '../views/profile/SupportView.vue'
 import SettingView from '../views/profile/SettingView.vue'
 import ProfileScoreView from '../views/profile/ProfileScoreView.vue'
 import ProfileTeamView from '../views/profile/ProfileTeamView.vue'
+import ProfileTeamMembersView from '../views/profile/ProfileTeamMembersView.vue'
 import ProfileEventsView from '../views/profile/ProfileEventsView.vue'
 import ProfileTimeView from '../views/profile/ProfileTimeView.vue'
 import ProfileWalletView from '../views/profile/ProfileWalletView.vue'
@@ -119,6 +120,11 @@ const routes = [
     path: '/profile-team',
     name: 'profile-team',
     component: ProfileTeamView
+  },
+  {
+    path: '/team-members',
+    name: 'team-members',
+    component: ProfileTeamMembersView
   },
   {
     path: '/profile-events',
