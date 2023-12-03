@@ -62,8 +62,7 @@
                             <img src="@/assets/images/notification/trash.svg" alt="">
                         </button>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <!-- modal-dialog-centered modal-sm -->
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content text-center">

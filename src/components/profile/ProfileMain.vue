@@ -71,26 +71,25 @@
                 </div>
 
                 <div class="col-md-6">
-                    <!-- https://codepen.io/vsfvjiuv-the-typescripter/pen/mdMeJwL -->
-                    <!-- https://www.youtube.com/watch?v=8ptKpzW-KLo -->
-                    <!-- https://stackoverflow.com/questions/70266054/how-do-i-use-the-bootstrap-datepicker-in-vue3 -->
-                    <!-- https://www.npmjs.com/package/vue3-datepicker -->
-                    <!-- https://www.youtube.com/watch?v=AIebdHQYrEs -->
-                    <!-- https://ej2.syncfusion.com/vue/documentation/datepicker/getting-started-vue3 -->
-                    <!-- https://vue3datepicker.com/ -->
-                    <!-- https://youtu.be/czp8roGS9sI?si=jd0GVH9OrHtXAm4h -->
-                    <!-- https://youtu.be/xQU9I-Irep8?si=yaT8S__1uPAuWW2I -->
-                    <!-- https://vue3datepicker.com/ -->
-                    <!-- https://codepen.io/web-elements/pen/YzxoEWd -->
-                    <!-- https://themeselection.com/vue-date-picker/ -->
-                    <label for="date" class="form-label">Date of birth</label>
-                    <div class="input-group date" id="datepicker">
-                        <input type="text" class="form-control shadow-none" id="date" placeholder="15/7/2000" />
+
+                    <!-- <label for="date" class="form-label">Date of birth</label>
+                    <div class="input-group">
+                        <input type="date" class="form-control shadow-none" id="date" value="2013-01-08">
                         <span class="input-group-text" role="button" id="calenderSpan">
-                            <!-- <font-awesome-icon :icon="['fas', 'fa-calendar-days']" /> -->
                             <img src="@/assets/images/profile/calendar-icon.svg" alt="">
                         </span>
-                    </div>
+                    </div> -->
+
+                    <!-- https://www.w3schools.com/tags/att_input_type_date.asp -->
+
+                    <!-- <label for="date" class="form-label">Date of birth</label>
+                    <input type="date" class="form-control shadow-none" id="date" placeholder="mn/yyyy"> -->
+
+                    <!-- https://copyprogramming.com/howto/how-to-remove-or-customize-input-type-date-calendar-icon-ultimate-guide -->
+
+                    <label for="date" class="form-label">Date of birth</label>
+                    <input type="date" class="form-control shadow-none" id="date" value="2013-01-08">
+
                 </div>
 
                 <div class="col-md-6">
@@ -361,7 +360,7 @@ export default {
             font-size: 14px;
         }
 
-        .input-group {
+        /* .input-group {
             input {
                 border-right: 0;
                 border-top-right-radius: 0;
@@ -379,7 +378,7 @@ export default {
                     height: 16px;
                 }
             }
-        }
+        } */
 
         a,
         #submit {
@@ -398,7 +397,7 @@ export default {
             -webkit-text-fill-color: transparent;
         }
 
-        #submit{
+        #submit {
             @include breakpoints(x-small) {
                 margin-top: 16px;
                 display: block;
@@ -416,19 +415,22 @@ export default {
 
     }
 
-    #links{
-        a, a:hover, a.router-link-exact-active{
+    #links {
+
+        a,
+        a:hover,
+        a.router-link-exact-active {
 
             color: $white;
             font-size: 16px;
 
-            img{
+            img {
                 width: 24px;
                 height: 24px;
             }
 
         }
     }
-    
+
 }
 </style>
