@@ -66,7 +66,7 @@
                                         data-bs-target="#addCardExampleIndicators" data-bs-slide="prev">
                                         <font-awesome-icon :icon="['fas', 'arrow-left']" />
                                     </button> -->
-                                    <button class="carousel-control-next rounded d-flex justify-content-start align-items-center" type="button"
+                                    <button class="carousel-control-next d-flex justify-content-start align-items-center" type="button"
                                         data-bs-target="#addCardExampleIndicators" data-bs-slide="next">
                                         <img src="@/assets/images/profile/wallet_arrow_icon.svg" alt="">
                                     </button>
@@ -128,7 +128,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button class="carousel-control-next rounded d-flex justify-content-start align-items-center" type="button"
+                                    <button class="carousel-control-next d-flex justify-content-start align-items-center" type="button"
                                         data-bs-target="#addCardSmallExampleIndicators" data-bs-slide="next">
                                         <img src="@/assets/images/profile/wallet_arrow_icon.svg" alt="">
                                     </button>
@@ -177,8 +177,8 @@
                                             </div>
 
                                             <div class="col-md-4">
-                                                <label for="inputName" class="form-label">Name</label>
-                                                <input type="text" class="form-control shadow-none" id="inputName"
+                                                <label for="inputBankName" class="form-label">Bank Name</label>
+                                                <input type="text" class="form-control shadow-none" id="inputBankName"
                                                     placeholder="NBK">
                                             </div>
 
