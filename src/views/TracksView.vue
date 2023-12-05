@@ -1,8 +1,8 @@
 <template>
     <!-- Start Navbar -->
     <!-- import navbar in main.js file -->
-    <Navbar />
-    <router-view />
+    <!-- <Navbar />
+    <router-view /> -->
     <!-- End Navbar -->
     <!-- Start Tracks -->
     <Tracks />

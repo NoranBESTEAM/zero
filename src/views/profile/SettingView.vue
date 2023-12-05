@@ -1,7 +1,7 @@
 <template>
     <!-- import navbar in main.js file -->
-    <Navbar />
-    <router-view />
+    <!-- <Navbar />
+    <router-view /> -->
     <!-- Start Settings -->
     <Settings />
     <!-- End Settings -->
