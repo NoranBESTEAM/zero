@@ -9,8 +9,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "normalize.css";
 // import Fonts
 import "@/assets/scss/style.scss";
-// import flag icon
-import FlagIcon from "vue-flag-icon";
 // import Wow Library
 import 'animate.css';
 // import Navbar Component
@@ -35,8 +33,6 @@ const app = createApp(App);
 app.use(store);
 //Add font awesome icon component
 app.component("font-awesome-icon", FontAwesomeIcon);
-// Add Flag Icon
-app.use(FlagIcon);
 //Add Navbar Component
 app.component('Navbar', Navbar)
 // Add Footer Component
