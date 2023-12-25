@@ -12,9 +12,9 @@
             <div class="container">
                 <!-- class="figure-caption" -->
                 <figcaption>
-                    <h1 class="text-justify mb-4">Be a professional programmer</h1>
-                    <h3 class="text-justify mb-4">Create solutions for world issues</h3>
-                    <p class="text-justify mb-4">
+                    <h1 class="mb-4">Be a professional programmer</h1>
+                    <h3 class="mb-4">Create solutions for world issues</h3>
+                    <p class="mb-4">
                         Digital Skills provides you with a funny and integrated content makes you learn programming easier.
                     </p>
                     <div>
@@ -108,6 +108,7 @@ export default {
 
             h1 {
                 font-size: 40px;
+                line-height: normal;
                 // margin-bottom: 24px;
 
                 @include breakpoints(x-small) {
@@ -128,6 +129,7 @@ export default {
 
             h3 {
                 font-size: 32px;
+                line-height: normal; 
                 // margin-bottom: 24px;
 
                 @include breakpoints(x-small) {
@@ -148,7 +150,8 @@ export default {
             p {
                 width: 455px;
                 font-size: 18px;
-                line-height: 24px;
+                // line-height: 24px;
+                text-align: justify;
                 // margin-bottom: 24px;
 
                 @include breakpoints(x-small) {
