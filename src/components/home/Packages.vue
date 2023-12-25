@@ -104,28 +104,28 @@ export default {
         changeBorderOne(isHovering) {
             if (isHovering) {
                 // this.$refs.myParagraph.style.border = '1px solid #E74B90';
-                this.$refs.myCardOne.style.border = '1px solid #E74B90';
+                this.$refs.myCardOne.style.outline = '1px solid #E74B90';
             } else {
                 // this.$refs.myParagraph.style.border = '0';
-                this.$refs.myCardOne.style.border = '0';
+                this.$refs.myCardOne.style.outline = '0';
             }
         },
         changeBorderTwo(isHovering) {
             if (isHovering) {
                 // this.$refs.myParagraph.style.border = '1px solid #E74B90';
-                this.$refs.myCardTwo.style.border = '1px solid #E74B90';
+                this.$refs.myCardTwo.style.outline = '1px solid #E74B90';
             } else {
                 // this.$refs.myParagraph.style.border = '0';
-                this.$refs.myCardTwo.style.border = '0';
+                this.$refs.myCardTwo.style.outline = '0';
             }
         },
         changeBorderThree(isHovering) {
             if (isHovering) {
                 // this.$refs.myParagraph.style.border = '1px solid #E74B90';
-                this.$refs.myCardThree.style.border = '1px solid #E74B90';
+                this.$refs.myCardThree.style.outline = '1px solid #E74B90';
             } else {
                 // this.$refs.myParagraph.style.border = '0';
-                this.$refs.myCardThree.style.border = '0';
+                this.$refs.myCardThree.style.outline = '0';
             }
         },
     },
@@ -143,6 +143,12 @@ export default {
 
         .card {
 
+            -webkit-box-sizing: border-box;
+            /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;
+            /* Firefox, other Gecko */
+            box-sizing: border-box;
+
             background-color: $mov;
             color: $white;
             padding-top: 16px;
@@ -152,9 +158,10 @@ export default {
 
                 border: 0;
 
-                /* h3 {
-                    font-size: 32px;
-                } */
+                h3 {
+                    // font-size: 32px;
+                    line-height: normal;
+                }
 
             }
 
@@ -165,6 +172,7 @@ export default {
                 h4 {
 
                     font-size: 40px;
+                    line-height: normal;
 
                     span {
                         font-size: 14px;

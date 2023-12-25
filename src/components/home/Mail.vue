@@ -19,9 +19,12 @@
                 </figcaption>
             </div>
         </figure>
+        <!-- For Small Screen -->
         <section class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
             <div class="container">
-                <img src="@/assets/images/mail/mail_responsive_img.png" alt="">
+                <div class="img_wrapper">
+                    <img src="@/assets/images/mail/mail_responsive_img.png" alt="">
+                </div>
                 <h5 class="fw-bold mt-4 mb-4">Subscribe newsletter to get the latest updates.</h5>
                 <div class="input-group">
                     <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email"
@@ -45,6 +48,8 @@ export default {
 <style lang="scss" scoped>
 #mail {
 
+    // For Large Screen
+
     figure {
 
         margin-bottom: 0;
@@ -65,22 +70,36 @@ export default {
 
     }
 
+    // For Small Screen
+
     section {
-        
+
         background-color: $mov;
         padding-top: 40px;
         padding-bottom: 40px;
 
-        img {
+        .img_wrapper {
+
             width: 228px;
             height: 228px;
+            margin: auto;
+            
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
         }
 
     }
 
-    h5 {
-        color: $white;
+    // For All Screen
 
+    h5 {
+        font-size: 18px; 
+        color: $white;
     }
 
     .input-group {

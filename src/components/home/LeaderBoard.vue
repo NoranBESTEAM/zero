@@ -292,6 +292,10 @@ export default {
         background-size: cover;
     }
 
+    h3, p{
+        line-height: normal;
+    }
+
     table {
 
         caption {
