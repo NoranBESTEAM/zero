@@ -1,22 +1,34 @@
 <template>
+    <!-- https://mdbootstrap.com/docs/standard/navigation/navbar/ -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
+
+        <!-- Container wrapper -->
+
         <div class="container">
+
             <!-- Logo -->
+
             <router-link to="/" class="navbar-brand">
                 <img src="@/assets/images/navbar/logo1.png" alt="ZEROLogo" />
             </router-link>
-            <!-- Toggle Button -->
+
+            <!-- Toggle button -->
+
             <!-- shadow-none border-0 -->
             <button class="navbar-toggler rounded-3" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <img src="@/assets/images/navbar/gg_menu-right.svg" alt="Toggler Icon">
             </button>
+
             <!-- Sidebar -->
+
             <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
+
                 <!-- Sidebar Header -->
+
                 <div class="offcanvas-header">
                     <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                         <img src="@/assets/images/navbar/logo1.png" alt="ZEROLogo" />
@@ -26,70 +38,101 @@
                         <font-awesome-icon :icon="['fas', 'fa-xmark']" />
                     </button>
                 </div>
+
                 <!-- Sidebar Body -->
+
                 <!-- d-flex flex-column flex-lg-row -->
                 <div class="offcanvas-body">
+
+                    <!-- Left links -->
+
                     <!-- fs-5 -->
-                    <!-- justify-content-center align-items-center pe-3-->
-                    <ul class="navbar-nav justify-content-start flex-grow-1 ">
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                    <!-- https://getbootstrap.com/docs/5.3/utilities/flex/ -->
+                    <!-- flex-grow-1 pe-3-->
+                    <ul class="navbar-nav me-auto d-flex justify-content-lg-center align-items-lg-center">
+                        <!-- mx-xl-2 mx-xxl-4 -->
+                        <li class="nav-item">
                             <router-link :to="{ name: 'home' }" class="nav-link" aria-current="page"
                                 exact>Home</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item">
                             <router-link :to="{ name: 'tracks' }" class="nav-link">Tracks</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item">
                             <router-link :to="{ name: 'competitions' }" class="nav-link">Competitions</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item">
                             <router-link :to="{ name: 'our-platforms' }" class="nav-link">Our platforms</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item">
                             <router-link :to="{ name: 'readable-content' }" class="nav-link">Readable content</router-link>
                         </li>
                     </ul>
 
-                    <div class="d-flex flex-lg-row d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                        <button class="btn rounded-3 me-3 d-lg-none d-xl-inline-block" id="time">
+                    <!-- Left links -->
+
+                    <!-- Right elements -->
+
+                    <!-- d-flex justify-content-xxl-end align-items-xxl-end flex-lg-row -->
+                    <div class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center">
+
+                        <button class="btn rounded-3 me-2 d-lg-none d-xl-inline-block" id="time">
                             <img src="@/assets/images/navbar/time.png" alt="">
                             2.45.00
                         </button>
-                        <button class="btn rounded-3 me-3 d-lg-none d-xl-inline-block" id="certificate">
+
+                        <button class="btn rounded-3 me-2 d-lg-none d-xl-inline-block" id="certificate">
                             <img src="@/assets/images/navbar/certificate.png" alt="">
                             250 XP
                         </button>
+
                         <!-- https://freefrontend.com/css-notifications/ -->
                         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
-                        <router-link :to="{ name: 'notification' }" class="btn me-3 text-reset" id="alert">
+                        <router-link :to="{ name: 'notification' }" class="btn me-2 text-reset" id="alert">
                             <img src="@/assets/images/navbar/notification.svg" alt="" class="position-relative">
                             <font-awesome-icon :icon="['fas', 'fa-circle']" />
                             <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
-                            <!-- <span class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                            <!-- <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
                                 <span class="visually-hidden">New alerts</span>
                             </span> -->
                         </router-link>
+
                         <router-link :to="{ name: 'profile' }" class="btn" id="user">
                             <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
                             <img src="@/assets/images/profile/profile-pic-square.png" alt="">
                         </router-link>
+
                     </div>
 
+                    <!-- Right elements -->
+
                 </div>
+
             </div>
 
+            <!-- End Sidebar -->
+
             <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+
                 <router-link :to="{ name: 'notification' }" class="btn me-3 text-reset" id="alert">
                     <img src="@/assets/images/navbar/notification.svg" alt="">
                     <font-awesome-icon :icon="['fas', 'fa-circle']" />
                 </router-link>
+
                 <router-link :to="{ name: 'profile' }" class="btn" id="user">
                     <img src="@/assets/images/profile/profile-pic-square.png" alt="">
                 </router-link>
+
             </div>
 
         </div>
+
+        <!-- Container wrapper -->
+
     </nav>
+
+    <!-- Navbar -->
 </template>
 
 <script>
@@ -188,24 +231,29 @@ nav {
 
                         a {
 
+                            font-size: 18px;
                             color: $white;
+                            line-height: normal;
 
                             @include breakpoints(x-small) {
                                 padding-top: 12px;
                                 padding-bottom: 12px;
                                 box-shadow: 0px 4px 4px 0px $box-shadow;
+                                text-align: center;
                             }
 
                             @include breakpoints(small) {
                                 padding-top: 12px;
                                 padding-bottom: 12px;
                                 box-shadow: 0px 4px 4px 0px $box-shadow;
+                                text-align: center;
                             }
 
                             @include breakpoints(medium) {
                                 padding-top: 12px;
                                 padding-bottom: 12px;
                                 box-shadow: 0px 4px 4px 0px $box-shadow;
+                                text-align: center;
                             }
 
                         }
@@ -227,6 +275,9 @@ nav {
                 div {
 
                     button {
+
+                        font-size: 18px;
+                        line-height: normal;
 
                         background: $linear-blue;
                         background-clip: padding-box;

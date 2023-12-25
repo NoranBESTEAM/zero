@@ -2,25 +2,21 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store/index";
+
 // import Bootstrap
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 //import Normalize
 import "normalize.css";
+
 // import Fonts
 import "@/assets/scss/style.scss";
-// import Wow Library
-import 'animate.css';
-// import Navbar Component
-import Navbar from "@/components/layouts/Navbar.vue";
-// import Footer Component
-import Footer from "@/components/layouts/Footer.vue";
+
 //import the fontawesome core
 import { library } from "@fortawesome/fontawesome-svg-core";
 //import font awesome icon component
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-// import flag icon
-import FlagIcon from "vue-flag-icon";
 //import specific icons
 //Regular Icons
 import { far } from "@fortawesome/free-regular-svg-icons";
@@ -28,6 +24,19 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 //Brands Icons
 import { fab } from "@fortawesome/free-brands-svg-icons";
+
+// import flag icon
+import FlagIcon from "vue-flag-icon";
+
+// import Wow Library
+import 'animate.css';
+
+// import Navbar Component
+import Navbar from "@/components/layouts/Navbar.vue";
+
+// import Footer Component
+import Footer from "@/components/layouts/Footer.vue";
+
 //add icons to the library
 library.add(fas, far, fab);
 
