@@ -7,7 +7,7 @@
 
             <div class="row d-flex justify-content-center align-items-center">
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-block d-sm-block d-md-block d-lg-block d-xl-block">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-block">
 
                     <div class="image-wrapper m-auto mb-3">
                         <img src="@/assets/images/navbar/logo1.png" alt="">
@@ -150,6 +150,7 @@ export default {
 
     h1 {
         color: $white;
+        line-height: normal;
     }
 
     form {
