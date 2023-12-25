@@ -19,6 +19,8 @@ import Footer from "@/components/layouts/Footer.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 //import font awesome icon component
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+// import flag icon
+import FlagIcon from "vue-flag-icon";
 //import specific icons
 //Regular Icons
 import { far } from "@fortawesome/free-regular-svg-icons";
@@ -33,6 +35,8 @@ const app = createApp(App);
 app.use(store);
 //Add font awesome icon component
 app.component("font-awesome-icon", FontAwesomeIcon);
+// Add Flag Icon
+app.use(FlagIcon);
 //Add Navbar Component
 app.component('Navbar', Navbar)
 // Add Footer Component
