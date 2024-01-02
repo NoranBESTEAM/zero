@@ -121,8 +121,7 @@
                                 <router-link :to="{ name: 'mission_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">1</span>
-                                        <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
-                                            alt="">
+                                        <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top" alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -367,8 +366,8 @@
                                         <router-link :to="{ name: 'mission_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
                                                 <span class="ms-3 h3 mb-0">3</span>
-                                                <img src="@/assets/images/levels/orange_2_star_robot.png"
-                                                    class="card-img-top" alt="">
+                                                <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
+                                                    alt="">
                                             </div>
                                         </router-link>
                                         <div class="card-body">
@@ -406,8 +405,8 @@
                                         <router-link :to="{ name: 'mission_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
                                                 <span class="ms-3 h3 mb-0">4</span>
-                                                <img src="@/assets/images/levels/orange_2_star_robot.png"
-                                                    class="card-img-top" alt="">
+                                                <img src="@/assets/images/levels/orange_2_star_robot.png" class="card-img-top"
+                                                    alt="">
                                             </div>
                                         </router-link>
                                         <div class="card-body">
@@ -482,7 +481,7 @@ export default {
         }
 
         #content {
-
+            
             padding-top: 40px;
             padding-bottom: 40px;
 
@@ -548,8 +547,7 @@ export default {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    // opacity: 0.6;
-                    opacity: 0.4;
+                    opacity: 0.6;
 
                     .disabled {
                         pointer-events: none;
@@ -587,6 +585,33 @@ export default {
                     background: $lock-BG;
 
                     width: 100%;
+                    height: 295px;
+
+                    @include breakpoints(x-small) {
+                        position: initial;
+                        height: 271px !important;
+                        margin-top: -271px;
+                    }
+
+                    @include breakpoints(small) {
+                        position: initial;
+                        height: 271px !important;
+                        margin-top: -271px;
+                    }
+
+                    @include breakpoints(medium) {
+                        position: initial;
+                        height: 271px !important;
+                        margin-top: -271px;
+                    }
+
+                    @include breakpoints(large) {
+                        height: 343px !important;
+                    }
+
+                    @include breakpoints(x-Large) {
+                        height: 319px !important;
+                    }
 
                     // border-radius: 8px;
 
@@ -601,60 +626,19 @@ export default {
                     }
 
                 }
-
             }
 
-
+            @media only screen and (max-width: 386px) {
+                .lock-overlay {
+                    position: initial;
+                    height: 295px !important;
+                    margin-top: -295px !important;
+                }
+            }
 
         }
 
     }
 
-
-
-
-    /* .card {
-
-        @include breakpoints(x-small) {
-            height: 310px !important;
-        }
-
-        @include breakpoints(large) {
-            height: 334px !important;
-        }
-
-    } */
-
-    /* .lock-wrapper {
-
-        .lock-overlay {
-
-            width: 100%;
-            height: 320px;
-
-            @include breakpoints(x-small) {
-                position: initial;
-                height: 310px !important;
-                margin-top: -310px;
-            }
-
-            @include breakpoints(small) {
-                position: initial;
-                height: 294px !important;
-                margin-top: -294px;
-            }
-
-            @include breakpoints(medium) {
-                position: initial;
-                height: 294px !important;
-                margin-top: -294px;
-            }
-
-            @include breakpoints(large) {
-                height: 334px !important;
-            }
-        }
-
-    } */
 }
 </style>

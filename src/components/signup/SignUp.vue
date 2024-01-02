@@ -10,7 +10,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-block">
 
                     <div class="image-wrapper m-auto mb-3">
-                        <img src="@/assets/images/navbar/logo1.png" alt="">
+                        <img src="@/assets/images/navbar/logo1.webp" alt="">
                     </div>
 
                     <h1 class="text-center mb-5">Sign up</h1>

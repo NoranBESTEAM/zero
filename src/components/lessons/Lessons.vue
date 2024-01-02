@@ -130,6 +130,7 @@ export default {
     min-height: 100vh;
 
     h3 {
+        line-height: normal;
         a {
             svg {
                 color: $pink;
@@ -170,6 +171,12 @@ export default {
             background-clip: padding-box;
             -webkit-background-clip: padding-box;
             -webkit-text-fill-color: $white;
+        }
+
+        .card-body{
+            h5{
+                line-height: normal;
+            }
         }
 
         a {

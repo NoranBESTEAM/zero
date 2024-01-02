@@ -2,6 +2,7 @@
     <section id="tracks">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2 g-4">
+
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body">
@@ -20,6 +21,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body">
@@ -38,6 +40,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -51,24 +54,29 @@ export default {
 
 <style lang="scss" scoped>
 #tracks {
+
     margin-top: 64px;
     padding-top: 40px;
     padding-bottom: 40px;
     background: $my-gradient;
+    
     min-height: 100vh;
     // height: calc(100% - number)
-    // min-height: calc(100vh - 378px);
+    /* Firefox */
+    // height: -moz-calc(100vh - 289px);
+    /* Chrome, Safari */
+    // height: -webkit-calc(100vh - 289px);
+    /* IE9+ and future browsers */
+    // height: calc(100vh - 289px);
 
     .card {
         background-color: $primary;
         color: $white;
         box-shadow: 0px 4px 0px 0px $box-shadow;
 
-        /* h5{
-            font-size: 20px;
-        } */
-
         h5 {
+            // font-size: 20px;
+            line-height: normal; 
             img {
                 // margin-inline-start: 90%;
                 float: right;
@@ -76,10 +84,11 @@ export default {
             }
         }
 
-        /* p {
+        p {
             // font-size: 18px;
             // line-height: 24px;
-        } */
+            text-align: justify;
+        }
 
         a {
             float: right;
@@ -99,5 +108,4 @@ export default {
         -webkit-background-clip: padding-box;
         -webkit-text-fill-color: $white;
     }
-}
-</style>
+}</style>

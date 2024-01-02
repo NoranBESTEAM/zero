@@ -1,107 +1,144 @@
 <template>
+    <!-- https://mdbootstrap.com/docs/standard/navigation/navbar/ -->
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+
+    <nav class="navbar navbar-expand-xl fixed-top">
+
+        <!-- Container wrapper -->
+
         <div class="container">
+
             <!-- Logo -->
             <router-link to="/" class="navbar-brand">
-                <img src="@/assets/images/navbar/logo1.png" alt="ZEROLogo" />
+                <img src="@/assets/images/navbar/logo1.webp" alt="ZEROLogo" />
             </router-link>
+
             <!-- Toggle Button -->
-            <!-- shadow-none border-0 -->
-            <button class="navbar-toggler rounded-3" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler rounded-3 shadow-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
-                <img src="@/assets/images/navbar/gg_menu-right.svg" alt="Toggler Icon">
+                <img src="@/assets/images/navbar/gg_menu-right.webp" alt="Toggler Icon">
             </button>
+
             <!-- Sidebar -->
+
             <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
+
                 <!-- Sidebar Header -->
+
                 <div class="offcanvas-header">
                     <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                         <img src="@/assets/images/navbar/logo1.png" alt="ZEROLogo" />
                     </h5> -->
                     <!-- class="btn-close" -->
-                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="shadow-none">
                         <font-awesome-icon :icon="['fas', 'fa-xmark']" />
                     </button>
                 </div>
+
                 <!-- Sidebar Body -->
-                <!-- d-flex flex-column flex-lg-row -->
+
                 <div class="offcanvas-body">
-                    <!-- fs-5 -->
-                    <!-- justify-content-center align-items-center pe-3-->
-                    <ul class="navbar-nav justify-content-start flex-grow-1 ">
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'home' }" class="nav-link" aria-current="page"
                                 exact>Home</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'tracks' }" class="nav-link">Tracks</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'competitions' }" class="nav-link">Competitions</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'our-platforms' }" class="nav-link">Our platforms</router-link>
                         </li>
-                        <li class="nav-item mx-xxl-4 mx-xl-2">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'readable-content' }" class="nav-link">Readable content</router-link>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                            <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                        </li> -->
                     </ul>
-                    <!-- <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
-                    <!-- Login / Sign up -->
-                    <div class="d-flex flex-lg-row d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                        <router-link :to="{ name: 'login' }" class="btn rounded-3 me-3">Login</router-link>
-                        <router-link :to="{ name: 'sign-up' }" class="btn rounded-3 me-3">Sign Up</router-link>
-                        <router-link :to="{ name: '' }" class="btn rounded-3 me-3">
-                            <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
-                            <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
+
+                    <div class="d-none d-xl-flex justify-content-center align-items-center gap-2">
+
+                        <button class="btn rounded-3 d-xl-none d-xxl-inline-flex" id="time">
+                            <img src="@/assets/images/navbar/time.webp" alt="">
+                            2.45.00
+                        </button>
+
+                        <button class="btn rounded-3 d-xl-none d-xxl-inline-flex" id="certificate">
+                            <img src="@/assets/images/navbar/certificate.webp" alt="">
+                            250 XP
+                        </button>
+
+                        <!-- https://freefrontend.com/css-notifications/ -->
+                        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
+                        <router-link :to="{ name: 'notification' }" class="btn" id="alert">
+                            <img src="@/assets/images/navbar/notification.webp" alt="" class="position-relative">
+                            <font-awesome-icon :icon="['fas', 'fa-circle']" />
+                            <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
+                            <!-- <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span> -->
                         </router-link>
+
+                        <router-link :to="{ name: 'profile' }" class="btn" id="user">
+                            <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
+                            <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
+                        </router-link>
+
                     </div>
+
                 </div>
+
             </div>
-            <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none" id="responsive">
-                <router-link :to="{ name: 'login' }" class="btn rounded-3 me-3">
-                    Start
+
+            <div class="d-flex d-xl-none justify-content-end align-items-center gap-3" id="responsive">
+
+                <!-- https://freefrontend.com/css-notifications/ -->
+                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
+                <router-link :to="{ name: 'notification' }" class="btn" id="alert">
+                    <img src="@/assets/images/navbar/notification.webp" alt="" class="position-relative">
+                    <font-awesome-icon :icon="['fas', 'fa-circle']" />
+                    <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
+                    <!-- <span
+                        class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span> -->
                 </router-link>
-                <router-link :to="{ name: '' }" class="btn rounded-3 me-3">
-                    <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
-                    <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
+
+                <router-link :to="{ name: 'profile' }" class="btn" id="user">
+                    <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
+                    <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
                 </router-link>
+
             </div>
 
         </div>
+
+        <!-- Container wrapper -->
+
     </nav>
+
+    <!-- Navbar -->
 </template>
 
 <script>
+
 export default {
-    name: 'Navbar2',
-}
+    name: 'Navbar',
+};
+
 </script>
 
 <style scoped lang="scss">
 nav {
 
     background: $mov;
-    box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+    box-shadow: 0px 4px 4px 0px $box-shadow;
 
     width: 100%;
     height: 64px;
@@ -122,6 +159,10 @@ nav {
                 display: none;
             }
 
+            @include breakpoints(large) {
+                display: none;
+            }
+
             img {
                 width: 119.614px;
                 height: 40px;
@@ -132,7 +173,6 @@ nav {
         .navbar-toggler {
 
             border: 1px solid $pink;
-            // box-shadow: none;
 
             img {
                 width: 31px;
@@ -141,27 +181,11 @@ nav {
 
         }
 
-        .navbar-toggler:focus {
-            box-shadow: none;
-        }
-
         .offcanvas {
 
             background: $dark-mov;
 
             .offcanvas-header {
-
-                /* @include breakpoints(x-small) {
-                background: $dark-mov;
-            }
-
-            @include breakpoints(small) {
-                background: $dark-mov;
-            }
-
-            @include breakpoints(medium) {
-                background: $dark-mov;
-            } */
 
                 padding-top: 57px;
 
@@ -177,56 +201,58 @@ nav {
 
             .offcanvas-body {
 
-                padding-top: 0;
-
-                /* @include breakpoints(x-small) {
-                background: $dark-mov;
-            }
-
-            @include breakpoints(small) {
-                background: $dark-mov;
-            }
-
-            @include breakpoints(medium) {
-                background: $dark-mov;
-            } */
-
                 ul {
 
                     li {
 
                         @include breakpoints(x-small) {
-                            margin: 0 !important;
+                            width: 100%;
                         }
 
                         @include breakpoints(small) {
-                            margin: 0 !important;
+                            width: 100%;
                         }
 
                         @include breakpoints(medium) {
-                            margin: 0 !important;
+                            width: 100%;
+                        }
+
+                        @include breakpoints(large) {
+                            width: 100%;
                         }
 
                         a {
 
                             color: $white;
+                            font-size: 18px;
+                            line-height: normal;
 
                             @include breakpoints(x-small) {
-                                padding-top: 12px;
-                                padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+                                text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
                             }
 
                             @include breakpoints(small) {
-                                padding-top: 12px;
-                                padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+                                text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
                             }
 
                             @include breakpoints(medium) {
-                                padding-top: 12px;
-                                padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+                                text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
+                            }
+
+                            @include breakpoints(large) {
+                                text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
                             }
 
                         }
@@ -245,36 +271,61 @@ nav {
 
                 div {
 
-                    a {
+                    button {
 
-                        border: 1px solid $pink;
+                        padding: 4px 8px;
 
-                        background: $linear-pink;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                        font-size: 18px;
+                        line-height: normal;
 
-                        svg {
-                            width: 16px;
-                            height: 16px;
-                            margin-right: 8px;
-                            color: $pink;
-                        }
-
-                    }
-
-                    a:hover,
-                    a.router-link-exact-active {
-
-                        background: $linear-pink;
+                        background: $linear-blue;
                         background-clip: padding-box;
                         -webkit-background-clip: padding-box;
                         -webkit-text-fill-color: $white;
 
-                        svg {
-                            color: $white;
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
                         }
 
+                    }
+
+                    #alert {
+                        padding: 0;
+                        position: relative;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        svg {
+                            color: green;
+                            font-size: 8px;
+                            position: absolute;
+                            top: 10px;
+                            right: 12px;
+                            // border: 1px solid #fff;
+                            // border-radius: 50%;
+                        }
+
+                    }
+
+                    #user {
+                        padding: 0;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 8px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    #user:hover,
+                    #user.router-link-exact-active {
+                        border: 1px solid $pink;
                     }
 
                 }
@@ -285,48 +336,41 @@ nav {
 
         div#responsive {
 
-            a {
-                border: 1px solid $pink;
+            #alert {
+                padding: 0;
+                position: relative;
 
-                background: $linear-pink;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-
-                // margin-left: 1rem !important;
-
-                @include breakpoints(x-small) {
-                    margin-left: 0 !important;
-                }
-
-                @include breakpoints(small) {
-                    margin-left: 0 !important;
-                }
-
-                @include breakpoints(medium) {
-                    margin-left: 0 !important;
+                img {
+                    width: 40px;
+                    height: 40px;
                 }
 
                 svg {
-                    width: 16px;
-                    height: 16px;
-                    margin-right: 8px;
-                    color: $pink;
+                    color: green;
+                    font-size: 8px;
+                    position: absolute;
+                    top: 10px;
+                    right: 12px;
+                    // border: 1px solid #fff;
+                    // border-radius: 50%;
+                }
+
+            }
+
+            #user {
+                padding: 0;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 8px;
+                    object-fit: cover;
                 }
             }
 
-            a:hover,
-            a.router-link-exact-active {
-
-                background: $linear-pink;
-                background-clip: padding-box;
-                -webkit-background-clip: padding-box;
-                -webkit-text-fill-color: $white;
-
-                svg {
-                    color: $white;
-                }
-
+            #user:hover,
+            #user.router-link-exact-active {
+                border: 1px solid $pink;
             }
 
         }

@@ -223,7 +223,7 @@
                     get discounts.</p>
 
                 <button type="button" class="btn me-3" id="certificate">
-                    <img src="@/assets/images/navbar/certificate.png" alt="">
+                    <img src="@/assets/images/navbar/certificate.webp" alt="">
                     250 XP
                 </button>
 

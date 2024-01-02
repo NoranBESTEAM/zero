@@ -1,25 +1,22 @@
 <template>
-    <!-- https://mdbootstrap.com/docs/standard/navigation/navbar/ -->
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <!-- https://www.youtube.com/watch?v=zOtxP7ahi4M -->
 
-        <!-- Container wrapper -->
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-xl fixed-top">
 
         <div class="container">
 
             <!-- Logo -->
-
             <router-link to="/" class="navbar-brand">
-                <img src="@/assets/images/navbar/logo1.png" alt="ZEROLogo" />
+                <img src="@/assets/images/navbar/logo1.webp" alt="ZEROLogo" />
             </router-link>
 
-            <!-- Toggle button -->
-
-            <!-- shadow-none border-0 -->
-            <button class="navbar-toggler rounded-3" type="button" data-bs-toggle="offcanvas"
+            <!-- Toggle Button -->
+            <button class="navbar-toggler rounded-3 shadow-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
-                <img src="@/assets/images/navbar/gg_menu-right.svg" alt="Toggler Icon">
+                <img src="@/assets/images/navbar/gg_menu-right.webp" alt="Toggler Icon">
             </button>
 
             <!-- Sidebar -->
@@ -34,113 +31,73 @@
                         <img src="@/assets/images/navbar/logo1.png" alt="ZEROLogo" />
                     </h5> -->
                     <!-- class="btn-close" -->
-                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="shadow-none">
                         <font-awesome-icon :icon="['fas', 'fa-xmark']" />
                     </button>
                 </div>
 
                 <!-- Sidebar Body -->
 
-                <!-- d-flex flex-column flex-lg-row -->
                 <div class="offcanvas-body">
 
-                    <!-- Left links -->
-
-                    <!-- fs-5 -->
-                    <!-- https://getbootstrap.com/docs/5.3/utilities/flex/ -->
-                    <!-- flex-grow-1 pe-3-->
-                    <ul class="navbar-nav me-auto d-flex justify-content-lg-center align-items-lg-center">
-                        <!-- mx-xl-2 mx-xxl-4 -->
-                        <li class="nav-item">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'home' }" class="nav-link" aria-current="page"
                                 exact>Home</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'tracks' }" class="nav-link">Tracks</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'competitions' }" class="nav-link">Competitions</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'our-platforms' }" class="nav-link">Our platforms</router-link>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <router-link :to="{ name: 'readable-content' }" class="nav-link">Readable content</router-link>
                         </li>
                     </ul>
 
-                    <!-- Left links -->
-
-                    <!-- Right elements -->
-
-                    <!-- d-flex justify-content-xxl-end align-items-xxl-end flex-lg-row -->
-                    <div class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex align-items-center">
-
-                        <button class="btn rounded-3 me-2 d-lg-none d-xl-inline-block" id="time">
-                            <img src="@/assets/images/navbar/time.png" alt="">
-                            2.45.00
-                        </button>
-
-                        <button class="btn rounded-3 me-2 d-lg-none d-xl-inline-block" id="certificate">
-                            <img src="@/assets/images/navbar/certificate.png" alt="">
-                            250 XP
-                        </button>
-
-                        <!-- https://freefrontend.com/css-notifications/ -->
-                        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
-                        <router-link :to="{ name: 'notification' }" class="btn me-2 text-reset" id="alert">
-                            <img src="@/assets/images/navbar/notification.svg" alt="" class="position-relative">
-                            <font-awesome-icon :icon="['fas', 'fa-circle']" />
-                            <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
-                            <!-- <span
-                                class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                                <span class="visually-hidden">New alerts</span>
-                            </span> -->
+                    <!-- Login / Sign up -->
+                    <div class="d-none d-xl-flex justify-content-center align-items-center gap-3">
+                        <!-- me-3 -->
+                        <router-link :to="{ name: 'login' }" class="btn rounded-3">
+                            Login
                         </router-link>
-
-                        <router-link :to="{ name: 'profile' }" class="btn" id="user">
-                            <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
-                            <img src="@/assets/images/profile/profile-pic-square.png" alt="">
+                        <router-link :to="{ name: 'sign-up' }" class="btn rounded-3">
+                            Sign Up
                         </router-link>
-
+                        <router-link :to="{ name: '' }" class="btn rounded-3">
+                            <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
+                            <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
+                        </router-link>
                     </div>
-
-                    <!-- Right elements -->
 
                 </div>
 
             </div>
 
-            <!-- End Sidebar -->
-
-            <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
-
-                <router-link :to="{ name: 'notification' }" class="btn me-3 text-reset" id="alert">
-                    <img src="@/assets/images/navbar/notification.svg" alt="">
-                    <font-awesome-icon :icon="['fas', 'fa-circle']" />
+            <div class="d-flex d-xl-none justify-content-end align-items-center gap-3" id="responsive">
+                <router-link :to="{ name: 'login' }" class="btn rounded-3">
+                    Start
                 </router-link>
-
-                <router-link :to="{ name: 'profile' }" class="btn" id="user">
-                    <img src="@/assets/images/profile/profile-pic-square.png" alt="">
+                <router-link :to="{ name: '' }" class="btn rounded-3">
+                    <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
+                    <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
                 </router-link>
-
             </div>
+
 
         </div>
 
-        <!-- Container wrapper -->
-
     </nav>
-
-    <!-- Navbar -->
 </template>
 
 <script>
-
 export default {
     name: 'Navbar',
-};
-
+}
 </script>
 
 <style scoped lang="scss">
@@ -168,6 +125,10 @@ nav {
                 display: none;
             }
 
+            @include breakpoints(large) {
+                display: none;
+            }
+
             img {
                 width: 119.614px;
                 height: 40px;
@@ -178,17 +139,12 @@ nav {
         .navbar-toggler {
 
             border: 1px solid $pink;
-            // box-shadow: none;
 
             img {
                 width: 31px;
                 height: 31px;
             }
 
-        }
-
-        .navbar-toggler:focus {
-            box-shadow: none;
         }
 
         .offcanvas {
@@ -211,49 +167,58 @@ nav {
 
             .offcanvas-body {
 
-                padding-top: 0;
-
                 ul {
 
                     li {
 
                         @include breakpoints(x-small) {
-                            margin: 0 !important;
+                            width: 100%;
                         }
 
                         @include breakpoints(small) {
-                            margin: 0 !important;
+                            width: 100%;
                         }
 
                         @include breakpoints(medium) {
-                            margin: 0 !important;
+                            width: 100%;
+                        }
+
+                        @include breakpoints(large) {
+                            width: 100%;
                         }
 
                         a {
 
-                            font-size: 18px;
                             color: $white;
+                            font-size: 18px;
                             line-height: normal;
 
                             @include breakpoints(x-small) {
-                                padding-top: 12px;
-                                padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px $box-shadow;
                                 text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
                             }
 
                             @include breakpoints(small) {
-                                padding-top: 12px;
-                                padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px $box-shadow;
                                 text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
                             }
 
                             @include breakpoints(medium) {
-                                padding-top: 12px;
-                                padding-bottom: 12px;
-                                box-shadow: 0px 4px 4px 0px $box-shadow;
                                 text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
+                            }
+
+                            @include breakpoints(large) {
+                                text-align: center;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
                             }
 
                         }
@@ -270,80 +235,92 @@ nav {
 
                 }
 
-                // First Div
-
                 div {
 
-                    button {
+                    a {
+
+                        padding: 8px 16px;
 
                         font-size: 18px;
-                        line-height: normal;
 
-                        background: $linear-blue;
+                        line-height: 24px;
+
+                        border: 1px solid $pink;
+
+                        background: $linear-pink;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 8px;
+                            color: $pink;
+                        }
+
+                    }
+
+                    a:hover,
+                    a.router-link-exact-active {
+
+                        background: $linear-pink;
                         background-clip: padding-box;
                         -webkit-background-clip: padding-box;
                         -webkit-text-fill-color: $white;
 
-                        img {
-                            width: 24px;
-                            height: 24px;
+                        svg {
+                            color: $white;
                         }
 
                     }
 
                 }
+
             }
 
         }
 
-        // Second Div
+        div#responsive {
 
-        div {
+            a {
 
-            #alert {
-                padding: 0;
-                position: relative;
+                padding: 8px 16px;
 
-                img {
-                    width: 40px;
-                    height: 40px;
-                }
+                font-size: 18px;
+
+                line-height: 24px;
+
+                border: 1px solid $pink;
+
+                background: $linear-pink;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
 
                 svg {
-                    color: green;
-                    font-size: 8px;
-                    position: absolute;
-                    top: 10px;
-                    right: 12px;
-                    // border: 1px solid #fff;
-                    // border-radius: 50%;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+                    color: $pink;
+                }
+            }
+
+            a:hover,
+            a.router-link-exact-active {
+
+                background: $linear-pink;
+                background-clip: padding-box;
+                -webkit-background-clip: padding-box;
+                -webkit-text-fill-color: $white;
+
+                svg {
+                    color: $white;
                 }
 
             }
 
-            #user {
-                padding: 0;
-
-                img {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 8px;
-                    object-fit: cover;
-                }
-            }
-
         }
-
-        /* #alert:hover,
-        #alert.router-link-exact-active {
-            border: 1px solid $pink;
-        } */
-
-        #user:hover,
-        #user.router-link-exact-active {
-            border: 1px solid $pink;
-        }
-
 
     }
 

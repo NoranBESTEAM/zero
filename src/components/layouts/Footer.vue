@@ -12,7 +12,7 @@
                 <!-- Grid column -->
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 mx-auto" id="about-us">
-                    <img src="@/assets/images/navbar/logo1.png" alt="Footer Logo" id="logoImg">
+                    <img src="@/assets/images/navbar/logo1.webp" alt="Footer Logo" id="logoImg">
                     <!-- mb-0 -->
                     <p class="mt-2">Digital Skills provides you with a funny and integrated content makes
                         you learn programming easier.</p>
