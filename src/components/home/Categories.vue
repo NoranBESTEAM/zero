@@ -5,12 +5,12 @@
 
         <div class="container">
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
 
                 <div class="col">
                     <!-- h-100 -->
                     <div class="card h-100" ref="myCardOne">
-                        <img src="@/assets/images/categories/learn.svg" class="card-img-top" alt="Learn">
+                        <img src="@/assets/images/categories/learn.webp" class="card-img-top" alt="Learn">
                         <div class="card-body">
                             <h5 class="card-title">Learn</h5>
                             <p class="card-text">
@@ -29,7 +29,7 @@
                 <div class="col">
                     <!-- h-100 -->
                     <div class="card h-100" ref="myCardTwo">
-                        <img src="@/assets/images/categories/code.svg" class="card-img-top" alt="Code">
+                        <img src="@/assets/images/categories/code.webp" class="card-img-top" alt="Code">
                         <div class="card-body">
                             <h5 class="card-title">Code</h5>
                             <p class="card-text">Practice digital skills with experts.</p>
@@ -46,7 +46,7 @@
                 <div class="col">
                     <!-- h-100 -->
                     <div class="card h-100" ref="myCardThree">
-                        <img src="@/assets/images/categories/compute.svg" class="card-img-top" alt="Compute">
+                        <img src="@/assets/images/categories/compute.webp" class="card-img-top" alt="Compute">
                         <div class="card-body">
                             <h5 class="card-title">Compete</h5>
                             <p class="card-text">
@@ -150,12 +150,14 @@ export default {
 
                 h5 {
                     color: $orange;
+                    font-size: 18px;
                     line-height: normal;
                 }
 
                 p {
                     color: $white;
-
+                    font-size: 16px;
+                    line-height: 24px;
                     // width: 358px;
                 }
 
@@ -166,6 +168,8 @@ export default {
                 border: 0;
 
                 a {
+                    font-size: 16px;
+                    line-height: 24px;
                     border: 1px solid $pink;
                     background: $linear-pink;
                     background-clip: text;

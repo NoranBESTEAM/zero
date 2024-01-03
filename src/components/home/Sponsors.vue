@@ -2,17 +2,17 @@
     <div id="sponsors">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                    <img src="@/assets/images/sponsors/logo-sponsor.png" alt="علم">
+                <div class="col-6 col-md-3">
+                    <img src="@/assets/images/sponsors/logo-sponsor.webp" alt="علم">
                 </div>
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                    <img src="@/assets/images/sponsors/logo-sponsor2.png" alt="تطوير لتقنيات التعليم">
+                <div class="col-6 col-md-3">
+                    <img src="@/assets/images/sponsors/logo-sponsor2.webp" alt="تطوير لتقنيات التعليم">
                 </div>
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                    <img src="@/assets/images/sponsors/logo-sponsor3.png" alt="جامعه المجمعه">
+                <div class="col-6 col-md-3">
+                    <img src="@/assets/images/sponsors/logo-sponsor3.webp" alt="جامعه المجمعه">
                 </div>
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                    <img src="@/assets/images/sponsors/logo-sponsor4.png" alt="جامعه الملك سعود">
+                <div class="col-6 col-md-3">
+                    <img src="@/assets/images/sponsors/logo-sponsor4.webp" alt="جامعه الملك سعود">
                 </div>
             </div>
         </div>

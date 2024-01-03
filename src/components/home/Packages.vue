@@ -15,7 +15,7 @@
                         </div>
 
                         <div class="card-body">
-                            <h4 class="fw-bolder">
+                            <h4>
                                 10.00
                                 <span class="fw-normal">\ month</span>
                             </h4>
@@ -26,8 +26,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <router-link :to="{ name: '' }" class="btn rounded-3"
-                                v-on:mouseover="changeBorderOne(true)" v-on:mouseleave="changeBorderOne(false)">
+                            <router-link :to="{ name: '' }" class="btn rounded-3" v-on:mouseover="changeBorderOne(true)"
+                                v-on:mouseleave="changeBorderOne(false)">
                                 Get offer
                             </router-link>
                         </div>
@@ -43,7 +43,7 @@
                         </div>
 
                         <div class="card-body">
-                            <h4 class="fw-bolder">
+                            <h4>
                                 15.00
                                 <span class="fw-normal">\ month</span>
                             </h4>
@@ -54,8 +54,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <router-link :to="{ name: '' }" class="btn rounded-3"
-                                v-on:mouseover="changeBorderTwo(true)" v-on:mouseleave="changeBorderTwo(false)">
+                            <router-link :to="{ name: '' }" class="btn rounded-3" v-on:mouseover="changeBorderTwo(true)"
+                                v-on:mouseleave="changeBorderTwo(false)">
                                 Get offer
                             </router-link>
                         </div>
@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="card-body">
-                            <h4 class="fw-bolder">
+                            <h4>
                                 25.00
                                 <span class="fw-normal">\ month</span>
                             </h4>
@@ -80,8 +80,8 @@
                         </div>
 
                         <div class="card-footer">
-                            <router-link :to="{ name: '' }" class="btn rounded-3"
-                                v-on:mouseover="changeBorderThree(true)" v-on:mouseleave="changeBorderThree(false)">
+                            <router-link :to="{ name: '' }" class="btn rounded-3" v-on:mouseover="changeBorderThree(true)"
+                                v-on:mouseleave="changeBorderThree(false)">
                                 Get offer
                             </router-link>
                         </div>
@@ -159,7 +159,7 @@ export default {
                 border: 0;
 
                 h3 {
-                    // font-size: 32px;
+                    font-size: 24px;
                     line-height: normal;
                 }
 
@@ -171,7 +171,7 @@ export default {
 
                 h4 {
 
-                    font-size: 40px;
+                    font-size: 32px;
                     line-height: normal;
 
                     span {
@@ -181,6 +181,11 @@ export default {
 
                 }
 
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
             }
 
             .card-footer {
@@ -188,6 +193,9 @@ export default {
                 border: 0;
 
                 a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 8px 16px;
                     border: 1px solid $pink;
                     background: $linear-pink;
                     background-clip: text;

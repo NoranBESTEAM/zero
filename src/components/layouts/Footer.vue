@@ -1,4 +1,5 @@
 <template>
+
     <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
 
     <footer>
@@ -153,6 +154,7 @@ footer {
             h6 {
                 font-size: 16px;
                 color: $orange;
+                line-height: 24px;
                 @include breakpoints(x-small) {
                     margin-top: 8px;
                 }
@@ -169,8 +171,8 @@ footer {
 
             p {
                 font-size: 14px;
+                line-height: 24px;
                 margin-bottom: 8px;
-
             }
 
             svg {
@@ -197,6 +199,7 @@ footer {
 
                 input::placeholder {
                     font-size: 12px;
+                    line-height: 24px;
                 }
 
                 input:focus,
@@ -226,6 +229,7 @@ footer {
 
         #copyright {
             font-size: 11px;
+            line-height: 24px;
 
             a {
                 color: $orange !important;

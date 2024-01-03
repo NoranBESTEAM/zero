@@ -3,11 +3,11 @@
         <!-- https://www.browserstack.com/guide/position-text-over-image-using-css -->
         <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
         <!-- For Large Screen -->
-        <figure class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-            <img src="@/assets/images/mail/mail.jpg" alt="Mail Large Background">
+        <figure class="d-none d-lg-block">
+            <img src="@/assets/images/mail/mail.webp" alt="Mail Large Background">
             <div class="container">
                 <figcaption>
-                    <h5 class="fw-bold mb-4">Subscribe newsletter to get the latest updates.</h5>
+                    <h5 class="mb-4">Subscribe newsletter to get the latest updates.</h5>
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email"
                             aria-describedby="basic-addon1" />
@@ -20,12 +20,12 @@
             </div>
         </figure>
         <!-- For Small Screen -->
-        <section class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+        <section class="d-block d-lg-none">
             <div class="container">
                 <div class="img_wrapper">
-                    <img src="@/assets/images/mail/mail_responsive_img.png" alt="">
+                    <img src="@/assets/images/mail/mail_responsive_img.webp" alt="">
                 </div>
-                <h5 class="fw-bold mt-4 mb-4">Subscribe newsletter to get the latest updates.</h5>
+                <h5 class="mt-4 mb-4">Subscribe newsletter to get the latest updates.</h5>
                 <div class="input-group">
                     <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email"
                         aria-describedby="basic-addon1" />
@@ -64,7 +64,15 @@ export default {
 
             position: absolute;
 
-            top: 160px;
+            top: 200px;
+
+            @include breakpoints(large) {
+                top: 120px;
+            }
+
+            @include breakpoints(x-Large) {
+                top: 150px;
+            }
 
         }
 
@@ -98,11 +106,17 @@ export default {
     // For All Screen
 
     h5 {
-        font-size: 18px; 
         color: $white;
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .input-group {
+
+        input:placeholder{
+            font-size: 16px;
+            line-height: 24px;
+        }
 
         input:focus,
         input:focus+span {

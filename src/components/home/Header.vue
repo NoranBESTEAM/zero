@@ -1,22 +1,33 @@
 <template>
     <section id="header">
+
         <!-- https://www.browserstack.com/guide/position-text-over-image-using-css -->
         <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
+
         <figure>
+
             <!-- For Large Screen -->
-            <img src="@/assets/images/header/header.jpg" alt="Header Large Background"
-                class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <img src="@/assets/images/header/header.webp" alt="Header Large Background"
+                class="d-none d-lg-block">
+
             <!-- For Mobile Screen -->
-            <img src="@/assets/images/header/header_mobile.jpg" alt="Header Small Background"
-                class="d-none d-sm-block d-md-block d-lg-none d-xl-none">
+            <img src="@/assets/images/header/header_mobile.webp" alt="Header Small Background"
+                class="d-none d-sm-block d-lg-none">
+
             <div class="container">
+
                 <!-- class="figure-caption" -->
+
                 <figcaption>
+
                     <h1 class="mb-4">Be a professional programmer</h1>
+
                     <h3 class="mb-4">Create solutions for world issues</h3>
+
                     <p class="mb-4">
                         Digital Skills provides you with a funny and integrated content makes you learn programming easier.
                     </p>
+
                     <div>
                         <router-link :to="{ name: 'tracks' }" class="btn rounded-3 me-3">
                             Start Your Journey
@@ -24,25 +35,31 @@
                         <router-link :to="{ name: '' }" class="btn rounded-3">
                             <!-- <i class="fa-solid fa-circle-chevron-right"></i> -->
                             <!-- <font-awesome-icon :icon="['fas', 'fa-circle-chevron-right']" /> -->
-                            <img src="@/assets/images/header/Play_icon.svg" alt="" class="me-2">
+                            <img src="@/assets/images/header/Play_icon.webp" alt="" class="me-2">
                             Watch the video
                         </router-link>
                     </div>
+
                     <div>
                         <router-link :to="{ name: '' }" class="btn rounded-3 me-3 mb-3 mb-sm-0">
-                            <img src="@/assets/images/header/app_store.jpg" alt="" class="rounded-3">
+                            <img src="@/assets/images/header/app_store.webp" alt="" class="rounded-3">
                         </router-link>
                         <router-link :to="{ name: '' }" class="btn rounded-3 me-3 mb-3 mb-sm-0">
-                            <img src="@/assets/images/header/google_play.jpg" alt="" class="rounded-3">
+                            <img src="@/assets/images/header/google_play.webp" alt="" class="rounded-3">
                         </router-link>
                         <router-link :to="{ name: '' }" class="btn rounded-3 me-3 mb-3 mb-sm-0">
-                            <img src="@/assets/images/header/windows_store.jpg" alt="" class="rounded-3">
+                            <img src="@/assets/images/header/windows_store.webp" alt="" class="rounded-3">
                         </router-link>
                     </div>
+
                 </figcaption>
+
             </div>
+
         </figure>
+
     </section>
+
 </template>
 
 <script>
@@ -84,18 +101,18 @@ export default {
 
             position: absolute;
 
-            top: 130px;
+            top: 90px;
 
             @include breakpoints(x-small) {
                 position: initial;
             }
 
             @include breakpoints(small) {
-                top: 0;
+                top: 7px;
             }
 
             @include breakpoints(medium) {
-                top: 0;
+                top: 55px;
             }
 
             @include breakpoints(large) {
@@ -103,21 +120,23 @@ export default {
             }
 
             @include breakpoints(x-Large) {
-                top: 0;
+                top: 15px;
             }
 
             h1 {
                 font-size: 40px;
                 line-height: normal;
-                // margin-bottom: 24px;
 
                 @include breakpoints(x-small) {
-                    font-size: 32px;
+                    font-size: 24px;
                     margin-top: 0;
                 }
 
                 @include breakpoints(small) {
-                    // font-size: 24px;
+                    font-size: 24px;
+                }
+
+                @include breakpoints(medium) {
                     font-size: 32px;
                 }
 
@@ -130,29 +149,30 @@ export default {
             h3 {
                 font-size: 32px;
                 line-height: normal; 
-                // margin-bottom: 24px;
 
                 @include breakpoints(x-small) {
-                    font-size: 28px;
+                    font-size: 20px;
                 }
 
                 @include breakpoints(small) {
                     // width: 262px;
-                    // font-size: 18px;
-                    font-size: 28px;
+                    font-size: 20px;
+                }
+
+                @include breakpoints(medium) {
+                    font-size: 24px;
                 }
 
                 @include breakpoints(large) {
-                    font-size: 28px;
+                    font-size: 24px;
                 }
             }
 
             p {
                 width: 455px;
                 font-size: 18px;
-                // line-height: 24px;
+                line-height: 24px;
                 text-align: justify;
-                // margin-bottom: 24px;
 
                 @include breakpoints(x-small) {
                     font-size: 16px;
@@ -161,7 +181,6 @@ export default {
 
                 @include breakpoints(small) {
                     // width: 256px;
-                    // font-size: 14px;
                     font-size: 16px;
                 }
 
@@ -183,6 +202,8 @@ export default {
                 }
 
                 a {
+                    font-size: 16px;
+                    line-height: 24px;
                     border: 1px solid $pink;
                     background: $linear-pink;
                     background-clip: text;

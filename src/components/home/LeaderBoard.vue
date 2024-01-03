@@ -1,16 +1,21 @@
 <template>
     <div id="leader-board">
+
         <div class="container">
+
             <h3 class="text-center">Leader Board</h3>
+
             <p class="text-center">The leader board is updated all day long</p>
+
             <div class="row">
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 table-responsive" id="players">
+
                     <!-- table-striped table-bordered -->
                     <table class="table caption-top">
                         <caption>
                             <h5 class="text-center">
-                                <img src="@/assets/images/leader_board/user.svg" alt="players">
+                                <img src="@/assets/images/leader_board/user.webp" alt="players">
                                 Players
                             </h5>
                         </caption>
@@ -131,10 +136,11 @@
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 table-responsive" id="leagues">
+
                     <table class="table caption-top">
                         <caption>
                             <h5 class="text-center">
-                                <img src="@/assets/images/leader_board/leagues.svg" alt="leagues">
+                                <img src="@/assets/images/leader_board/leagues.webp" alt="leagues">
                                 Leagues
                             </h5>
                         </caption>
@@ -239,10 +245,13 @@
                             </tr>
                         </tbody>
                     </table>
+
                 </div>
 
             </div>
+
         </div>
+
     </div>
 </template>
 
@@ -257,7 +266,7 @@ export default {
 
     // https://www.w3schools.com/cssref/pr_background-image.php
     /* The image used */
-    background-image: url("@/assets/images/leader_board/leader_board.jpg");
+    background-image: url("@/assets/images/leader_board/leader_board.webp");
     /* Used if the image is unavailable */
     background-color: $dark-mov;
     /* Center the image */
@@ -292,19 +301,43 @@ export default {
         background-size: cover;
     }
 
-    h3, p{
-        line-height: normal;
+    h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     table {
 
         caption {
             color: $white;
+
+            h5 {
+                font-size: 18px;
+                line-height: normal;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 4px;
+                }
+            }
         }
 
-        tr {
-            border-bottom: 4px solid $table-border;
-            border-style: outset;
+        thead {
+            tr {
+                border-bottom: 4px solid $table-border;
+                border-style: outset;
+
+                th {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
         }
 
         tbody {
@@ -327,6 +360,8 @@ export default {
                 }
 
                 td {
+                    font-size: 16px;
+                    line-height: 24px;
                     background-color: $table-BG;
                     padding: 8px 16px;
                     color: $white;
