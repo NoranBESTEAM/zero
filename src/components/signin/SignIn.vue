@@ -90,7 +90,7 @@
 
                 <div class="col-lg-6 col-xl-6 d-none d-sm-none d-md-none d-lg-block d-xl-block">
 
-                    <img src="@/assets/images/signup/signupImg.png" class="img-fluid" alt="">
+                    <img src="@/assets/images/signup/signupImg.webp" class="img-fluid" alt="">
 
                 </div>
 

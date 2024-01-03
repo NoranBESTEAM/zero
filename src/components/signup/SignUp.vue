@@ -101,7 +101,7 @@
 
                 <div class="col-lg-6 col-xl-6 d-none d-sm-none d-md-none d-lg-block d-xl-block">
 
-                    <img src="@/assets/images/signup/signupImg.png" class="img-fluid" alt="">
+                    <img src="@/assets/images/signup/signupImg.webp" class="img-fluid" alt="">
 
                 </div>
 
@@ -125,7 +125,7 @@ export default {
 
     // https://www.w3schools.com/cssref/pr_background-image.php
     /* The image used */
-    // background-image: url("@/assets/images/signup/signupBG.png");
+    // background-image: url("@/assets/images/signup/signupBG.webp");
     /* Used if the image is unavailable */
     // background-color: $dark-mov;
     /* Center the image */

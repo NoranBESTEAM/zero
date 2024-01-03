@@ -8,7 +8,7 @@
 
         <div id="video-wrapper">
 
-            <video playsinline autoplay muted loop poster="@/assets/images/signup/signupBG.png" id="back-video">
+            <video playsinline autoplay muted loop poster="@/assets/images/signup/signupBG.webp" id="back-video">
                 <!-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> -->
                 <source src="@/assets/images/levels/levels_bg.webm" type="video/webm">
                 <source src="@/assets/images/levels/levels_bg.mp4" type="video/mp4">
