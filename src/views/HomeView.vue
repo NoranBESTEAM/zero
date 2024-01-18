@@ -1,36 +1,34 @@
 <template>
   <!-- import navbar in main.js file -->
-  <!-- <Navbar />
-  <router-view/> -->
+  <Navbar />
   <!-- Start Header -->
-    <Header/>
+  <Header />
   <!-- End Header -->
 
   <!-- Start Categories -->
-  <Categories/>
+  <Categories />
   <!-- End Categories -->
 
   <!-- Start Leader Board -->
-  <LeaderBoard/>
+  <LeaderBoard />
   <!-- End Leader Board -->
 
   <!-- Start Packages -->
-  <Packages/>
+  <Packages />
   <!-- End Packages -->
 
   <!-- Start Sponsors -->
-  <Sponsors/>
+  <Sponsors />
   <!-- End Sponsors -->
 
   <!-- Start Mail -->
-  <Mail/>
+  <Mail />
   <!-- End Mail -->
 
   <!-- Start Footer -->
   <!-- import Footer in main.js file -->
-  <Footer/>
+  <Footer />
   <!-- End Footer -->
-  
 </template>
 
 <script>
@@ -53,11 +51,13 @@ export default {
     Packages,
     Sponsors,
     Mail,
-  }
+  },
+
+  created() {
+    this.$store.commit("setPage", "home");
+  },
 
 }
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Levels -->
     <Levels />
     <!-- End Levels -->
@@ -17,7 +16,10 @@ export default {
     name: 'LevelsView',
     components: {
         Levels
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "levels");
+    },
 }
 </script>
 

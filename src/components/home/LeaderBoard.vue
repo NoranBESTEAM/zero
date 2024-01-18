@@ -9,7 +9,7 @@
 
             <div class="row">
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 table-responsive" id="players">
+                <div class="col-12 col-lg-6 table-responsive" id="players">
 
                     <!-- table-striped table-bordered -->
                     <table class="table caption-top">
@@ -135,7 +135,7 @@
 
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 table-responsive" id="leagues">
+                <div class="col-12 col-lg-6 table-responsive" id="leagues">
 
                     <table class="table caption-top">
                         <caption>

@@ -29,117 +29,186 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta:{
+      title: 'Home',
+    }
   },
   {
     path: '/tracks',
     name: 'tracks',
-    component: TracksView
+    component: TracksView,
+    meta:{
+      title: 'Tracks',
+    }
   },
   {
     path: '/lessons',
     name: 'lessons',
-    component: LessonsView
+    component: LessonsView,
+    meta:{
+      title: 'Tracks',
+    }
   },
   {
     path: '/levels',
     name: 'levels',
-    component: LevelsView
+    component: LevelsView,
+    meta:{
+      title: 'Tracks',
+    }
   },
   {
     path: '/level_slider',
     name: 'level_slider',
-    component: LevelSliderView
+    component: LevelSliderView,
+    meta:{
+      title: 'Tracks',
+    }
   },
   {
     path: '/mission_slider',
     name: 'mission_slider',
-    component: MissionSliderView
+    component: MissionSliderView,
+    meta:{
+      title: 'Tracks',
+    }
   },
   {
     path: '/competitions',
     name: 'competitions',
-    component: CompetitionsView
+    component: CompetitionsView,
+    meta:{
+      title: 'Competitions',
+    }
   },
   {
     path: '/journey',
     name: 'journey',
-    component: JourneyView
+    component: JourneyView,
+    meta:{
+      title: 'Competitions',
+    }
   },
   {
     path: '/our-platforms',
     name: 'our-platforms',
-    component: OurPlatformsView
+    component: OurPlatformsView,
+    meta:{
+      title: 'OurPlatforms',
+    }
   },
   {
     path: '/readable-content',
     name: 'readable-content',
-    component: ReadableContentView
+    component: ReadableContentView,
+    meta:{
+      title: 'ReadableContent',
+    }
   },
   {
     path: '/sign-up',
     name: 'sign-up',
-    component: SignUpView
+    component: SignUpView,
+    meta:{
+      title: 'SignUp',
+    }
   },
   {
     path: '/sign-in',
     name: 'login',
-    component: SignInView
+    component: SignInView,
+    meta:{
+      title: 'LogIn',
+    }
   },
   {
     path: '/notification',
     name: 'notification',
-    component: NotificationView
+    component: NotificationView,
+    meta:{
+      title: 'Notification',
+    }
   },
   {
     path: '/profile',
     name: 'profile',
-    component: ProfileView
+    component: ProfileView,
+    meta:{
+      title: 'Profile',
+    }
   },
   {
     path: '/change-password',
     name: 'change-password',
-    component: ChangePasswordView
+    component: ChangePasswordView,
+    meta:{
+      title: 'ChangePassword',
+    }
   },
   {
     path: '/support',
     name: 'support',
-    component: SupportView
+    component: SupportView,
+    meta:{
+      title: 'Support',
+    }
   },
   {
     path: '/settings',
     name: 'settings',
-    component: SettingView
+    component: SettingView,
+    meta:{
+      title: 'Settings',
+    }
   },
   {
     path: '/profile-score',
     name: 'profile-score',
-    component: ProfileScoreView
+    component: ProfileScoreView,
+    meta:{
+      title: 'HighScores',
+    }
   },
   {
     path: '/profile-team',
     name: 'profile-team',
-    component: ProfileTeamView
+    component: ProfileTeamView,
+    meta:{
+      title: 'AddTeam',
+    }
   },
   {
     path: '/team-members',
     name: 'team-members',
-    component: ProfileTeamMembersView
+    component: ProfileTeamMembersView,
+    meta:{
+      title: 'AddTeam',
+    }
   },
   {
     path: '/profile-events',
     name: 'profile-events',
-    component: ProfileEventsView
+    component: ProfileEventsView,
+    meta:{
+      title: 'Events',
+    }
   },
   {
     path: '/profile-time',
     name: 'profile-time',
-    component: ProfileTimeView
+    component: ProfileTimeView,
+    meta:{
+      title: 'TimeOnSite',
+    }
   },
   {
     path: '/profile-wallet',
     name: 'profile-wallet',
-    component: ProfileWalletView
+    component: ProfileWalletView,
+    meta:{
+      title: 'MyWallet',
+    }
   },
 ]
 
@@ -149,16 +218,21 @@ const router = createRouter({
   routes
 })
 
-/* router.beforeEach((to,from,next)=>{
+router.beforeEach((to, from, next) => {
 
-  if (to.name != null){
-    document.title = `${process.env.VUE_APP_TITLE} - ${to.name}`;
-  } else{
-    document.title = `${process.env.VUE_APP_TITLE}`;
+  // https://www.youtube.com/watch?v=W6qpsmkuJ8c
+
+  if(to.meta.title !== undefined){
+    document.title = `${process.env.VUE_APP_TITLE} | ${to.meta.title}`;
+  } else {
+    if(to.name !== null){
+      document.title = `${process.env.VUE_APP_TITLE} | ${to.name}`;
+    } else{
+      document.title = `${process.env.VUE_APP_TITLE}`;
+    }
   }
-  
-  next();
 
-}); */
+  next();
+});
 
 export default router

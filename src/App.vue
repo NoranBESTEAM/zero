@@ -1,6 +1,6 @@
 <template>
   <!-- import navbar in main.js file -->
-  <Navbar />
+  <!-- <Navbar /> -->
   <router-view/>
 </template>
 
@@ -19,5 +19,8 @@
   }
   #app a{
     text-decoration: none;
+  }
+  body{
+    overflow: visible !important;
   }
 </style>

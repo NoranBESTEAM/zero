@@ -7,8 +7,7 @@
 
             <div class="row d-flex justify-content-center align-items-center">
 
-                <div
-                    class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-block">
+                <div class="col-12 col-lg-6 d-block">
 
                     <div class="image-wrapper m-auto mb-3">
                         <img src="@/assets/images/navbar/logo1.webp" alt="">
@@ -42,7 +41,8 @@
 
                         <!-- Checkbox -->
                         <div class="form-check mb-3">
-                            <input class="form-check-input shadow-none border-0" type="checkbox" value="" id="form-checkbox" />
+                            <input class="form-check-input shadow-none border-0" type="checkbox" value=""
+                                id="form-checkbox" />
                             <label class="form-check-label" for="form-checkbox"> Remember me </label>
                         </div>
 
@@ -88,7 +88,7 @@
 
                 </div>
 
-                <div class="col-lg-6 col-xl-6 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                <div class="d-none d-lg-block col-lg-6">
 
                     <img src="@/assets/images/signup/signupImg.webp" class="img-fluid" alt="">
 
@@ -124,101 +124,105 @@ export default {
     /* Resize the background image to cover the entire container */
     // background-size: cover;
     padding-top: 80px;
-    height: 100vh;
+    min-height: 100vh;
 
-    .image-wrapper {
-        width: 239.227px;
-        height: 80px;
+    .container {
 
-        img {
-            width: 100%;
-            height: 100%;
-            // object-fit: cover;
-        }
-    }
+        .image-wrapper {
+            width: 239.227px;
+            height: 80px;
 
-    h1 {
-        color: $white;
-        line-height: normal;
-    }
-
-    form {
-        .input-group {
-
-            border: 1px solid $white;
-            border-radius: 8px;
-
-            input,
-            span {
-                background: transparent;
-                border: none;
-            }
-
-            input{
-                caret-color: $white;
-            }
-
-            span img {
-                width: 16px;
-                height: 16px;
-            }
-
-            input::placeholder {
-                color: $white;
-            }
-
-            input:focus::placeholder {
-                color: transparent;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
-        .form-check {
+        h1 {
+            color: $white;
+            line-height: normal;
+        }
 
-            /* input{
+        form {
+            .input-group {
+
+                border: 1px solid $white;
+                border-radius: 8px;
+
+                input,
+                span {
+                    background: transparent;
+                    border: none;
+                }
+
+                input {
+                    caret-color: $white;
+                }
+
+                span img {
+                    width: 16px;
+                    height: 16px;
+                }
+
+                input::placeholder {
+                    color: $white;
+                }
+
+                input:focus::placeholder {
+                    color: transparent;
+                }
+            }
+
+            .form-check {
+
+                /* input{
                 background: transparent;
             } */
-            .form-check-input:checked {
-                background-color: $mov !important;
-                border: none;
+                .form-check-input:checked {
+                    background-color: $mov !important;
+                    border: none;
+                }
+
+                label {
+                    color: $white;
+                }
             }
 
-            label {
+            #login {
+                background: $linear-pink;
+                background-clip: padding-box;
+                -webkit-background-clip: padding-box;
+                -webkit-text-fill-color: $white;
+
+                box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
+            }
+
+            p,
+            a {
                 color: $white;
             }
-        }
 
-        #login {
-            background: $linear-pink;
-            background-clip: padding-box;
-            -webkit-background-clip: padding-box;
-            -webkit-text-fill-color: $white;
-            
-            box-shadow: 0px 4px 4px 0px rgba(87, 87, 87, 0.25);
-        }
+            // https://stackoverflow.com/questions/23584120/line-before-and-after-title-over-image
+            .myP:before,
+            .myP:after {
+                content: "";
+                display: inline-block;
+                width: 47%;
+                margin: 0 .5em 0 -55%;
+                vertical-align: middle;
+                border-bottom: 1px solid $white;
+            }
 
-        p,
-        a {
-            color: $white;
-        }
+            .myP:after {
+                margin: 0 -55% 0 .5em;
+            }
 
-        // https://stackoverflow.com/questions/23584120/line-before-and-after-title-over-image
-        .myP:before,
-        .myP:after {
-            content: "";
-            display: inline-block;
-            width: 47%;
-            margin: 0 .5em 0 -55%;
-            vertical-align: middle;
-            border-bottom: 1px solid $white;
-        }
+            .social img {
+                width: 40px;
+                height: 40px;
+            }
 
-        .myP:after {
-            margin: 0 -55% 0 .5em;
-        }
-
-        .social img {
-            width: 40px;
-            height: 40px;
         }
 
     }

@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Lessons -->
     <Lessons />
     <!-- End Lessons -->
@@ -17,7 +16,10 @@ export default {
     name: 'LessonsView',
     components: {
         Lessons
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "lessons");
+    },
 }
 </script>
 

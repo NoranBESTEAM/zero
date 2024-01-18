@@ -1,8 +1,7 @@
 <template>
     <!-- Start Navbar -->
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- End Navbar -->
     <!-- Start Tracks -->
     <Tracks />
@@ -21,7 +20,10 @@ export default {
     name: 'TracksView',
     components: {
         Tracks
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "tracks");
+    },
 }
 </script>
 

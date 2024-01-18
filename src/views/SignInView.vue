@@ -10,7 +10,10 @@ export default {
     name: 'SignInView',
     components: {
         SignIn,
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "login");
+    },
 }
 </script>
 

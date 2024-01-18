@@ -6,12 +6,14 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">
+                            <h5 class="card-title mb-4">
                                 Digital future skills training
                                 <!-- <font-awesome-icon :icon="['fas', 'fa-code']"/> -->
-                                <img src="@/assets/images/tracks/Frame_14787.svg" alt="" class="">
+                                <div class="image_wrapper">
+                                    <img src="@/assets/images/tracks/code_icon.webp" alt="" class="">
+                                </div>
                             </h5>
-                            <p class="card-text">
+                            <p class="card-text mb-0">
                                 It is an international competition that encourages students to think, research, create and
                                 teamwork under the guidance of professional trainers.
                             </p>
@@ -25,12 +27,14 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">
+                            <h5 class="card-title mb-4">
                                 Digital future skills training
                                 <!-- <font-awesome-icon :icon="['fas', 'fa-code']"/> -->
-                                <img src="@/assets/images/tracks/Frame_14787.svg" alt="" class="">
+                                <div class="image_wrapper">
+                                    <img src="@/assets/images/tracks/code_icon.webp" alt="" class="">
+                                </div>
                             </h5>
-                            <p class="card-text">
+                            <p class="card-text mb-0">
                                 It is an international competition that encourages students to think, research, create and
                                 teamwork under the guidance of professional trainers.
                             </p>
@@ -59,7 +63,7 @@ export default {
     padding-top: 40px;
     padding-bottom: 40px;
     background: $my-gradient;
-    
+
     min-height: 100vh;
     // height: calc(100% - number)
     /* Firefox */
@@ -69,43 +73,59 @@ export default {
     /* IE9+ and future browsers */
     // height: calc(100vh - 289px);
 
-    .card {
-        background-color: $primary;
-        color: $white;
-        box-shadow: 0px 4px 0px 0px $box-shadow;
+    .container {
 
-        h5 {
-            // font-size: 20px;
-            line-height: normal; 
-            img {
-                // margin-inline-start: 90%;
+        .card {
+            background-color: $primary;
+            color: $white;
+            box-shadow: 0px 4px 0px 0px $box-shadow;
+
+            h5 {
+                font-size: 20px;
+                line-height: normal;
+                font-weight: 400;
+
+                .image_wrapper {
+                    float: right;
+                    width: 40px;
+                    height: 29px;
+
+                    img {
+                        // margin-inline-start: 90%;
+                        // margin-right: 16px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 400;
+                text-align: justify;
+            }
+
+            a {
                 float: right;
                 // margin-right: 16px;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    color: $white;
+                }
             }
         }
 
-        p {
-            // font-size: 18px;
-            // line-height: 24px;
-            text-align: justify;
+        .card:hover {
+            background: $linear-pink;
+            background-clip: padding-box;
+            -webkit-background-clip: padding-box;
+            -webkit-text-fill-color: $white;
         }
 
-        a {
-            float: right;
-            // margin-right: 16px;
-
-            svg {
-                width: 24px;
-                height: 24px;
-                color: $white;
-            }
-        }
     }
-
-    .card:hover {
-        background: $linear-pink;
-        background-clip: padding-box;
-        -webkit-background-clip: padding-box;
-        -webkit-text-fill-color: $white;
-    }
-}</style>
+}
+</style>

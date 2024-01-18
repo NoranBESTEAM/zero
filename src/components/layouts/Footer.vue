@@ -12,7 +12,7 @@
 
                 <!-- Grid column -->
 
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 mx-auto" id="about-us">
+                <div class="col-12 col-sm-6 col-xl-3 mx-auto" id="about-us">
                     <img src="@/assets/images/navbar/logo1.webp" alt="Footer Logo" id="logoImg">
                     <!-- mb-0 -->
                     <p class="mt-2">Digital Skills provides you with a funny and integrated content makes
@@ -21,7 +21,7 @@
 
                 <!-- Grid column -->
 
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 mx-auto">
+                <div class="col-12 col-sm-6 col-xl-2 mx-auto">
                     <h6 class="fw-bold mb-2">Fast links</h6>
                     <p>Home</p>
                     <p>Tracks</p>
@@ -32,7 +32,7 @@
                 <!-- Grid column -->
 
                 <!-- mt-sm-4 mt-md-4 mt-lg-4 mt-xl-0 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 mx-auto">
+                <div class="col-12 col-sm-6 col-xl-2 mx-auto">
                     <h6 class="fw-bold mb-2">Help & Support</h6>
                     <p>Terms and Conditions</p>
                     <p>Privacy policy</p>
@@ -42,12 +42,12 @@
                 <!-- Grid column -->
 
                 <!-- mt-sm-4 mt-md-4 mt-lg-4 mt-xl-0 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 mx-auto">
+                <div class="col-12 col-sm-6 col-xl-2 mx-auto">
                     <h6 class="fw-bold mb-2">Contact us</h6>
                     <p>
                         <!-- <i class="fa-solid fa-phone"></i> -->
                         <font-awesome-icon :icon="['fas', 'fa-phone']" />
-                        +966531577796
+                        +9-6653-1577-796
                     </p>
                     <p>
                         <!-- <i class="fa-solid fa-envelope"></i> -->
@@ -64,7 +64,7 @@
                 <!-- Grid column -->
 
                 <!-- mt-sm-4 mt-md-4 mt-lg-4 mt-xl-0 -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 mx-auto">
+                <div class="col-12 col-sm-12 col-xl-3 mx-auto">
                     <h6 class="fw-bold mb-2">Last news</h6>
                     <!-- Email input -->
                     <div class="input-group mb-3">
