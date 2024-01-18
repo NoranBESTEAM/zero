@@ -141,6 +141,8 @@ export default {
             a {
                 svg {
                     color: $pink;
+                    width: 24px;
+                    height: 24px;
                 }
             }
         }

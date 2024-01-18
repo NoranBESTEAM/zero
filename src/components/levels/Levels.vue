@@ -33,7 +33,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">1</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -55,7 +56,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">2</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -77,7 +79,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">3</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -99,7 +102,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">4</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -144,7 +148,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">5</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -166,7 +171,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">6</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -188,7 +194,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">7</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -210,7 +217,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">8</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -255,7 +263,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">9</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -277,7 +286,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">10</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -299,7 +309,8 @@
                                 <router-link :to="{ name: 'level_slider' }" class="text-reset">
                                     <div class="image-wrapper">
                                         <span class="ms-3 h3 mb-0">11</span>
-                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top" alt="">
+                                        <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
+                                            alt="">
                                     </div>
                                 </router-link>
                                 <div class="card-body">
@@ -328,8 +339,8 @@
                                         <router-link :to="{ name: 'level_slider' }" class="text-reset disabled">
                                             <div class="image-wrapper">
                                                 <span class="ms-3 h3 mb-0">12</span>
-                                                <img src="@/assets/images/levels/gray_3_star_robot.webp" class="card-img-top"
-                                                    alt="">
+                                                <img src="@/assets/images/levels/gray_3_star_robot.webp"
+                                                    class="card-img-top" alt="">
                                             </div>
                                         </router-link>
                                         <div class="card-body">
@@ -347,7 +358,7 @@
 
                                 </div>
 
-                                <div class="lock-overlay">
+                                <div class="lock-overlay rounded">
                                     <img src="@/assets/images/lessons/lock.webp" alt="">
                                 </div>
 
@@ -386,7 +397,7 @@
 
                                 </div>
 
-                                <div class="lock-overlay">
+                                <div class="lock-overlay rounded">
                                     <img src="@/assets/images/lessons/lock.webp" alt="">
                                 </div>
 
@@ -425,7 +436,7 @@
 
                                 </div>
 
-                                <div class="lock-overlay">
+                                <div class="lock-overlay rounded">
                                     <img src="@/assets/images/lessons/lock.webp" alt="">
                                 </div>
 
@@ -455,206 +466,207 @@ export default {
 
     margin-top: 64px;
     width: 100%;
-    // min-height: 100vh;
+    min-height: 100vh;
 
     #video-wrapper {
 
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         position: relative;
         overflow: hidden;
-        // text-align: center;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
 
         video {
             position: absolute;
             top: 0;
             left: 0;
             z-index: -1;
-            min-width: 100%;
-            // width: 100%;
+            width: 100%;
             min-height: 100%;
-            // height: 100%;
             object-fit: cover;
-            // object-fit: fill;
         }
 
-        #content {
+        .container {
 
-            padding-top: 40px;
-            padding-bottom: 40px;
+            #content {
 
-            h3 {
-                color: $white;
-                transition: 0.3s;
-                line-height: normal;
+                padding-top: 40px;
+                padding-bottom: 40px;
 
-                a {
-                    svg {
-                        color: $pink;
-                    }
-                }
-            }
+                h3 {
+                    color: $white;
+                    transition: 0.3s;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
 
-            .card {
-
-                background-color: $primary;
-                box-shadow: 0px 4px 0px 0px $box-shadow;
-                color: $white;
-
-                .image-wrapper {
-                    background-color: $mov;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 24px 0px;
-                    border-radius: 8px 8px 0 0;
-
-                    img {
-                        height: 95px;
-                        object-fit: contain;
+                    a {
+                        svg {
+                            color: $pink;
+                            width: 24px;
+                            height: 24px;
+                        }
                     }
                 }
 
-                .image-wrapper:hover {
-                    background: $linear-pink;
-                    background-clip: padding-box;
-                    -webkit-background-clip: padding-box;
-                    -webkit-text-fill-color: $white;
-                }
+                .card {
 
-            }
+                    background-color: $primary;
+                    box-shadow: 0px 4px 0px 0px $box-shadow;
+                    color: $white;
 
-            .lock-wrapper {
+                    height: 310px !important;
 
-                position: relative;
+                    @include breakpoints(x-small) {
+                        height: 310px !important;
+                    }
 
-                @include breakpoints(x-small) {
-                    position: initial;
-                }
+                    @include breakpoints(small) {
+                        height: 310px !important;
+                    }
 
-                @include breakpoints(small) {
-                    position: initial;
-                }
+                    @include breakpoints(medium) {
+                        height: 310px !important;
+                    }
 
-                @include breakpoints(medium) {
-                    position: initial;
-                }
+                    @include breakpoints(large) {
+                        height: 340px !important;
+                    }
 
-                .lock-card {
+                    @include breakpoints(x-Large) {
+                        height: 320px !important;
+                    }
 
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    // opacity: 0.6;
-                    opacity: 0.4;
+                    .image-wrapper {
+                        background-color: $mov;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 24px 0px;
+                        border-radius: 8px 8px 0 0;
 
-                    .disabled {
-                        pointer-events: none;
+                        img {
+                            height: 95px;
+                            object-fit: contain;
+                        }
                     }
 
                     .image-wrapper:hover {
-                        background: $mov;
+                        background: $linear-pink;
+                        background-clip: padding-box;
+                        -webkit-background-clip: padding-box;
+                        -webkit-text-fill-color: $white;
                     }
+
+                }
+
+                .lock-wrapper {
+
+                    position: relative;
 
                     @include breakpoints(x-small) {
                         position: initial;
-                        // opacity: 0.2;
-                        opacity: 0.1;
                     }
 
                     @include breakpoints(small) {
                         position: initial;
-                        opacity: 0.1;
                     }
 
                     @include breakpoints(medium) {
                         position: initial;
-                        opacity: 0.1;
+                    }
+
+                    .lock-card {
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0.4;
+
+                        @include breakpoints(x-small) {
+                            position: initial;
+                            opacity: 0.1;
+                        }
+
+                        @include breakpoints(small) {
+                            position: initial;
+                            opacity: 0.1;
+                        }
+
+                        @include breakpoints(medium) {
+                            position: initial;
+                            opacity: 0.1;
+                        }
+
+                        .image-wrapper:hover {
+                            background: $mov;
+                        }
+
+                        .disabled {
+                            pointer-events: none;
+                        }
+
+                    }
+
+                    .lock-overlay {
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 9;
+
+                        background: $lock-BG;
+
+                        width: 100%;
+                        height: 310px;
+
+                        @include breakpoints(x-small) {
+                            position: initial;
+                            height: 310px !important;
+                            margin-top: -310px;
+                        }
+
+                        @include breakpoints(small) {
+                            position: initial;
+                            height: 310px !important;
+                            margin-top: -310px;
+                        }
+
+                        @include breakpoints(medium) {
+                            position: initial;
+                            height: 310px !important;
+                            margin-top: -310px;
+                        }
+
+                        @include breakpoints(large) {
+                            height: 340px !important;
+                        }
+
+                        @include breakpoints(x-Large) {
+                            height: 320px !important;
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            object-fit: contain;
+                        }
+
                     }
 
                 }
 
-                .lock-overlay {
 
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 9;
-
-                    background: $lock-BG;
-
-                    width: 100%;
-
-                    // border-radius: 8px;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        width: 100px;
-                        height: 100px;
-                        object-fit: contain;
-                    }
-
-                }
 
             }
-
-
 
         }
 
     }
 
-
-
-
-    /* .card {
-
-        @include breakpoints(x-small) {
-            height: 310px !important;
-        }
-
-        @include breakpoints(large) {
-            height: 334px !important;
-        }
-
-    } */
-
-    /* .lock-wrapper {
-
-        .lock-overlay {
-
-            width: 100%;
-            height: 320px;
-
-            @include breakpoints(x-small) {
-                position: initial;
-                height: 310px !important;
-                margin-top: -310px;
-            }
-
-            @include breakpoints(small) {
-                position: initial;
-                height: 294px !important;
-                margin-top: -294px;
-            }
-
-            @include breakpoints(medium) {
-                position: initial;
-                height: 294px !important;
-                margin-top: -294px;
-            }
-
-            @include breakpoints(large) {
-                height: 334px !important;
-            }
-        }
-
-    } */
 }
 </style>
