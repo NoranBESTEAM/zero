@@ -56,7 +56,11 @@
                             }">Tracks</router-link>
                         </li>
                         <li class="nav-item mx-2">
-                            <router-link :to="{ name: 'competitions' }" class="nav-link">Competitions</router-link>
+                            <router-link :to="{ name: 'competitions' }" class="nav-link" :class="{
+                                'router-link-exact-active':
+                                    this.$store.getters.getPage === 'competitions' ||
+                                    this.$store.getters.getPage === 'journey'
+                            }">Competitions</router-link>
                         </li>
                         <li class="nav-item mx-2">
                             <router-link :to="{ name: 'our-platforms' }" class="nav-link">Our platforms</router-link>

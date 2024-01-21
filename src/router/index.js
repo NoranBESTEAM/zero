@@ -8,6 +8,7 @@ import LessonsView from '../views/LessonsView.vue'
 import LevelsView from '../views/LevelsView.vue'
 import LevelSliderView from '../views/LevelSliderView.vue'
 import MissionSliderView from '../views/MissionSliderView.vue'
+import competitionsParentView from '../views/CompetitionsParentView.vue'
 import CompetitionsView from '../views/CompetitionsView.vue'
 import JourneyView from '../views/JourneyView.vue'
 import OurPlatformsView from '../views/OurPlatformsView.vue'
@@ -85,20 +86,27 @@ const routes = [
     ]
   },
   {
-    path: '/competitions',
-    name: 'competitions',
-    component: CompetitionsView,
-    meta:{
-      title: 'Competitions',
-    }
-  },
-  {
-    path: '/journey',
-    name: 'journey',
-    component: JourneyView,
-    meta:{
-      title: 'Competitions',
-    }
+    path: "/competitions/",
+    name: "competitions_parent",
+    component: competitionsParentView,
+    children:[
+      {
+        path: 'competitions',
+        name: 'competitions',
+        component: CompetitionsView,
+        meta:{
+          title: 'Competitions',
+        }
+      },
+      {
+        path: 'journey',
+        name: 'journey',
+        component: JourneyView,
+        meta:{
+          title: 'Competitions',
+        }
+      },
+    ]
   },
   {
     path: '/our-platforms',
