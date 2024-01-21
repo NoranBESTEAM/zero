@@ -46,7 +46,14 @@
                                 exact>Home</router-link>
                         </li>
                         <li class="nav-item mx-2">
-                            <router-link :to="{ name: 'tracks' }" class="nav-link">Tracks</router-link>
+                            <router-link :to="{ name: 'tracks' }" class="nav-link" :class="{
+                                'router-link-exact-active':
+                                    this.$store.getters.getPage === 'tracks' ||
+                                    this.$store.getters.getPage === 'lessons' ||
+                                    this.$store.getters.getPage === 'levels' ||
+                                    this.$store.getters.getPage === 'level_slider' ||
+                                    this.$store.getters.getPage === 'mission_slider' 
+                            }">Tracks</router-link>
                         </li>
                         <li class="nav-item mx-2">
                             <router-link :to="{ name: 'competitions' }" class="nav-link">Competitions</router-link>
