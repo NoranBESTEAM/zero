@@ -11,9 +11,9 @@
             </h3>
 
             <div class="image-wrapper">
-                <img src="@/assets/images/mission_slider/mission_slider_bg.png" alt=""
+                <img src="@/assets/images/mission_slider/mission_slider_bg.webp" alt=""
                     class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                <img src="@/assets/images/mission_slider/mission_slider_bg_mobile.png" alt=""
+                <img src="@/assets/images/mission_slider/mission_slider_bg_mobile.webp" alt=""
                     class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
             </div>
         </div>

@@ -2,6 +2,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'
+import TracksParentView from '../views/TracksParentView.vue'
 import TracksView from '../views/TracksView.vue'
 import LessonsView from '../views/LessonsView.vue'
 import LevelsView from '../views/LevelsView.vue'
@@ -35,46 +36,53 @@ const routes = [
     }
   },
   {
-    path: '/tracks',
-    name: 'tracks',
-    component: TracksView,
-    meta:{
-      title: 'Tracks',
-    }
-  },
-  {
-    path: '/lessons',
-    name: 'lessons',
-    component: LessonsView,
-    meta:{
-      title: 'Tracks',
-    }
-  },
-  {
-    path: '/levels',
-    name: 'levels',
-    component: LevelsView,
-    meta:{
-      title: 'Tracks',
-    }
-  },
-  {
-    path: '/level_slider/:number',
-    name: 'level_slider',
-    component: LevelSliderView,
-    props: true,
-    meta:{
-      title: 'Tracks',
-    }
-  },
-  {
-    path: '/mission_slider/:number',
-    name: 'mission_slider',
-    component: MissionSliderView,
-    props: true,
-    meta:{
-      title: 'Tracks',
-    }
+    path: "/tracks/",
+    name: "tracks_parent",
+    component: TracksParentView,
+    children:[
+      {
+        path: 'tracks',
+        name: 'tracks',
+        component: TracksView,
+        meta:{
+          title: 'Tracks',
+        }
+      },
+      {
+        path: 'lessons',
+        name: 'lessons',
+        component: LessonsView,
+        meta:{
+          title: 'Tracks',
+        }
+      },
+      {
+        path: 'levels',
+        name: 'levels',
+        component: LevelsView,
+        meta:{
+          title: 'Tracks',
+        }
+      },
+      {
+        path: 'level_slider/:number',
+        name: 'level_slider',
+        component: LevelSliderView,
+        props: true,
+        meta:{
+          title: 'Tracks',
+        }
+      },
+      {
+        path: 'mission_slider/:number',
+        name: 'mission_slider',
+        component: MissionSliderView,
+        props: true,
+        meta:{
+          title: 'Tracks',
+        }
+      },
+    ]
   },
   {
     path: '/competitions',

@@ -11,9 +11,9 @@
             </h3>
 
             <div class="image-wrapper">
-                <img src="@/assets/images/level_slider/level_slider_bg.png" alt=""
+                <img src="@/assets/images/level_slider/level_slider_bg.webp" alt=""
                     class="d-none d-lg-block">
-                <img src="@/assets/images/level_slider/level_slider_bg_mobile.png" alt=""
+                <img src="@/assets/images/level_slider/level_slider_bg_mobile.webp" alt=""
                     class="d-block d-lg-none">
             </div>
         </div>
