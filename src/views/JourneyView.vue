@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Journey -->
     <Journey />
     <!-- End Journey -->
@@ -17,7 +16,10 @@ export default {
     name: 'JourneyView',
     components: {
         Journey
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "journey");
+    },
 }
 </script>
 

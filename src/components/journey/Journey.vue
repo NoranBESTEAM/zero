@@ -99,9 +99,16 @@ export default {
     min-height: 100vh;
 
     h3 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
         a {
             svg {
                 color: $pink;
+                width: 24px;
+                height: 24px;
             }
         }
     }
@@ -121,7 +128,7 @@ export default {
             border-radius: 8px 8px 0 0;
 
             img {
-                height: 124px;
+                height: 140px;
                 object-fit: contain;
             }
         }
@@ -133,15 +140,35 @@ export default {
             -webkit-text-fill-color: $white;
         }
 
+        .card-body {
+            h5 {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            p {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+
         a {
             padding: 8px 16px;
             background: $linear-pink;
             background-clip: padding-box;
             -webkit-background-clip: padding-box;
             -webkit-text-fill-color: $white;
+            box-shadow: 0px 4px 0px 0px $box-shadow;
             border: 1px solid $pink;
-            // border-radius: 8px;
             float: right;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
         }
 
     }
