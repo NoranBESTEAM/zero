@@ -232,6 +232,9 @@ export default {
                             h5 {
                                 color: $white;
                                 font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
                             }
 
                             button {
@@ -248,7 +251,7 @@ export default {
 
                             img {
                                 width: 180px;
-                                height: 180px;
+                                height: 132px;
                                 border-radius: 8px;
                                 object-fit: cover;
                             }
@@ -272,6 +275,9 @@ export default {
                                 background: $linear-pink;
                                 color: $white;
                                 font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
                             }
 
                         }
@@ -287,10 +293,16 @@ export default {
 
             h5 {
                 font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
             }
 
             span {
                 font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
             }
         }
 
@@ -302,21 +314,26 @@ export default {
 
         label {
             color: $label-color;
-
             font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
 
             span {
                 color: $notification-close-btn;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
             }
         }
 
         input,
-        select,
-        #calenderSpan {
+        select {
             background: transparent;
             color: $white;
             border: 1px solid $white;
-            border-radius: 8px;
+            border-radius: 4px;
         }
 
         input,
@@ -345,6 +362,9 @@ export default {
         input::placeholder {
             color: $white;
             font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
         }
 
         input:focus::placeholder {
@@ -358,6 +378,9 @@ export default {
             // background: url("data:image/svg+xml;charset=utf-8,<svg width='10' height='6' fill='none' xmlns='http:%2F%2Fwww.w3.org/2000/svg'><path d='M1 1l4 4 4-4' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>") right .75rem center/16px 10px no-repeat !important;
 
             font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
         }
 
         /* .input-group {
@@ -384,12 +407,16 @@ export default {
         #submit {
             border-radius: 8px;
             border: 1px solid $pink;
+            box-shadow: 0px 4px 0px 0px $box-shadow;
 
             width: 166px;
 
             padding: 8px 16px;
 
             font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
 
             background: $linear-pink;
             background-clip: text;
@@ -423,6 +450,9 @@ export default {
 
             color: $white;
             font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
 
             img {
                 width: 24px;

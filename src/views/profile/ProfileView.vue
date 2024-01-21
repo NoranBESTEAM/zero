@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Main Profile -->
     <ProfileMain />
     <!-- End Main Profile -->
@@ -16,7 +15,10 @@ export default {
     name: 'ProfileView',
     components: {
         ProfileMain
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "profile");
+    },
 }
 </script>
 
