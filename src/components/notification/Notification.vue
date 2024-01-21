@@ -6,11 +6,11 @@
 
                 <div class="float-start">
                     <h5>A new card was added successfully</h5>
-                    <span class="d-block d-sm-none d-md-none d-lg-none d-xl-none">1 hour ago</span>
+                    <span class="d-block d-sm-none">1 hour ago</span>
                 </div>
 
                 <div class="float-end d-flex justify-content-center align-items-center">
-                    <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
+                    <span class="me-2 d-none d-sm-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
@@ -43,11 +43,11 @@
 
                 <div class="float-start">
                     <h5>A new card was added successfully</h5>
-                    <span class="d-block d-sm-none d-md-none d-lg-none d-xl-none">1 hour ago</span>
+                    <span class="d-block d-sm-none">1 hour ago</span>
                 </div>
 
                 <div class="float-end d-flex justify-content-center align-items-center">
-                    <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
+                    <span class="me-2 d-none d-sm-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
@@ -75,11 +75,11 @@
 
                 <div class="float-start">
                     <h5>A new card was added successfully</h5>
-                    <span class="d-block d-sm-none d-md-none d-lg-none d-xl-none">1 hour ago</span>
+                    <span class="d-block d-sm-none">1 hour ago</span>
                 </div>
 
                 <div class="float-end d-flex justify-content-center align-items-center">
-                    <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
+                    <span class="me-2 d-none d-sm-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
@@ -107,11 +107,11 @@
 
                 <div class="float-start">
                     <h5>A new card was added successfully</h5>
-                    <span class="d-block d-sm-none d-md-none d-lg-none d-xl-none">1 hour ago</span>
+                    <span class="d-block d-sm-none">1 hour ago</span>
                 </div>
 
                 <div class="float-end d-flex justify-content-center align-items-center">
-                    <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
+                    <span class="me-2 d-none d-sm-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
@@ -139,11 +139,11 @@
 
                 <div class="float-start">
                     <h5>A new card was added successfully</h5>
-                    <span class="d-block d-sm-none d-md-none d-lg-none d-xl-none">1 hour ago</span>
+                    <span class="d-block d-sm-none">1 hour ago</span>
                 </div>
 
                 <div class="float-end d-flex justify-content-center align-items-center">
-                    <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
+                    <span class="me-2 d-none d-sm-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
@@ -171,11 +171,11 @@
 
                 <div class="float-start">
                     <h5>A new card was added successfully</h5>
-                    <span class="d-block d-sm-none d-md-none d-lg-none d-xl-none">1 hour ago</span>
+                    <span class="d-block d-sm-none">1 hour ago</span>
                 </div>
 
                 <div class="float-end d-flex justify-content-center align-items-center">
-                    <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
+                    <span class="me-2 d-none d-sm-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
@@ -203,11 +203,11 @@
 
                 <div class="float-start">
                     <h5>A new card was added successfully</h5>
-                    <span class="d-block d-sm-none d-md-none d-lg-none d-xl-none">1 hour ago</span>
+                    <span class="d-block d-sm-none">1 hour ago</span>
                 </div>
 
                 <div class="float-end d-flex justify-content-center align-items-center">
-                    <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
+                    <span class="me-2 d-none d-sm-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
@@ -267,18 +267,23 @@ export default {
 
         h5 {
             font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
         }
 
         span {
-            font-size: 14px;
             color: $notification-color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
         }
 
         img {
             width: 24px;
             height: 24px;
         }
-
 
         .modal {
 
@@ -293,10 +298,15 @@ export default {
                 // right: 10px;
 
                 .modal-content {
-                    background: $primary;
+
+                    background: $mov;
 
                     .modal-body {
+                        color: #FFF;
                         font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
                     }
 
                     .modal-footer {
@@ -304,6 +314,11 @@ export default {
                             color: $white;
                             font-size: 16px;
                             padding: 2px 16px;
+                            border-radius: 4px;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
                         }
 
                         #yesBtn {

@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Journey -->
     <Notification />
     <!-- End Journey -->
@@ -17,7 +16,10 @@ export default {
     name:'NotificationView',
     components: {
         Notification
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "notification");
+    },
 }
 </script>
 

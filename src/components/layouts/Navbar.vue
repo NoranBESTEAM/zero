@@ -54,7 +54,7 @@
                                     this.$store.getters.getPage === 'lessons' ||
                                     this.$store.getters.getPage === 'levels' ||
                                     this.$store.getters.getPage === 'level_slider' ||
-                                    this.$store.getters.getPage === 'mission_slider' 
+                                    this.$store.getters.getPage === 'mission_slider'
                             }">Tracks</router-link>
                         </li>
                         <li class="nav-item mx-2">
@@ -323,6 +323,11 @@ nav {
 
                     }
 
+                    #alert:hover,
+                    #alert.router-link-exact-active {
+                        border: 1px solid $pink;
+                    }
+
                     #user {
                         padding: 0;
 
@@ -366,6 +371,11 @@ nav {
                     // border-radius: 50%;
                 }
 
+            }
+
+            #alert:hover,
+            #alert.router-link-exact-active {
+                border: 1px solid $pink;
             }
 
             #user {
