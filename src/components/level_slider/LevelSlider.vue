@@ -7,14 +7,14 @@
                 <router-link :to="{ name: 'levels' }" class="text-reset me-2">
                     <font-awesome-icon :icon="['fas', 'fa-chevron-left']" />
                 </router-link>
-                Level 1
+                Level {{ $route.params.number }}
             </h3>
 
             <div class="image-wrapper">
                 <img src="@/assets/images/level_slider/level_slider_bg.png" alt=""
-                    class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    class="d-none d-lg-block">
                 <img src="@/assets/images/level_slider/level_slider_bg_mobile.png" alt=""
-                    class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                    class="d-block d-lg-none">
             </div>
         </div>
     </section>
@@ -23,6 +23,12 @@
 <script>
 export default {
     name: 'LevelSlider',
+    props:{
+        number:{
+            type: String,
+            // default: 'One'
+        }
+    }
 }
 </script>
 
@@ -37,10 +43,16 @@ export default {
 
     h3 {
         color: $white;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 
         a {
             svg {
                 color: $pink;
+                width: 24px;
+                height: 24px;
             }
         }
     }
@@ -80,21 +92,9 @@ export default {
             height: 100%;
             object-fit: cover;
             border-radius: 8px;
-
-            @include breakpoints(x-small) {
-                border-radius: 4px;
-            }
-
-            @include breakpoints(small) {
-                border-radius: 4px;
-            }
-
-            @include breakpoints(medium) {
-                border-radius: 4px;
-            }
         }
 
     }
-    
+
 }
 </style>

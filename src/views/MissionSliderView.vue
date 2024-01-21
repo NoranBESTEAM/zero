@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Mission Slider -->
     <MissionSlider />
     <!-- End Mission Slider -->
@@ -17,7 +16,10 @@ export default {
     name: 'MissionSliderView',
     components: {
         MissionSlider
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "mission_slider");
+    },
 }
 </script>
 

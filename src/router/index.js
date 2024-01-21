@@ -59,17 +59,19 @@ const routes = [
     }
   },
   {
-    path: '/level_slider',
+    path: '/level_slider/:number',
     name: 'level_slider',
     component: LevelSliderView,
+    props: true,
     meta:{
       title: 'Tracks',
     }
   },
   {
-    path: '/mission_slider',
+    path: '/mission_slider/:number',
     name: 'mission_slider',
     component: MissionSliderView,
+    props: true,
     meta:{
       title: 'Tracks',
     }

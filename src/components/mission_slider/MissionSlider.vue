@@ -7,7 +7,7 @@
                 <router-link :to="{ name: 'levels' }" class="text-reset me-2">
                     <font-awesome-icon :icon="['fas', 'fa-chevron-left']" />
                 </router-link>
-                Mission 1
+                Mission {{ $route.params.number }}
             </h3>
 
             <div class="image-wrapper">
@@ -23,6 +23,12 @@
 <script>
 export default {
     name: 'MissionSlider',
+    props:{ 
+        number:{
+            type: String,
+            // default: 'One'
+        }
+    }
 }
 </script>
 
@@ -36,14 +42,20 @@ background: $my-gradient;
 // min-height: 100vh;
 
 h3 {
-    color: $white;
+        color: $white;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 
-    a {
-        svg {
-            color: $pink;
+        a {
+            svg {
+                color: $pink;
+                width: 24px;
+                height: 24px;
+            }
         }
     }
-}
 
 .image-wrapper {
 
@@ -80,18 +92,6 @@ h3 {
         height: 100%;
         object-fit: cover;
         border-radius: 8px;
-
-        @include breakpoints(x-small) {
-            border-radius: 4px;
-        }
-
-        @include breakpoints(small) {
-            border-radius: 4px;
-        }
-
-        @include breakpoints(medium) {
-            border-radius: 4px;
-        }
     }
 
 }

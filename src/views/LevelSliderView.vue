@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Level Slider -->
     <LevelSlider />
     <!-- End Level Slider -->
@@ -17,7 +16,10 @@ export default {
     name: 'LevelSliderView',
     components: {
         LevelSlider
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "level_slider");
+    },
 }
 </script>
 
