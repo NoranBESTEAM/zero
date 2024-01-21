@@ -16,17 +16,17 @@
                     <h6 class="mb-3">Contact us</h6>
 
                     <p>
-                        <img src="@/assets/images/profile/phone-icon.svg" alt="" class="me-2">
+                        <img src="@/assets/images/profile/phone-icon.webp" alt="" class="me-2">
                         +966531577796
                     </p>
 
                     <p>
-                        <img src="@/assets/images/profile/email-icon.svg" alt="" class="me-2">
+                        <img src="@/assets/images/profile/email-icon.webp" alt="" class="me-2">
                         info@thaka.sa
                     </p>
 
                     <p>
-                        <img src="@/assets/images/profile/loation-icon.svg" alt="" class="me-2">
+                        <img src="@/assets/images/profile/loation-icon.webp" alt="" class="me-2">
                         Saudi Arabia - Egypt - United Arab Emirates
                     </p>
 
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center" id="robot_img">
-                    <img src="@/assets/images/profile/robot-assistant.png" alt="">
+                    <img src="@/assets/images/profile/robot-assistant.webp" alt="">
                 </div>
 
             </div>

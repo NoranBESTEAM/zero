@@ -18,9 +18,9 @@
                         </div>
                         <div class="card-footer border-0 mb-2">
                             <div class="Players d-inline-block float-start">
-                                <img src="@/assets/images/competitions/player_1.png" alt="">
-                                <img src="@/assets/images/competitions/player_2.png" alt="">
-                                <img src="@/assets/images/competitions/player_3.png" alt="">
+                                <img src="@/assets/images/competitions/player_1.webp" alt="">
+                                <img src="@/assets/images/competitions/player_2.webp" alt="">
+                                <img src="@/assets/images/competitions/player_3.webp" alt="">
                                 <span class="ms-1 h4 mb-0">+3</span>
                             </div>
                             <router-link :to="{ name: 'journey' }" class="card-link text-reset rounded-3 float-end">

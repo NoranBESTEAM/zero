@@ -9,13 +9,13 @@
 
             <div id="profile_header" class="d-flex justify-content-center align-items-center mt-4 mb-4">
                 <div id="profile-image">
-                    <img src="@/assets/images/profile/profile-pic-square.png" alt="" id="circle_img">
+                    <img src="@/assets/images/profile/profile-pic-square.webp" alt="" id="circle_img">
                     <!-- <font-awesome-icon :icon="['far', 'fa-pen-to-square']" /> -->
                     <!-- https://getbootstrap.com/docs/5.3/components/modal/#how-it-works -->
                     <!-- Button trigger modal -->
                     <button type="button" class="btn border-0 p-0" id="penBtn" data-bs-toggle="modal"
                         data-bs-target="#changePicModal">
-                        <img src="@/assets/images/profile/profile-pic-icon.png" alt="">
+                        <img src="@/assets/images/profile/profile-pic-icon.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="changePicModal" tabindex="-1" aria-labelledby="changePicModalLabel"
@@ -29,7 +29,7 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body border-0 text-center">
-                                    <img src="@/assets/images/profile/profile-pic-square.png" alt="">
+                                    <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
                                 </div>
                                 <div class="modal-footer border-0 d-flex justify-content-center align-items-center">
                                     <span class="me-3">

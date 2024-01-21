@@ -22,7 +22,7 @@
                         </div>
                         <div class="modal-body border-0">
                             <div id="image_wrapper">
-                                <img src="@/assets/images/profile/default_img.svg" alt="">
+                                <img src="@/assets/images/profile/default_img.webp" alt="">
                             </div>
                             <form class="mt-3">
                                 <label for="teamNameInput" class="form-label">Team name</label>

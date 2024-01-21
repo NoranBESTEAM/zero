@@ -15,7 +15,7 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="image-wrapper">
-                            <img src="@/assets/images/journey/journey_1.png" class="card-img-top" alt="">
+                            <img src="@/assets/images/journey/journey_1.webp" class="card-img-top" alt="">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">
@@ -36,7 +36,7 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="image-wrapper">
-                            <img src="@/assets/images/journey/journey_2.png" class="card-img-top" alt="">
+                            <img src="@/assets/images/journey/journey_2.webp" class="card-img-top" alt="">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">
@@ -57,7 +57,7 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="image-wrapper">
-                            <img src="@/assets/images/journey/journey_3.png" class="card-img-top" alt="">
+                            <img src="@/assets/images/journey/journey_3.webp" class="card-img-top" alt="">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">

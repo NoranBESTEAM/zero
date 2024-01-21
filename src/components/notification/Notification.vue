@@ -12,7 +12,7 @@
                 <div class="float-end d-flex justify-content-center align-items-center">
                     <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="@/assets/images/notification/trash.svg" alt="">
+                        <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -49,7 +49,7 @@
                 <div class="float-end d-flex justify-content-center align-items-center">
                     <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="@/assets/images/notification/trash.svg" alt="">
+                        <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -81,7 +81,7 @@
                 <div class="float-end d-flex justify-content-center align-items-center">
                     <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="@/assets/images/notification/trash.svg" alt="">
+                        <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -113,7 +113,7 @@
                 <div class="float-end d-flex justify-content-center align-items-center">
                     <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="@/assets/images/notification/trash.svg" alt="">
+                        <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -145,7 +145,7 @@
                 <div class="float-end d-flex justify-content-center align-items-center">
                     <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="@/assets/images/notification/trash.svg" alt="">
+                        <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -177,7 +177,7 @@
                 <div class="float-end d-flex justify-content-center align-items-center">
                     <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="@/assets/images/notification/trash.svg" alt="">
+                        <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -209,7 +209,7 @@
                 <div class="float-end d-flex justify-content-center align-items-center">
                     <span class="me-2 d-none d-sm-block d-md-block d-lg-block d-xl-block">1 hour ago</span>
                     <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="@/assets/images/notification/trash.svg" alt="">
+                        <img src="@/assets/images/notification/trash.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"

@@ -10,13 +10,13 @@
 
             <div id="profile_header" class="d-flex justify-content-center align-items-center mt-4 mb-4">
                 <div id="profile-image">
-                    <img src="@/assets/images/profile/profile-pic-square.png" alt="" id="circle_img">
+                    <img src="@/assets/images/profile/profile-pic-square.webp" alt="" id="circle_img">
                     <!-- <font-awesome-icon :icon="['far', 'fa-pen-to-square']" /> -->
                     <!-- https://getbootstrap.com/docs/5.3/components/modal/#how-it-works -->
                     <!-- Button trigger modal -->
                     <button type="button" class="btn border-0 p-0" id="penBtn" data-bs-toggle="modal"
                         data-bs-target="#changePicModal">
-                        <img src="@/assets/images/profile/profile-pic-icon.png" alt="">
+                        <img src="@/assets/images/profile/profile-pic-icon.webp" alt="">
                     </button>
                     <!-- Modal -->
                     <div class="modal fade" id="changePicModal" tabindex="-1" aria-labelledby="changePicModalLabel"
@@ -30,7 +30,7 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body border-0 text-center">
-                                    <img src="@/assets/images/profile/profile-pic-square.png" alt="">
+                                    <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
                                 </div>
                                 <div class="modal-footer border-0 d-flex justify-content-center align-items-center">
                                     <span class="me-3">
@@ -57,10 +57,10 @@
                             <div id="my_container">
                                 <h5 class="card-title d-inline float-start">
                                     Robots team
-                                    <img src="@/assets/images/profile/profile-pic-icon.png" alt="" class="">
+                                    <img src="@/assets/images/profile/profile-pic-icon.webp" alt="" class="">
                                 </h5>
                                 <div id="image_wrapper">
-                                    <img src="@/assets/images/profile/default_img.svg" alt="">
+                                    <img src="@/assets/images/profile/default_img.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                             <!-- Button trigger modal -->
                             <button type="button" class="btn" id="teamMemberBtn" data-bs-toggle="modal"
                                 data-bs-target="#teamMembersModal">
-                                <img src="@/assets/images/profile/add_member_icon.svg" alt="">
+                                <img src="@/assets/images/profile/add_member_icon.webp" alt="">
                             </button>
                             <!-- Modal -->
                             <!-- https://fontawesomeicons.com/fa/bootstrap-remove-modal-background -->

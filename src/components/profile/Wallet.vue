@@ -31,12 +31,12 @@
                                         <div class="card-wrapper">
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_blue.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_blue.webp" alt="">
                                                 </div>
                                             </div>
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_orange.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_orange.webp" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -46,12 +46,12 @@
                                         <div class="card-wrapper">
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_blue.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_blue.webp" alt="">
                                                 </div>
                                             </div>
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_orange.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_orange.webp" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -68,7 +68,7 @@
                                     </button> -->
                                     <button class="carousel-control-next d-flex justify-content-start align-items-center" type="button"
                                         data-bs-target="#addCardExampleIndicators" data-bs-slide="next">
-                                        <img src="@/assets/images/profile/wallet_arrow_icon.svg" alt="">
+                                        <img src="@/assets/images/profile/wallet_arrow_icon.webp" alt="">
                                     </button>
                                 </div>
 
@@ -89,7 +89,7 @@
                                         <div class="card-wrapper">
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_blue.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_blue.webp" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -99,7 +99,7 @@
                                         <div class="card-wrapper">
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_orange.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_orange.webp" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +109,7 @@
                                         <div class="card-wrapper">
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_blue.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_blue.webp" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -119,7 +119,7 @@
                                         <div class="card-wrapper">
                                             <div class="card">
                                                 <div class="image-wrapper">
-                                                    <img src="@/assets/images/profile/card_orange.svg" alt="">
+                                                    <img src="@/assets/images/profile/card_orange.webp" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +130,7 @@
                                 <div class="d-flex justify-content-center">
                                     <button class="carousel-control-next d-flex justify-content-start align-items-center" type="button"
                                         data-bs-target="#addCardSmallExampleIndicators" data-bs-slide="next">
-                                        <img src="@/assets/images/profile/wallet_arrow_icon.svg" alt="">
+                                        <img src="@/assets/images/profile/wallet_arrow_icon.webp" alt="">
                                     </button>
                                 </div>
 
