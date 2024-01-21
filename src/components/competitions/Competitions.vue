@@ -17,11 +17,11 @@
                             </p>
                         </div>
                         <div class="card-footer border-0 mb-2">
-                            <div class="Players d-inline-block float-start">
+                            <div class="float-start d-inline-flex justify-content-center align-items-center">
                                 <img src="@/assets/images/competitions/player_1.webp" alt="">
                                 <img src="@/assets/images/competitions/player_2.webp" alt="">
                                 <img src="@/assets/images/competitions/player_3.webp" alt="">
-                                <span class="ms-1 h4 mb-0">+3</span>
+                                <span class="ms-2 h4 mb-0">+3</span>
                             </div>
                             <router-link :to="{ name: 'journey' }" class="card-link text-reset rounded-3 float-end">
                                 Start now
@@ -60,6 +60,25 @@ export default {
         box-shadow: 0px 4px 0px 0px $box-shadow;
         border: 1px solid $pink;
 
+        .card-body {
+
+            h5 {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+        }
+
         .card-footer {
 
             img {
@@ -78,6 +97,12 @@ export default {
                 -webkit-background-clip: padding-box;
                 -webkit-text-fill-color: $white;
                 border: 1px solid $pink;
+                box-shadow: 0px 4px 0px 0px $box-shadow;
+
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
             }
 
         }

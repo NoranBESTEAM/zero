@@ -1,8 +1,7 @@
 <template>
     <!-- Start Navbar -->
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- End Navbar -->
     <!-- Start Competitions -->
     <Competitions />
@@ -21,7 +20,10 @@ export default {
     name: 'CompetitionsView',
     components: {
         Competitions
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "competitions");
+    },
 }
 </script>
 
