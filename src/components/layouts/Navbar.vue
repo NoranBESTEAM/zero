@@ -1,9 +1,11 @@
 <template>
-    <!-- https://www.youtube.com/watch?v=zOtxP7ahi4M -->
+    <!-- https://mdbootstrap.com/docs/standard/navigation/navbar/ -->
 
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-xl fixed-top">
+
+        <!-- Container wrapper -->
 
         <div class="container">
 
@@ -70,19 +72,35 @@
                         </li>
                     </ul>
 
-                    <!-- Login / Sign up -->
-                    <div class="d-none d-xl-flex justify-content-center align-items-center gap-3">
-                        <!-- me-3 -->
-                        <router-link :to="{ name: 'login' }" class="btn rounded-3">
-                            Login
+                    <div class="d-none d-xl-flex justify-content-center align-items-center gap-2">
+
+                        <button class="btn rounded-3 d-xl-none d-xxl-inline-flex" id="time">
+                            <img src="@/assets/images/navbar/time.webp" alt="">
+                            2.45.00
+                        </button>
+
+                        <button class="btn rounded-3 d-xl-none d-xxl-inline-flex" id="certificate">
+                            <img src="@/assets/images/navbar/certificate.webp" alt="">
+                            250 XP
+                        </button>
+
+                        <!-- https://freefrontend.com/css-notifications/ -->
+                        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
+                        <router-link :to="{ name: 'notification' }" class="btn" id="alert">
+                            <img src="@/assets/images/navbar/notification.webp" alt="" class="position-relative">
+                            <font-awesome-icon :icon="['fas', 'fa-circle']" />
+                            <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
+                            <!-- <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span> -->
                         </router-link>
-                        <router-link :to="{ name: 'sign-up' }" class="btn rounded-3">
-                            Sign Up
+
+                        <router-link :to="{ name: 'profile' }" class="btn" id="user">
+                            <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
+                            <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
                         </router-link>
-                        <router-link :to="{ name: '' }" class="btn rounded-3">
-                            <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
-                            <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
-                        </router-link>
+
                     </div>
 
                 </div>
@@ -90,25 +108,41 @@
             </div>
 
             <div class="d-flex d-xl-none justify-content-end align-items-center gap-3" id="responsive">
-                <router-link :to="{ name: 'login' }" class="btn rounded-3">
-                    Start
-                </router-link>
-                <router-link :to="{ name: '' }" class="btn rounded-3">
-                    <font-awesome-icon :icon="['fas', 'fa-earth-americas']" /> Ar
-                    <!-- <img src="@/assets/images/navbar/navbar_icon.svg" alt="Lang Icon">Ar -->
-                </router-link>
-            </div>
 
+                <!-- https://freefrontend.com/css-notifications/ -->
+                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
+                <router-link :to="{ name: 'notification' }" class="btn" id="alert">
+                    <img src="@/assets/images/navbar/notification.webp" alt="" class="position-relative">
+                    <font-awesome-icon :icon="['fas', 'fa-circle']" />
+                    <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
+                    <!-- <span
+                        class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span> -->
+                </router-link>
+
+                <router-link :to="{ name: 'profile' }" class="btn" id="user">
+                    <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
+                    <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
+                </router-link>
+
+            </div>
 
         </div>
 
+        <!-- Container wrapper -->
+
     </nav>
+
+    <!-- Navbar -->
 </template>
 
 <script>
+
 export default {
     name: 'Navbar',
-}
+};
+
 </script>
 
 <style scoped lang="scss">
@@ -248,42 +282,61 @@ nav {
 
                 div {
 
-                    a {
+                    button {
 
-                        padding: 8px 16px;
+                        padding: 4px 8px;
 
                         font-size: 18px;
+                        line-height: normal;
 
-                        line-height: 24px;
-
-                        border: 1px solid $pink;
-
-                        background: $linear-pink;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-
-                        svg {
-                            width: 16px;
-                            height: 16px;
-                            margin-right: 8px;
-                            color: $pink;
-                        }
-
-                    }
-
-                    a:hover,
-                    a.router-link-exact-active {
-
-                        background: $linear-pink;
+                        background: $linear-blue;
                         background-clip: padding-box;
                         -webkit-background-clip: padding-box;
                         -webkit-text-fill-color: $white;
 
-                        svg {
-                            color: $white;
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
                         }
 
+                    }
+
+                    #alert {
+                        padding: 0;
+                        position: relative;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        svg {
+                            color: green;
+                            font-size: 8px;
+                            position: absolute;
+                            top: 10px;
+                            right: 12px;
+                            // border: 1px solid #fff;
+                            // border-radius: 50%;
+                        }
+
+                    }
+
+                    #user {
+                        padding: 0;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 8px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    #user:hover,
+                    #user.router-link-exact-active {
+                        border: 1px solid $pink;
                     }
 
                 }
@@ -294,41 +347,41 @@ nav {
 
         div#responsive {
 
-            a {
+            #alert {
+                padding: 0;
+                position: relative;
 
-                padding: 8px 16px;
-
-                font-size: 18px;
-
-                line-height: 24px;
-
-                border: 1px solid $pink;
-
-                background: $linear-pink;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
 
                 svg {
-                    width: 16px;
-                    height: 16px;
-                    margin-right: 8px;
-                    color: $pink;
+                    color: green;
+                    font-size: 8px;
+                    position: absolute;
+                    top: 10px;
+                    right: 12px;
+                    // border: 1px solid #fff;
+                    // border-radius: 50%;
+                }
+
+            }
+
+            #user {
+                padding: 0;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 8px;
+                    object-fit: cover;
                 }
             }
 
-            a:hover,
-            a.router-link-exact-active {
-
-                background: $linear-pink;
-                background-clip: padding-box;
-                -webkit-background-clip: padding-box;
-                -webkit-text-fill-color: $white;
-
-                svg {
-                    color: $white;
-                }
-
+            #user:hover,
+            #user.router-link-exact-active {
+                border: 1px solid $pink;
             }
 
         }
