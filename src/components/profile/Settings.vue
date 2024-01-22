@@ -3,12 +3,10 @@
 
         <div class="container">
 
-            <!-- <ProfileNavbar />
-            <router-view /> -->
+            <ProfileNavbar />
+            <router-view />
 
-            <!-- mt-4 -->
-
-            <div class="setting mb-3">
+            <div class="setting mt-4 mb-3 ">
 
                 <!-- my-auto -->
                 <div class="float-start">
@@ -76,21 +74,18 @@ export default {
     min-height: 100vh;
 
     .setting {
-
-        height: 56px;
+        height: 40px;
         background: $mov;
         border-radius: 4px;
-        padding: 16px;
+        padding: 8px 16px;
 
         color: $white;
 
-
-        /* @include breakpoints(x-small) {
-            height: 85px;
-        } */
-
         h5 {
             font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
         }
 
         .form-switch {
@@ -99,6 +94,7 @@ export default {
                 width: 40px;
                 height: 24px;
                 box-shadow: none;
+                margin-top: 0;
             }
 
             /* .form-check-input {
@@ -123,9 +119,14 @@ export default {
                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
             }
 
-            .form-check-input:focus:not(:checked) {
+            /* .form-check-input:focus:not(:checked) {
                 border-color: $green-light !important;
                 background-color: $green-light !important;
+            } */
+
+            .form-check-input:not(:checked) {
+                border-color: $gray !important;
+                background-color: $gray !important;
             }
 
         }

@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Change Password -->
     <ChangePassword />
     <!-- End Change Password -->
@@ -17,10 +16,11 @@ export default {
     name: 'ChangePasswordView',
     components: {
         ChangePassword
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "change-password");
+    },
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

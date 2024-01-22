@@ -26,9 +26,7 @@
                 </div>
 
                 <div class="col-12 mt-4">
-
                     <button type="submit" class="btn" id="submit">Save Changes</button>
-
                 </div>
 
             </form>
@@ -62,11 +60,14 @@ export default {
 
     form {
 
-        // color: $white;
+        color: $white;
 
         label {
             color: $label-color;
             font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
         }
 
         input {
@@ -74,7 +75,7 @@ export default {
             background: transparent;
             color: $white;
             border: 1px solid $white;
-            border-radius: 8px;
+            border-radius: 4px;
 
             caret-color: $white;
 
@@ -96,6 +97,9 @@ export default {
         input::placeholder {
             color: $white;
             font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
         }
 
         input:focus::placeholder {
@@ -105,12 +109,16 @@ export default {
         #submit {
             border-radius: 8px;
             border: 1px solid $pink;
+            box-shadow: 0px 4px 0px 0px $box-shadow;
 
             width: 166px;
 
             padding: 8px 16px;
 
             font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
 
             background: $linear-pink;
             background-clip: text;

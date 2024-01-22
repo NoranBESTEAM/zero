@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Technical Support -->
     <Support />
     <!-- End Technical Support -->
@@ -17,10 +16,11 @@ export default {
     name: 'SupportView',
     components: {
         Support
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "support");
+    },
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -10,7 +10,7 @@
             <!-- https://getbootstrap.com/docs/5.3/components/dropdowns/#menu-alignment -->
 
             <div class="btn-group mt-4 float-end" id="myDropDownBtn">
-                <button type="button" class="btn dropdown-toggle text-center" data-bs-toggle="dropdown"
+                <button type="button" class="btn dropdown-toggle text-center border-0" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Digital future skills training
                 </button>
@@ -34,7 +34,7 @@
                 <!-- accordion-flush -->
                 <div class="accordion" id="accordionExample">
 
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0">
 
                         <div id="myHeading">
 
@@ -56,7 +56,7 @@
 
                     </div>
 
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0">
 
                         <h5 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -124,7 +124,7 @@
 
                     </div>
 
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0">
 
                         <h5 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -149,7 +149,7 @@
 
                     </div>
 
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0">
 
                         <h5 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -205,30 +205,42 @@ export default {
     #myDropDownBtn {
 
         button {
-            width: 280px;
-            // padding: 0px 8px 4px 8px;
-            font-size: 16px;
+            // width: 247px;
+            width: 279px;
+            padding: 8px 16px;
             background: $linear-pink;
-            border: 1px solid $pink;
-            border-radius: 8px;
+            border-radius: 4px;
             color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .dropdown-toggle::after {
+            vertical-align: middle;
         }
 
         .dropdown-menu {
 
             background: $mov;
+            border-radius: 4px;
 
-            li:not(:last-child) {
+            /* li:not(:last-child) {
                 box-shadow: 0px 4px 4px 0px $box-shadow;
-            }
+            } */
 
             a {
-                font-size: 16px;
                 color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
             }
 
             a:hover {
                 background: $mov;
+                color: $orange;
             }
 
         }
@@ -243,10 +255,11 @@ export default {
 
         .accordion {
 
-            .accordion-item {
+            --bs-accordion-bg: transparent;
 
-                border: 0;
-                border-radius: 8px 8px 0px 0px;
+            .accordion-item {
+                // border-radius: 8px 8px 0px 0px;
+                border-radius: 8px;
 
                 #myHeading {
 
@@ -270,6 +283,8 @@ export default {
                                             border: 0;
                                             color: $white;
                                             font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
                                             line-height: 24px;
                                             width: 180px;
                                         }
@@ -290,8 +305,10 @@ export default {
 
                     border-bottom: 1px solid $pink;
 
+
                     .accordion-button {
-                        background: $mov;
+
+                        background-color: transparent;
                         box-shadow: none;
                         padding-top: 0;
                         padding-bottom: 0;
@@ -301,15 +318,17 @@ export default {
                             tbody {
                                 tr {
                                     height: 40px;
+                                }
 
-                                    td {
-                                        background: $mov;
-                                        border: 0;
-                                        color: $white;
-                                        font-size: 16px;
-                                        line-height: 24px;
-                                        width: 180px;
-                                    }
+                                td {
+                                    background-color: transparent;
+                                    border: 0;
+                                    color: $white;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    width: 180px;
                                 }
                             }
                         }
@@ -324,38 +343,77 @@ export default {
 
                 .accordion-collapse {
 
-                    .accordion-body {
+                    // border-bottom: 1px solid $pink;
 
-                        background: $mov;
+                    .accordion-body{
 
-                        table {
+                        // background: $mov;
 
-                            thead {
-                                tr {
+                        table{
+
+                            thead{
+
+                                tr{
+
                                     border-bottom: 1px solid $notification-border;
-                                    th,td {
+
+                                    th,
+                                    td{
                                         background: $black;
                                         border: 0;
                                         color: $white;
                                         font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
                                         line-height: 24px;
                                         width: 180px;
-                                        // text-align: center;
                                     }
+
                                 }
+
                             }
 
-                            tbody {
-                                tr {
+                            tbody{
+
+                                tr{
+
                                     border-bottom: 1px solid $pink;
-                                    th,td {
-                                        background: $mov;
+
+                                    th,
+                                    td {
+                                        background-color: transparent;
                                         border: 0;
                                         color: $white;
                                         font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
                                         line-height: 24px;
                                         width: 180px;
-                                        // text-align: center;
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                /* .accordion-collapse {
+
+                    .accordion-body {
+
+                        table {
+
+                            tbody {
+                                tr {
+                                    
+
+                                    th,
+                                    td {
+                                        
                                     }
                                 }
                             }
@@ -363,7 +421,7 @@ export default {
 
                     }
 
-                }
+                } */
 
             }
 

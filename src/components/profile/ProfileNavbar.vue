@@ -55,7 +55,7 @@ nav {
     gap: 16px;
 
     a {
-        border-radius: 8px;
+        border-radius: 4px !important;
         border: 1px solid $pink;
 
         display: flex;

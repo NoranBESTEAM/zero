@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Score -->
     <Score />
     <!-- End Score -->
@@ -17,7 +16,10 @@ export default {
     name: 'ProfileScoreView',
     components: {
         Score
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "profile-score");
+    },
 }
 </script>
 

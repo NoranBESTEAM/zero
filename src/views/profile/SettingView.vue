@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Settings -->
     <Settings />
     <!-- End Settings -->
@@ -17,7 +16,10 @@ export default {
     name: 'SettingView',
     components: {
         Settings
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "settings");
+    },
 }
 </script>
 
