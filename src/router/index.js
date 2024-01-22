@@ -161,7 +161,7 @@ const routes = [
     name: 'change-password',
     component: ChangePasswordView,
     meta:{
-      title: 'ChangePassword',
+      title: 'Profile',
     }
   },
   {
@@ -185,7 +185,7 @@ const routes = [
     name: 'profile-score',
     component: ProfileScoreView,
     meta:{
-      title: 'HighScores',
+      title: 'Scores',
     }
   },
   {
@@ -193,7 +193,7 @@ const routes = [
     name: 'profile-team',
     component: ProfileTeamView,
     meta:{
-      title: 'AddTeam',
+      title: 'Team',
     }
   },
   {
@@ -201,7 +201,7 @@ const routes = [
     name: 'team-members',
     component: ProfileTeamMembersView,
     meta:{
-      title: 'AddTeam',
+      title: 'Team',
     }
   },
   {
@@ -217,7 +217,7 @@ const routes = [
     name: 'profile-time',
     component: ProfileTimeView,
     meta:{
-      title: 'TimeOnSite',
+      title: 'Time',
     }
   },
   {
@@ -225,7 +225,7 @@ const routes = [
     name: 'profile-wallet',
     component: ProfileWalletView,
     meta:{
-      title: 'MyWallet',
+      title: 'Wallet',
     }
   },
 ]

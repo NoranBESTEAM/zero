@@ -19,7 +19,7 @@
                 <!-- https://getbootstrap.com/docs/5.3/components/dropdowns/#menu-alignment -->
 
                 <div class="btn-group float-end" id="myDropDownBtn">
-                    <button type="button" class="btn dropdown-toggle text-center" data-bs-toggle="dropdown"
+                    <button type="button" class="btn dropdown-toggle text-center border-0" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Day
                     </button>
@@ -48,21 +48,22 @@
 
                         <h5 class="d-inline-block">Saturday</h5>
 
-                        <h5 class="d-block d-sm-block d-md-inline-block d-lg-inline-block d-xl-inline-block float-none float-sm-none float-md-end float-lg-end float-xl-end float-xxl-end">20/5/2023</h5>
+                        <h5 class="d-block d-md-inline-block float-none float-md-end">20/5/2023</h5>
 
                     </div>
 
                     <div class="d-inline-block text-center" style="width: 50%;">
-                        <h5>Time on site: <span>3:40.15</span></h5>
+                        <h5>Time on site: <span class="d-block d-md-inline-block">3:40.15</span></h5>
                     </div>
 
                     <div class="float-end d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal"
+                        <button type="button" class="btn border-0 p-0 mt-3 mt-md-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             <img src="@/assets/images/notification/trash.webp" alt="">
                         </button>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <!-- modal-dialog-centered modal-sm -->
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content text-center">
@@ -86,16 +87,16 @@
 
                         <h5 class="d-inline-block">Sunday</h5>
 
-                        <h5 class="d-block d-sm-block d-md-inline-block d-lg-inline-block d-xl-inline-block float-none float-sm-none float-md-end float-lg-end float-xl-end float-xxl-end">21/5/2023</h5>
+                        <h5 class="d-block d-md-inline-block float-none float-md-end">21/5/2023</h5>
 
                     </div>
 
                     <div class="d-inline-block text-center" style="width: 50%;">
-                        <h5>Time on site: <span>3:40.15</span></h5>
+                        <h5>Time on site: <span class="d-block d-md-inline-block">3:40.15</span></h5>
                     </div>
 
                     <div class="float-end d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal"
+                        <button type="button" class="btn border-0 p-0 mt-3 mt-md-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             <img src="@/assets/images/notification/trash.webp" alt="">
                         </button>
@@ -124,16 +125,16 @@
 
                         <h5 class="d-inline-block">Monday</h5>
 
-                        <h5 class="d-block d-sm-block d-md-inline-block d-lg-inline-block d-xl-inline-block float-none float-sm-none float-md-end float-lg-end float-xl-end float-xxl-end">22/5/2023</h5>
+                        <h5 class="d-block d-md-inline-block float-none float-md-end">22/5/2023</h5>
 
                     </div>
 
                     <div class="d-inline-block text-center" style="width: 50%;">
-                        <h5>Time on site: <span>3:40.15</span></h5>
+                        <h5>Time on site: <span class="d-block d-md-inline-block">3:40.15</span></h5>
                     </div>
 
                     <div class="float-end d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal"
+                        <button type="button" class="btn border-0 p-0 mt-3 mt-md-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             <img src="@/assets/images/notification/trash.webp" alt="">
                         </button>
@@ -162,16 +163,16 @@
 
                         <h5 class="d-inline-block">Tuesday</h5>
 
-                        <h5 class="d-block d-sm-block d-md-inline-block d-lg-inline-block d-xl-inline-block float-none float-sm-none float-md-end float-lg-end float-xl-end float-xxl-end">23/5/2023</h5>
+                        <h5 class="d-block d-md-inline-block float-none float-md-end">23/5/2023</h5>
 
                     </div>
 
                     <div class="d-inline-block text-center" style="width: 50%;">
-                        <h5>Time on site: <span>3:40.15</span></h5>
+                        <h5>Time on site: <span class="d-block d-md-inline-block">3:40.15</span></h5>
                     </div>
 
                     <div class="float-end d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal"
+                        <button type="button" class="btn border-0 p-0 mt-3 mt-md-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             <img src="@/assets/images/notification/trash.webp" alt="">
                         </button>
@@ -200,16 +201,16 @@
 
                         <h5 class="d-inline-block">Wednesday</h5>
 
-                        <h5 class="d-block d-sm-block d-md-inline-block d-lg-inline-block d-xl-inline-block float-none float-sm-none float-md-end float-lg-end float-xl-end float-xxl-end">24/5/2023</h5>
+                        <h5 class="d-block d-md-inline-block float-none float-md-end">24/5/2023</h5>
 
                     </div>
 
                     <div class="d-inline-block text-center" style="width: 50%;">
-                        <h5>Time on site: <span>3:40.15</span></h5>
+                        <h5>Time on site: <span class="d-block d-md-inline-block">3:40.15</span></h5>
                     </div>
 
                     <div class="float-end d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal"
+                        <button type="button" class="btn border-0 p-0 mt-3 mt-md-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             <img src="@/assets/images/notification/trash.webp" alt="">
                         </button>
@@ -238,16 +239,16 @@
 
                         <h5 class="d-inline-block">Thursday</h5>
 
-                        <h5 class="d-block d-sm-block d-md-inline-block d-lg-inline-block d-xl-inline-block float-none float-sm-none float-md-end float-lg-end float-xl-end float-xxl-end">25/5/2023</h5>
+                        <h5 class="d-block d-md-inline-block float-none float-md-end">25/5/2023</h5>
 
                     </div>
 
                     <div class="d-inline-block text-center" style="width: 50%;">
-                        <h5>Time on site: <span>3:40.15</span></h5>
+                        <h5>Time on site: <span class="d-block d-md-inline-block">3:40.15</span></h5>
                     </div>
 
                     <div class="float-end d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal"
+                        <button type="button" class="btn border-0 p-0 mt-3 mt-md-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             <img src="@/assets/images/notification/trash.webp" alt="">
                         </button>
@@ -276,16 +277,16 @@
 
                         <h5 class="d-inline-block">Friday</h5>
 
-                        <h5 class="d-block d-sm-block d-md-inline-block d-lg-inline-block d-xl-inline-block float-none float-sm-none float-md-end float-lg-end float-xl-end float-xxl-end">26/5/2023</h5>
+                        <h5 class="d-block d-md-inline-block float-none float-md-end">26/5/2023</h5>
 
                     </div>
 
                     <div class="d-inline-block text-center" style="width: 50%;">
-                        <h5>Time on site: <span>3:40.15</span></h5>
+                        <h5>Time on site: <span class="d-block d-md-inline-block">3:40.15</span></h5>
                     </div>
 
                     <div class="float-end d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal"
+                        <button type="button" class="btn border-0 p-0 mt-3 mt-md-0" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             <img src="@/assets/images/notification/trash.webp" alt="">
                         </button>
@@ -338,44 +339,55 @@ export default {
 
     #timeContainer {
 
-        height: 40px;
-
         h5 {
             color: $white;
             font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
 
             span {
                 font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
             }
         }
 
         #myDropDownBtn {
 
             button {
-                // width: 280px;
                 padding: 8px 24px;
-                font-size: 16px;
                 background: $linear-pink;
-                border: 1px solid $pink;
-                border-radius: 8px;
+                // border: 1px solid $pink;
+                border-radius: 4px;
                 color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            button::after {
+                vertical-align: middle;
             }
 
             .dropdown-menu {
 
                 background: $mov;
 
-                li:not(:last-child) {
-                    box-shadow: 0px 4px 4px 0px $box-shadow;
-                }
-
                 a {
-                    font-size: 16px;
                     color: $white;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+
                 }
 
                 a:hover {
                     background: $mov;
+                    color: $orange;
                 }
 
             }
@@ -392,33 +404,45 @@ export default {
 
         .timeElement {
 
-            height: 56px;
+            height: 42px;
+            padding: 8px 16px;
+            border: 1px solid $pink;
             border-radius: 4px;
 
             @include breakpoints(x-small) {
-                height: 85px;
+                height: 72px;
             }
 
             @include breakpoints(small) {
-                height: 85px;
+                height: 72px;
             }
-
-            border: 1px solid $pink;
-            padding: 16px;
 
             h5 {
                 font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
             }
 
             span {
                 font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                @include breakpoints(x-small) {
+                    margin-top: 8px;
+                }
+
+                @include breakpoints(small) {
+                    margin-top: 8px;
+                }
             }
 
             img {
                 width: 24px;
                 height: 24px;
             }
-
 
             .modal {
 
@@ -428,16 +452,24 @@ export default {
 
                     .modal-content {
                         background: $primary;
+                        border-radius: 4px;
 
                         .modal-body {
                             font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 20px;
                         }
 
                         .modal-footer {
                             button {
+                                border-radius: 4px;
+                                padding: 2px 16px;
                                 color: $white;
                                 font-size: 16px;
-                                padding: 2px 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
                             }
 
                             #yesBtn {
@@ -457,10 +489,10 @@ export default {
 
         }
 
-        .timeElement:hover {
+        /* .timeElement:hover {
             border: 1px solid $notification-border;
             background: $mov;
-        }
+        } */
 
     }
 

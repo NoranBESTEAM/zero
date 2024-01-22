@@ -1,7 +1,6 @@
 <template>
 <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Time -->
     <Time />
     <!-- End Time -->
@@ -17,7 +16,10 @@ export default {
     name: 'ProfileTimeView',
     components: {
         Time
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "profile-time");
+    },
 }
 </script>
 

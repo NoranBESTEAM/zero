@@ -300,6 +300,7 @@ export default {
                 .modal-content {
 
                     background: $mov;
+                    border-radius: 4px;
 
                     .modal-body {
                         color: #FFF;

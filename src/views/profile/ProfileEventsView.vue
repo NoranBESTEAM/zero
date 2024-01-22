@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Events -->
     <Events />
     <!-- End Events -->
@@ -17,7 +16,10 @@ export default {
     name: 'ProfileEventsView',
     components: {
         Events
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "profile-events");
+    },
 }
 </script>
 

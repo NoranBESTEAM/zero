@@ -35,13 +35,19 @@ export default {
     min-height: 100vh;
 
     h5 {
-        font-size: 18px;
         color: $white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
     }
 
     p {
-        font-size: 16px;
         color: $label-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
     }
 }
 </style>

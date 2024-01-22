@@ -158,17 +158,18 @@ export default {
             .modal {
                 .modal-dialog {
 
-                    // width: 464px;
-
                     .modal-content {
 
                         background: $primary;
-                        // padding: 16px;
+                        border-radius: 4px;
 
                         .modal-header {
                             h5 {
                                 color: $white;
                                 font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
                             }
 
                             button {
@@ -186,7 +187,7 @@ export default {
                             img {
                                 width: 180px;
                                 height: 180px;
-                                border-radius: 8px;
+                                border-radius: 4px;
                                 object-fit: cover;
                             }
 
@@ -204,11 +205,15 @@ export default {
                             button {
                                 width: 149px;
                                 padding: 8px 16px;
-                                border: 1px solid $pink;
-                                border-radius: 8px;
+                                // border: 1px solid $pink;
+                                border-radius: 4px;
                                 background: $linear-pink;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
                                 color: $white;
                                 font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
                             }
 
                         }
@@ -224,10 +229,16 @@ export default {
 
             h5 {
                 font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
             }
 
             span {
                 font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
             }
         }
 
@@ -239,77 +250,82 @@ export default {
 
         background-color: $primary;
         color: $white;
+        border-radius: 4px;
         box-shadow: 0px 4px 0px 0px $box-shadow;
 
         .card-body {
 
             #my_container {
+
                 border-bottom: 1px solid $white;
                 height: 148px;
-            }
-
-            h5 {
-                font-size: 20px;
-
-                float: left;
-
-                img {
-                    width: 24px;
-                    height: 24px;
-                }
-            }
-
-            #image_wrapper {
-
-                // display: inline-block;
-
-                width: 180px;
-                height: 132px;
-
-                padding: 16px 40px;
-
-                background-color: $white;
-
-                border: 1px solid $notification-color;
-                border-radius: 8px;
-
-                float: right;
-
-                @include breakpoints(x-small) {
-                    width: 80px;
-                    height: 80px;
-                    padding: 12px;
-                }
 
                 @include breakpoints(large) {
-                    width: 80px;
-                    height: 80px;
-                    padding: 12px;
+                    height: 128px;
                 }
 
-                @include breakpoints(x-Large) {
-                    width: 80px;
-                    height: 80px;
-                    padding: 12px;
+                h5 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    float: left;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
 
-                img {
-                    width: 100px;
-                    height: 100px;
+                #image_wrapper {
+
+                    // display: inline-block;
+
+                    width: 180px;
+                    height: 132px;
+
+                    padding: 16px 40px;
+
+                    background-color: $white;
+
+                    border: 1px solid $notification-color;
+                    border-radius: 4px;
+
+                    float: right;
 
                     @include breakpoints(x-small) {
-                        width: 56px;
-                        height: 56px;
+                        width: 120px;
+                        height: 132px;
+                        padding: 16px 10px;
                     }
 
                     @include breakpoints(large) {
-                        width: 56px;
-                        height: 56px;
+                        width: 100px;
+                        height: 112px;
+                        padding: 16px 10px;
                     }
 
                     @include breakpoints(x-Large) {
-                        width: 56px;
-                        height: 56px;
+                        width: 140px;
+                        height: 132px;
+                        padding: 16px 20px;
+                    }
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+
+                        @include breakpoints(x-small) {
+                            width: 100px;
+                            height: 100px;
+                        }
+
+                        @include breakpoints(large) {
+                            width: 80px;
+                            height: 80px;
+                        }
+
                     }
                 }
             }
@@ -319,6 +335,9 @@ export default {
         .card-footer {
             p {
                 font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
                 display: inline-block;
             }
 
@@ -335,17 +354,18 @@ export default {
             .modal {
                 .modal-dialog {
 
-                    // width: 343px;
-
                     .modal-content {
 
                         background: $primary;
-                        // padding: 16px;
+                        border-radius: 4px;
 
                         .modal-header {
                             h5 {
                                 color: $white;
                                 font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
                             }
 
                             button {
@@ -355,8 +375,6 @@ export default {
                                 font-size: 10px;
                                 font-weight: bold;
                                 margin-right: 0;
-                                // width: 24px;
-                                // height: 24px;
                             }
                         }
 
@@ -364,18 +382,18 @@ export default {
 
                             form {
 
-                                // width: 311px; 
-
                                 label {
                                     color: $notification-color;
-                                    text-align: right;
                                     font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
                                 }
 
                                 input {
                                     // width: 358px;
                                     height: 40px;
-                                    // border-radius: 4px;
+                                    border-radius: 4px;
                                     border: 1px solid $notification-color;
                                     background: transparent;
                                     caret-color: $white;
@@ -384,7 +402,10 @@ export default {
 
                                 input::placeholder {
                                     color: $white;
-                                    font-size: 12px;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px;
                                 }
 
                                 input:focus::placeholder {
@@ -401,10 +422,14 @@ export default {
                                 width: 149px;
                                 padding: 8px 16px;
                                 border: 1px solid $pink;
-                                border-radius: 8px;
+                                border-radius: 4px;
                                 background: $linear-pink;
+                                box-shadow: 0px 4px 0px 0px $box-shadow;
                                 color: $white;
                                 font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
                             }
 
                         }

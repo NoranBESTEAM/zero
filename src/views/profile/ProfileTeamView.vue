@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Add Team -->
     <AddTeam />
     <!-- End Add Team -->
@@ -17,7 +16,10 @@ export default {
     name: 'ProfileTeamView',
     components: {
         AddTeam
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "profile-team");
+    },
 }
 </script>
 

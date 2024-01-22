@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Team Members -->
     <TeamMembers />
     <!-- End Team Members -->
@@ -17,7 +16,10 @@ export default {
     name: 'ProfileTeamMembersView',
     components: {
         TeamMembers
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "team-members");
+    },
 }
 </script>
 

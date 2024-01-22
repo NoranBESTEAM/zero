@@ -12,7 +12,8 @@
             </button>
             <!-- Modal -->
             <!-- https://fontawesomeicons.com/fa/bootstrap-remove-modal-background -->
-            <div class="modal fade" id="addTeamModal" tabindex="-1" aria-labelledby="addTeamModalLabel" aria-hidden="true" data-bs-backdrop="false">
+            <div class="modal fade" id="addTeamModal" tabindex="-1" aria-labelledby="addTeamModalLabel" aria-hidden="true"
+                data-bs-backdrop="false">
                 <!-- modal-sm -->
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -32,7 +33,7 @@
                         </div>
                         <div class="modal-footer border-0 d-flex justify-content-start align-items-center">
                             <!-- <button type="button" class="btn btn-lg" data-bs-dismiss="modal">Next</button> -->
-                            <router-link :to="{ name: 'team-members' }" class="btn btn-lg text-reset" role="button">
+                            <router-link :to="{ name: 'team-members' }" class="btn text-reset" role="button">
                                 Next
                             </router-link>
                         </div>
@@ -68,13 +69,16 @@ export default {
         padding: 24px 28px 34px 28px;
 
         border: 1px solid $pink;
-        border-radius: 8px;
+        border-radius: 4px;
 
         box-shadow: 0px 4px 4px 0px $box-shadow;
 
         text-align: center;
 
         font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 
         background: $linear-pink;
         background-clip: text;
@@ -85,17 +89,18 @@ export default {
     .modal {
         .modal-dialog {
 
-            // width: 464px;
-
             .modal-content {
 
                 background: $primary;
-                // padding: 16px;
+                border-radius: 4px;
 
                 .modal-header {
                     h5 {
                         color: $white;
                         font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
                     }
 
                     button {
@@ -105,8 +110,6 @@ export default {
                         font-size: 10px;
                         font-weight: bold;
                         margin-right: 0;
-                        // width: 24px;
-                        // height: 24px;
                     }
                 }
 
@@ -122,7 +125,7 @@ export default {
                         background-color: $white;
 
                         border: 1px solid $notification-color;
-                        border-radius: 8px;
+                        border-radius: 4px;
 
                         img {
                             width: 100px;
@@ -142,12 +145,15 @@ export default {
                             color: $notification-color;
                             text-align: right;
                             font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
                         }
 
                         input {
                             width: 358px;
                             height: 40px;
-                            // border-radius: 4px;
+                            border-radius: 4px;
                             border: 1px solid $notification-color;
                             background: transparent;
                             caret-color: $white;
@@ -169,10 +175,14 @@ export default {
                     a {
                         width: 149px;
                         padding: 8px 16px;
-                        border: 1px solid $pink;
-                        border-radius: 8px;
+                        // border: 1px solid $pink;
+                        border-radius: 4px;
                         background: $linear-pink;
+                        box-shadow: 0px 4px 4px 0px $box-shadow; 
                         font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
                     }
 
                 }
