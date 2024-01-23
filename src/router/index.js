@@ -16,6 +16,7 @@ import ReadableContentView from '../views/ReadableContentView.vue'
 import SignUpView from '../views/SignUpView.vue'
 import SignInView from '../views/SignInView.vue'
 import NotificationView from '../views/NotificationView.vue'
+import ProfileParentView from '../views/profile/ProfileParentView.vue'
 import ProfileView from '../views/profile/ProfileView.vue'
 import ChangePasswordView from '../views/profile/ChangePasswordView.vue'
 import SupportView from '../views/profile/SupportView.vue'
@@ -149,85 +150,92 @@ const routes = [
     }
   },
   {
-    path: '/profile',
-    name: 'profile',
-    component: ProfileView,
-    meta:{
-      title: 'Profile',
-    }
-  },
-  {
-    path: '/change-password',
-    name: 'change-password',
-    component: ChangePasswordView,
-    meta:{
-      title: 'Profile',
-    }
-  },
-  {
-    path: '/support',
-    name: 'support',
-    component: SupportView,
-    meta:{
-      title: 'Support',
-    }
-  },
-  {
-    path: '/settings',
-    name: 'settings',
-    component: SettingView,
-    meta:{
-      title: 'Settings',
-    }
-  },
-  {
-    path: '/profile-score',
-    name: 'profile-score',
-    component: ProfileScoreView,
-    meta:{
-      title: 'Scores',
-    }
-  },
-  {
-    path: '/profile-team',
-    name: 'profile-team',
-    component: ProfileTeamView,
-    meta:{
-      title: 'Team',
-    }
-  },
-  {
-    path: '/team-members',
-    name: 'team-members',
-    component: ProfileTeamMembersView,
-    meta:{
-      title: 'Team',
-    }
-  },
-  {
-    path: '/profile-events',
-    name: 'profile-events',
-    component: ProfileEventsView,
-    meta:{
-      title: 'Events',
-    }
-  },
-  {
-    path: '/profile-time',
-    name: 'profile-time',
-    component: ProfileTimeView,
-    meta:{
-      title: 'Time',
-    }
-  },
-  {
-    path: '/profile-wallet',
-    name: 'profile-wallet',
-    component: ProfileWalletView,
-    meta:{
-      title: 'Wallet',
-    }
-  },
+    path: "/profile/",
+    name: "profile_parent",
+    component: ProfileParentView,
+    children:[
+      {
+        path: 'edit-profile',
+        name: 'profile',
+        component: ProfileView,
+        meta:{
+          title: 'Profile',
+        }
+      },
+      {
+        path: 'change-password',
+        name: 'change-password',
+        component: ChangePasswordView,
+        meta:{
+          title: 'Profile',
+        }
+      },
+      {
+        path: 'support',
+        name: 'support',
+        component: SupportView,
+        meta:{
+          title: 'Support',
+        }
+      },
+      {
+        path: 'settings',
+        name: 'settings',
+        component: SettingView,
+        meta:{
+          title: 'Settings',
+        }
+      },
+      {
+        path: 'score',
+        name: 'profile-score',
+        component: ProfileScoreView,
+        meta:{
+          title: 'Scores',
+        }
+      },
+      {
+        path: 'add-team',
+        name: 'profile-team',
+        component: ProfileTeamView,
+        meta:{
+          title: 'Team',
+        }
+      },
+      {
+        path: 'team-members',
+        name: 'team-members',
+        component: ProfileTeamMembersView,
+        meta:{
+          title: 'Team',
+        }
+      },
+      {
+        path: 'events',
+        name: 'profile-events',
+        component: ProfileEventsView,
+        meta:{
+          title: 'Events',
+        }
+      },
+      {
+        path: 'time',
+        name: 'profile-time',
+        component: ProfileTimeView,
+        meta:{
+          title: 'Time',
+        }
+      },
+      {
+        path: 'wallet',
+        name: 'profile-wallet',
+        component: ProfileWalletView,
+        meta:{
+          title: 'Wallet',
+        }
+      },
+    ]
+  }
 ]
 
 const router = createRouter({
