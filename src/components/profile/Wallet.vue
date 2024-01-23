@@ -8,19 +8,19 @@
 
             <div id="my_cards" class="mt-4 mb-4 pb-4">
 
-                <h5 class="mb-4">My cards</h5>
+                <h5 class="mb-3">My cards</h5>
 
                 <div class="row">
 
                     <!-- -------------------------------------------------------------- -->
 
-                    <div class="col-md-9 col-lg-9 col-xl-8">
+                    <div class="col-12 col-md-9 col-xl-8">
 
                         <!-- -------------------------------------------------------------- -->
 
                         <!-- For Large Screen -->
 
-                        <div class="large_screen d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                        <div class="large_screen d-none d-lg-block">
 
                             <!-- data-bs-ride="carousel" -->
                             <div id="addCardExampleIndicators" class="carousel slide" data-bs-keyboard="true">
@@ -60,14 +60,8 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <!-- https://www.youtube.com/watch?v=BrCz-FlPGgk -->
-                                    <!-- Carousel controls -->
-                                    <!-- <button class="carousel-control-prev rounded" type="button"
-                                        data-bs-target="#addCardExampleIndicators" data-bs-slide="prev">
-                                        <font-awesome-icon :icon="['fas', 'arrow-left']" />
-                                    </button> -->
-                                    <button class="carousel-control-next d-flex justify-content-start align-items-center" type="button"
-                                        data-bs-target="#addCardExampleIndicators" data-bs-slide="next">
+                                    <button class="carousel-control-next d-flex justify-content-start align-items-center"
+                                        type="button" data-bs-target="#addCardExampleIndicators" data-bs-slide="next">
                                         <img src="@/assets/images/profile/wallet_arrow_icon.webp" alt="">
                                     </button>
                                 </div>
@@ -78,7 +72,7 @@
 
                         <!-- For Small Screen -->
 
-                        <div class="small_screen d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                        <div class="small_screen d-block d-lg-none">
 
                             <!-- data-bs-ride="carousel" -->
                             <div id="addCardSmallExampleIndicators" class="carousel slide">
@@ -128,8 +122,8 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button class="carousel-control-next d-flex justify-content-start align-items-center" type="button"
-                                        data-bs-target="#addCardSmallExampleIndicators" data-bs-slide="next">
+                                    <button class="carousel-control-next d-flex justify-content-start align-items-center"
+                                        type="button" data-bs-target="#addCardSmallExampleIndicators" data-bs-slide="next">
                                         <img src="@/assets/images/profile/wallet_arrow_icon.webp" alt="">
                                     </button>
                                 </div>
@@ -144,11 +138,12 @@
 
                     <!-- -------------------------------------------------------------- -->
 
-                    <div class="col-md-3 col-lg-3 col-xl-4 d-flex justify-content-center justify-content-sm-center justify-content-md-start align-items-center mt-3 mt-sm-3 mt-md-0">
+                    <div
+                        class="col-12 col-md-3 col-xl-4 d-flex justify-content-center justify-content-md-start align-items-center mt-3 mt-md-0">
 
                         <!-- Button trigger modal -->
 
-                        <button type="button" class="btn btn-lg" id="addCard" data-bs-toggle="modal"
+                        <button type="button" class="btn" id="addCard" data-bs-toggle="modal"
                             data-bs-target="#addCardModal">Add card</button>
 
                         <!-- Modal -->
@@ -199,7 +194,7 @@
                                     </div>
 
                                     <div class="modal-footer border-0">
-                                        <button type="button" class="btn btn-lg" data-bs-dismiss="modal">Done</button>
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Done</button>
                                     </div>
 
                                 </div>
@@ -215,21 +210,23 @@
 
             </div>
 
+            <!-- -------------------------------------------------------------- -->
+
             <div id="points">
 
-                <h5 class="mb-4">Points</h5>
+                <h5 class="mb-3">Points</h5>
 
                 <p class="mb-3">One stars gives you 30 points. <br /> Collect points then use them to buy our products and
                     get discounts.</p>
 
-                <button type="button" class="btn me-3" id="certificate">
-                    <img src="@/assets/images/navbar/certificate.webp" alt="">
+                <button type="button" class="btn me-3 border-0 shadow-none" id="certificate">
+                    <img src="@/assets/images/navbar/certificate.webp" class="me-2" alt="">
                     250 XP
                 </button>
 
                 <!-- https://www.youtube.com/watch?v=fMTYZNOfxjg&t=299s -->
 
-                <button type="button" class="btn" id="see_more" @click="SeeMoreTable = !SeeMoreTable;">
+                <button type="button" class="btn border-0 shadow-none" id="see_more" @click="SeeMoreTable = !SeeMoreTable;">
                     See more
                 </button>
 
@@ -304,11 +301,17 @@ export default {
     color: $white;
 
     h5 {
-        font-size: 18px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
     }
 
     #my_cards {
@@ -319,57 +322,70 @@ export default {
 
         // For Large Screen
 
-        @media screen and (min-width: 768px) {
+        .large_screen {
 
-            .large_screen {
+            .carousel {
 
-                .carousel {
+                .carousel-inner {
 
-                    .carousel-inner {
+                    width: 75%;
 
-                        width: 80%;
+                    @include breakpoints(large) {
+                        width: 90%;
+                    }
 
-                        @include breakpoints(large) {
-                            width: 95%;
-                        }
+                    @include breakpoints(x-Large) {
+                        width: 86%;
+                    }
 
-                        @include breakpoints(x-Large) {
-                            width: 90%;
-                        }
+                    .carousel-item {
 
-                        .carousel-item {
+                        transition: transform 2s ease-in-out;
 
-                            transition: transform 2.5s ease-in-out;
+                        .card-wrapper {
 
-                            .card-wrapper {
+                            display: flex;
+                            // justify-content: center;
+                            // align-items: center;
 
-                                display: flex;
-                                // justify-content: center;
-                                // align-items: center;
+                            .card {
+                                margin: auto 8px;
+                                width: 300px;
+                                border: 1px solid $pink;
+                                border-radius: 4px;
+                                box-sizing: content-box;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
 
-                                .card {
-                                    margin: auto 0.75em;
-                                    width: 305px;
-                                    border: 1px solid $pink;
-                                    border-radius: 8px;
-                                    box-sizing: content-box;
-                                    box-shadow: 0px 4px 4px 0px $box-shadow;
+                                @include breakpoints(large) {
+                                    width: 293px;
+                                }
 
-                                    .image-wrapper {
+                                @include breakpoints(x-Large) {
+                                    width: 296px;
+                                }
 
-                                        width: 305px;
-                                        height: 199px;
+                                .image-wrapper {
 
-                                        border-radius: 8px;
+                                    width: 300px;
+                                    height: 196px;
+                                    border-radius: 4px;
 
-                                        img {
-                                            width: 100%;
-                                            height: 100%;
-                                            object-fit: cover;
-                                            border-radius: 8px;
-                                        }
+                                    @include breakpoints(large) {
+                                        width: 293px;
+                                        height: 191px;
                                     }
 
+                                    @include breakpoints(x-Large) {
+                                        width: 296px;
+                                        height: 193px;
+                                    }
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        border-radius: 4px;
+                                    }
                                 }
 
                             }
@@ -378,24 +394,24 @@ export default {
 
                     }
 
-                    .carousel-control-next {
-                        width: 20%;
-                        opacity: 1;
+                }
 
-                        @include breakpoints(large) {
-                            width: 5%;
-                        }
+                .carousel-control-next {
+                    width: 20%;
+                    opacity: 1;
 
-                        @include breakpoints(x-Large) {
-                            width: 10%;
-                        }
-
-                        img {
-                            width: 24px;
-                            height: 24px;
-                        }
+                    @include breakpoints(large) {
+                        width: 8%;
                     }
 
+                    @include breakpoints(x-Large) {
+                        width: 12%;
+                    }
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
 
             }
@@ -404,54 +420,57 @@ export default {
 
         // For Small Screen
 
-        @media screen and (max-width: 1200px) {
+        .small_screen {
 
-            .small_screen {
+            .carousel {
 
-                .carousel {
+                .carousel-inner {
 
-                    .carousel-inner {
+                    width: 63%;
 
-                        width: 80%;
+                    @include breakpoints(x-small) {
+                        width: 90%;
+                    }
 
-                        @include breakpoints(x-small) {
-                            width: 95%;
-                        }
+                    .carousel-item {
 
-                        .carousel-item {
+                        transition: transform 2s ease-in-out;
 
-                            transition: transform 2.5s ease-in-out;
+                        .card-wrapper {
 
-                            .card-wrapper {
+                            display: flex;
+                            /* justify-content: center;
+                            align-items: center; */
 
-                                display: flex;
-                                // justify-content: center;
-                                // align-items: center;
+                            .card {
 
-                                .card {
+                                margin: auto 8px;
+                                width: 300px;
+                                border: 1px solid $pink;
+                                border-radius: 4px;
+                                box-sizing: content-box;
+                                box-shadow: 0px 4px 4px 0px $box-shadow;
 
-                                    margin: auto 0.5em;
-                                    width: 305px;
-                                    border: 1px solid $pink;
-                                    border-radius: 8px;
-                                    box-sizing: content-box;
-                                    box-shadow: 0px 4px 4px 0px $box-shadow;
+                                @include breakpoints(x-small) {
+                                    width: 290px;
+                                }
 
+                                .image-wrapper {
 
-                                    .image-wrapper {
+                                    width: 300px;
+                                    height: 196px;
+                                    border-radius: 4px;
 
-                                        width: 305px;
-                                        height: 199px;
+                                    @include breakpoints(x-small) {
+                                        width: 290px;
+                                        height: 189px;
+                                    }
 
-                                        border-radius: 8px;
-
-                                        img {
-                                            width: 100%;
-                                            height: 100%;
-                                            object-fit: cover;
-                                            border-radius: 8px;
-                                        }
-
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        border-radius: 4px;
                                     }
 
                                 }
@@ -462,24 +481,23 @@ export default {
 
                     }
 
-                    .carousel-control-next {
-                        width: 20%;
-                        opacity: 1;
+                }
 
-                        @include breakpoints(x-small) {
-                            width: 5%;
-                        }
+                .carousel-control-next {
+                    width: 33%;
+                    opacity: 1;
 
-                        img {
-                            width: 24px;
-                            height: 24px;
-                        }
+                    @include breakpoints(x-small) {
+                        width: 7%;
                     }
 
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
 
             }
-
 
         }
 
@@ -487,12 +505,16 @@ export default {
 
         #addCard {
             width: 241px;
-            // padding: 2px 16px 8px 16px;
-            border: 1px solid $pink;
-            border-radius: 8px;
+            padding: 8px 16px;
+            // border: 1px solid $pink;
+            border-radius: 4px;
             background: $linear-pink;
+            box-shadow: 0px 4px 4px 0px $box-shadow;
             color: $white;
             font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
         }
 
         #addCardModal {
@@ -501,19 +523,25 @@ export default {
 
                 width: 375px;
                 // height: 290px;
-                // border-radius: 16px;
-                // box-shadow: 0px 4px 4px 0px $box-shadow;
+                border-radius: 4px;
+                box-shadow: 0px 4px 4px 0px $box-shadow;
 
                 .modal-content {
 
                     background: $mov;
-
                     color: $white;
+
+                    @include breakpoints(x-small) {
+                        margin-left: -8px;
+                    }
 
                     .modal-header {
 
                         h5 {
                             font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
                         }
 
                         button {
@@ -523,8 +551,6 @@ export default {
                             font-size: 10px;
                             font-weight: bold;
                             margin-right: 0;
-                            // width: 24px;
-                            // height: 24px;
                         }
 
                     }
@@ -535,10 +561,13 @@ export default {
 
                             label {
                                 font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
                             }
 
                             input {
-                                border-radius: 8px;
+                                border-radius: 4px;
                                 border: 1px solid $gray;
                                 background: $white;
                                 // caret-color: $white;
@@ -548,6 +577,9 @@ export default {
                             input::placeholder {
                                 color: $gray;
                                 font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
                             }
 
                             input:focus::placeholder {
@@ -562,10 +594,14 @@ export default {
                         button {
                             width: 343px;
                             padding: 8px 16px;
-                            border-radius: 8px;
+                            border-radius: 4px;
                             background: $linear-pink;
+                            box-shadow: 0px 4px 4px 0px $box-shadow;
                             color: $white;
                             font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
                         }
                     }
 
@@ -577,14 +613,19 @@ export default {
 
     }
 
+    // -------------------------------------------- //
+
     #points {
 
         button {
-            width: 140px;
-            // padding: 8px 16px;
-            border-radius: 8px;
+            width: 139px;
+            padding: 8px 16px;
+            border-radius: 4px;
             color: $white;
             font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
         }
 
         #certificate {
@@ -620,6 +661,8 @@ export default {
                         border: 0;
                         color: $white;
                         font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
                         line-height: 24px;
                         // width: 180px;
                         // text-align: center;
@@ -633,10 +676,13 @@ export default {
 
                     th,
                     td {
-                        background: $mov;
+                        // background: $mov;
+                        background-color: transparent;
                         border: 0;
                         color: $white;
                         font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
                         line-height: 24px;
                         // width: 180px;
                         // text-align: center;

@@ -1,7 +1,6 @@
 <template>
     <!-- import navbar in main.js file -->
-    <!-- <Navbar />
-    <router-view /> -->
+    <Navbar />
     <!-- Start Wallet -->
     <Wallet />
     <!-- End Wallet -->
@@ -17,7 +16,10 @@ export default {
     name: 'ProfileWalletView',
     components: {
         Wallet
-    }
+    },
+    created() {
+        this.$store.commit("setPage", "profile-wallet");
+    },
 }
 </script>
 
