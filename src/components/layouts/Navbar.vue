@@ -86,7 +86,10 @@
 
                         <!-- https://freefrontend.com/css-notifications/ -->
                         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
-                        <router-link :to="{ name: 'notification' }" class="btn" id="alert">
+                        <router-link :to="{ name: 'notification' }" class="btn" id="alert" :class="{
+                            'router-link-exact-active':
+                                this.$store.getters.getPage === 'notification'
+                        }">
                             <img src="@/assets/images/navbar/notification.webp" alt="" class="position-relative">
                             <font-awesome-icon :icon="['fas', 'fa-circle']" />
                             <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
@@ -96,7 +99,19 @@
                             </span> -->
                         </router-link>
 
-                        <router-link :to="{ name: 'profile' }" class="btn" id="user">
+                        <router-link :to="{ name: 'profile' }" class="btn" id="user" :class="{
+                            'router-link-exact-active':
+                                this.$store.getters.getPage === 'profile' ||
+                                this.$store.getters.getPage === 'change-password' ||
+                                this.$store.getters.getPage === 'support' ||
+                                this.$store.getters.getPage === 'settings' ||
+                                this.$store.getters.getPage === 'profile-score' ||
+                                this.$store.getters.getPage === 'profile-team' ||
+                                this.$store.getters.getPage === 'team-members' ||
+                                this.$store.getters.getPage === 'profile-events' ||
+                                this.$store.getters.getPage === 'profile-time' ||
+                                this.$store.getters.getPage === 'profile-wallet'
+                        }">
                             <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
                             <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
                         </router-link>
@@ -111,7 +126,10 @@
 
                 <!-- https://freefrontend.com/css-notifications/ -->
                 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_notification -->
-                <router-link :to="{ name: 'notification' }" class="btn" id="alert">
+                <router-link :to="{ name: 'notification' }" class="btn" id="alert" :class="{
+                    'router-link-exact-active':
+                        this.$store.getters.getPage === 'notification'
+                }">
                     <img src="@/assets/images/navbar/notification.webp" alt="" class="position-relative">
                     <font-awesome-icon :icon="['fas', 'fa-circle']" />
                     <!-- https://getbootstrap.com/docs/5.3/components/badge/ -->
@@ -121,7 +139,19 @@
                     </span> -->
                 </router-link>
 
-                <router-link :to="{ name: 'profile' }" class="btn" id="user">
+                <router-link :to="{ name: 'profile' }" class="btn" id="user" :class="{
+                    'router-link-exact-active':
+                        this.$store.getters.getPage === 'profile' ||
+                        this.$store.getters.getPage === 'change-password' ||
+                        this.$store.getters.getPage === 'support' ||
+                        this.$store.getters.getPage === 'settings' ||
+                        this.$store.getters.getPage === 'profile-score' ||
+                        this.$store.getters.getPage === 'profile-team' ||
+                        this.$store.getters.getPage === 'team-members' ||
+                        this.$store.getters.getPage === 'profile-events' ||
+                        this.$store.getters.getPage === 'profile-time' ||
+                        this.$store.getters.getPage === 'profile-wallet'
+                }">
                     <!-- <img src="@/assets/images/navbar/user.png" alt=""> -->
                     <img src="@/assets/images/profile/profile-pic-square.webp" alt="">
                 </router-link>
